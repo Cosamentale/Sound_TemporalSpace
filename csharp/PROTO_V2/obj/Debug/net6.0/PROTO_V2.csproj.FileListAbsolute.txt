@@ -1,0 +1,4 @@
+D:\TEMPORAL\GIT\Sound_TemporalSpace\csharp\PROTO_V2\bin\Debug\net6.0\PROTO_V2.deps.json
+D:\TEMPORAL\GIT\Sound_TemporalSpace\csharp\PROTO_V2\obj\Debug\net6.0\PROTO_V2.GeneratedMSBuildEditorConfig.editorconfig
+D:\TEMPORAL\GIT\Sound_TemporalSpace\csharp\PROTO_V2\obj\Debug\net6.0\PROTO_V2.AssemblyInfoInputs.cache
+D:\TEMPORAL\GIT\Sound_TemporalSpace\csharp\PROTO_V2\obj\Debug\net6.0\PROTO_V2.AssemblyInfo.cs
