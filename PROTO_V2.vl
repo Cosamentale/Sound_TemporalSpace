@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="TrsSzvvHUOBLhlezdh1aan" LanguageVersion="2023.5.2" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="BQcy9O9no36Lwvz5TTnHew" LanguageVersion="2023.5.2" Version="0.128">
   <NugetDependency Id="GeiBd1ft3DCMtfqLDkKLjF" Location="VL.CoreLib" Version="2023.5.2" />
   <Patch Id="JgSYa9PSqaYOSFG4uy324K">
     <Canvas Id="S0pkASCNTzuQIrZ87xBkJj" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
@@ -401,7 +401,7 @@
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
               <CategoryReference Kind="Category" Name="Skia" NeedsToBeDirectParent="true" />
             </p:NodeReference>
-            <Pin Id="Ky8ckRO0oOrOD96xJoXXEh" Name="Bounds" Kind="InputPin" DefaultValue="1947, 297, 592, 422">
+            <Pin Id="Ky8ckRO0oOrOD96xJoXXEh" Name="Bounds" Kind="InputPin" DefaultValue="1946, 296, 592, 421">
               <p:TypeAnnotation LastCategoryFullName="System.Windows" LastDependency="VL.CoreLib.Windows.vl">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -536,7 +536,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SceneWindow" />
             </p:NodeReference>
-            <Pin Id="DicTHKzgcLFQYwSPeTLGoa" Name="Bounds" Kind="InputPin" DefaultValue="1560, 65.6, 1503.2, 637.6" />
+            <Pin Id="DicTHKzgcLFQYwSPeTLGoa" Name="Bounds" Kind="InputPin" DefaultValue="1561.6, 71.2, 1500, 630.4" />
             <Pin Id="QL4foPdxtXgLcR9zUV52fO" Name="Input" Kind="InputPin" />
             <Pin Id="IL8cH2nx4KOPttqRm93ral" Name="Camera" Kind="InputPin" />
             <Pin Id="Ias8TWNwAYuNln9bL7DikS" Name="Enable Default Camera" Kind="InputPin" />
@@ -1019,7 +1019,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="RenderWindow" />
             </p:NodeReference>
-            <Pin Id="IeWBhYWPppKMAQoPNDZvuC" Name="Bounds" Kind="InputPin" DefaultValue="1544.8, 155.2, 799.2, 546.4">
+            <Pin Id="IeWBhYWPppKMAQoPNDZvuC" Name="Bounds" Kind="InputPin" DefaultValue="1546.4, 160.8, 796, 539.2">
               <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -1558,7 +1558,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="RenderWindow" />
             </p:NodeReference>
-            <Pin Id="B5hYIpQpeqQMHSxLxqFvNa" Name="Bounds" Kind="InputPin" DefaultValue="2313.6, 163.2, 782.4, 424.8">
+            <Pin Id="B5hYIpQpeqQMHSxLxqFvNa" Name="Bounds" Kind="InputPin" DefaultValue="2315.2, 168.8, 779.2, 417.6">
               <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -1701,7 +1701,6 @@
         <Link Id="LP5McdHzOHkMcrB5Xjp3zJ" Ids="Ef9RnC68vX3QQhZtyCKgDp,SGSgLULgCFTPPFe0gehxgq" />
         <Link Id="IfHyQ8PcgZrMe9gTalyPNK" Ids="Ef9RnC68vX3QQhZtyCKgDp,AL6WESqHDAROXLYhR7BBap" />
         <Link Id="TImMZaN80fMONR3sukeGfO" Ids="AaOJLWBOUP7LWSH0bdHFK7,PBgKrImgNYrNJ1pXK8qNNx" />
-        <Link Id="AyejIgZZIgmOwZDcV540ur" Ids="EaUDrxR1juKLNudy6HXkNh,TF9PPtn5ty3PsRlwWhHXkL" />
         <Link Id="EjX5UtvkSy7L7ikYvqk5ij" Ids="KfHRyumaBGHNkmDsqCJzMl,QRUyaTouvaLOi1xgTNQAd0" />
         <Link Id="EgLBUukdqW5PBii8Vs75uY" Ids="AaOJLWBOUP7LWSH0bdHFK7,Te8WXNEHdsLPRhEqjIlTBP" />
         <Link Id="RQasGKbMwYtLFZvqrp2QiU" Ids="KfHRyumaBGHNkmDsqCJzMl,BdUqlL6Ah60PswcvvaKqHK" />
@@ -1797,11 +1796,12 @@
         <Link Id="SFHpYLOxFsVPwai6ymqn8z" Ids="PAMIP084yNWOepTtUXzYKS,C4bdgk94DZYOV0FQp1nvQZ" />
         <Link Id="SCbrwKsyZaoMV9KtlNcCek" Ids="DWKDASzETsDMcqwOicyVQN,RlZOYomuGiHLThP9excUu0" />
         <Link Id="Uuwrm5MJtqSQQsPa83Nhl8" Ids="KT2qhCmmw7ILIATPyyQuBq,GTjHk0jV5keMKJYImwQ9Ve" />
-        <Link Id="Im9ADTorih6Nbs2msWiiWQ" Ids="EaUDrxR1juKLNudy6HXkNh,FTDGpZYPvemOKVqfpo3Hjt" />
         <Link Id="C7gZx2ldITeOi286XiMnFG" Ids="Jzn0cn8iTuEPu7tO1fdJGK,FzWXp1v72yXPkWysI9JKfo" />
         <Link Id="V5e3AICn6YvNiFBoFkEWcQ" Ids="PDzm2WcnKklOwNLInTAtsJ,ViWoXQOa1CjMnqFultelm2" />
         <Link Id="PFFhtEnTrWuNq3fSIrMBwF" Ids="R5udhlWyuXPLEI1g3kBqlh,RLgUHlaNnJnOanhDlqfQ56" />
         <Link Id="Gry2BbifZYPQAlWjCCk1ck" Ids="ABrfjERLGDAMQeDDQ0yUGy,BFjfPChWYjQPFCvlzHugsX" />
+        <Link Id="Jjd7rLGHJhcLGE67y2zIaj" Ids="EaUDrxR1juKLNudy6HXkNh,TF9PPtn5ty3PsRlwWhHXkL" />
+        <Link Id="NRDbLrG83EMOv5AwaOW99g" Ids="KfHRyumaBGHNkmDsqCJzMl,FTDGpZYPvemOKVqfpo3Hjt" />
       </Patch>
     </Node>
   </Patch>

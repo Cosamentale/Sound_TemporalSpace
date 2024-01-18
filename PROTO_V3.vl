@@ -491,7 +491,7 @@
             <Pin Id="DwnwtuP4aAvQO4LO2Kwz0s" Name="Depth Stencil State" Kind="InputPin" />
             <Pin Id="T6RWv4MbkhNL1pi6jcjAwP" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="1129,1485,67,19" Id="ECbkrQCOXGFPgIwNmEdeJF">
+          <Node Bounds="1138,1485,67,19" Id="ECbkrQCOXGFPgIwNmEdeJF">
             <p:NodeReference LastCategoryFullName="Stride.API.Graphics.BlendStateDescription" LastDependency="VL.Stride.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="AlphaBlend" />
@@ -1019,7 +1019,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="RenderWindow" />
             </p:NodeReference>
-            <Pin Id="IeWBhYWPppKMAQoPNDZvuC" Name="Bounds" Kind="InputPin" DefaultValue="1564, 172, 1052.8, 641.6">
+            <Pin Id="IeWBhYWPppKMAQoPNDZvuC" Name="Bounds" Kind="InputPin" DefaultValue="1565.6, 177.6, 1049.6, 634.4">
               <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -1080,7 +1080,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="FsJn3pnJB1lOQi3oBPIPFl" Comment="" Bounds="857,1093,208,15" ShowValueBox="true" isIOBox="true" Value="..\..\RECORD\Recorded5\\" />
+          <Pad Id="FsJn3pnJB1lOQi3oBPIPFl" Comment="" Bounds="857,1093,208,15" ShowValueBox="true" isIOBox="true" Value="..\..\RECORD\RecordedBZ2\\" />
           <Pad Id="GzuC5a1JoCmNfoW2FBIZfa" Bounds="697,1236,35,15" ShowValueBox="true" isIOBox="true" Value="0.1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Float32" />
@@ -1127,7 +1127,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="UYpy7uq5OBBO5qwXEJZSfO" Name="Bounds" Kind="InputPin" DefaultValue="1000, 328, 506, 207" />
+            <Pin Id="UYpy7uq5OBBO5qwXEJZSfO" Name="Bounds" Kind="InputPin" DefaultValue="1000, 328, 505, 206" />
             <Pin Id="LLOkUkqjMhVLCXMmDjGQz9" Name="Bound to Document" Kind="InputPin" DefaultValue="True" />
             <Pin Id="B20lMU5zpCtPLQO5LusD2E" Name="Input" Kind="InputPin" />
             <Pin Id="F726qXNE42CLWRiLrseRis" Name="Color" Kind="InputPin" />
