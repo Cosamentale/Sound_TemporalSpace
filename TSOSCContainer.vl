@@ -1311,14 +1311,28 @@
             <ControlPoint Id="FFmQZVBTu3nPvbKTpKTFiL" Bounds="869,653" />
             <ControlPoint Id="O60dc7aQTC9Ow38CH6S9zS" Bounds="890,671" />
             <ControlPoint Id="O3z7PD5sKEQOy2gn7PR5O7" Bounds="950,669" />
-            <ControlPoint Id="JLXOlp9ZDpfQOYnfhOYDkf" Bounds="1934,288" />
-            <ControlPoint Id="SS9rwUAQBcDOoQZLRdCSBG" Bounds="1610,296" />
+            <ControlPoint Id="JLXOlp9ZDpfQOYnfhOYDkf" Bounds="1934,286" />
+            <ControlPoint Id="SS9rwUAQBcDOoQZLRdCSBG" Bounds="1610,286" />
+            <Node Bounds="2132,1469,85,26" Id="TTyIcC85aI4LSB3nHyjawF">
+              <p:NodeReference LastCategoryFullName="IO.OSC.OSCClient" LastDependency="VL.IO.OSC.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="SendMessage" />
+              </p:NodeReference>
+              <Pin Id="EWSlkxOcSGmMdMMO81mpbC" Name="Input" Kind="StateInputPin" />
+              <Pin Id="D5UtUCwSXVgNXhaaWg2IbQ" Name="Address" Kind="InputPin" />
+              <Pin Id="LyNBGxPhNNqLDB2iGQ3vRQ" Name="Arguments" Kind="InputPin" />
+              <Pin Id="KffcYryNPC5QACzm5NkOgr" Name="Bundled Per Frame" Kind="InputPin" />
+              <Pin Id="AR0ZSj02zNrLBJpvxe7woR" Name="Apply" Kind="InputPin" />
+              <Pin Id="GtthBx8vfUNLnLo9wAOEE2" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Pad Id="HpgloDTIZLqN2MXVvG3Apd" Comment="Address" Bounds="2155,1440,50,15" ShowValueBox="true" isIOBox="true" Value="/StopR">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+            </Pad>
+            <ControlPoint Id="LVk3dghr7DsPK8v5vfcINQ" Bounds="2142,286" />
+            <ControlPoint Id="K1P9hyuWnk9N8TaMaP8YLI" Bounds="2169,304" />
           </Canvas>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="O6mwd7BkZhXPI5jAM5FZbQ">
             <Fragment Id="GowaE5lNjcoMv1Ejw94z31" Patch="CLodlwE5Q9NP5VPCNI7g1E" Enabled="true" />
             <Fragment Id="K2XyP1GYl1lQC8zKpw4NPE" Patch="F6Wz2kjlELBOiwachbwmji" Enabled="true" />
@@ -1434,7 +1448,15 @@
             <Pin Id="C0zlYVFpFNlMAnmj1fbDMt" Name="SendingEnabled" Kind="InputPin" Bounds="1795,291" DefaultValue="False" />
             <Pin Id="UFo5lOSmEuhN8B8x7Yk5wn" Name="Data" Kind="OutputPin" Bounds="157,275" />
             <Pin Id="Q67hdI4VgVSMrq0f2Vl5br" Name="DataPreview" Kind="OutputPin" Bounds="218,328" />
+            <Pin Id="Htfk1HarjliPEn5Msi2r0a" Name="StopRAddress" Kind="InputPin" Bounds="2138,939" />
+            <Pin Id="UnzvHeaNVZmPjyjTA6NksE" Name="StopRArgument" Kind="InputPin" Bounds="2166,344" />
           </Patch>
+          <Link Id="ULssDSRWIZ5Lm8YUzfMnEs" Ids="HpgloDTIZLqN2MXVvG3Apd,D5UtUCwSXVgNXhaaWg2IbQ" />
+          <Link Id="QXnKaVjNWmXQUDPVKLMdOZ" Ids="Jp6cBtqGd80PyDVWxQO7nV,EWSlkxOcSGmMdMMO81mpbC" />
+          <Link Id="MbDLXEwFNnCPg8QeFak3ik" Ids="LVk3dghr7DsPK8v5vfcINQ,HpgloDTIZLqN2MXVvG3Apd" />
+          <Link Id="O8t8wdPnl4JNctoOBSxqir" Ids="Htfk1HarjliPEn5Msi2r0a,LVk3dghr7DsPK8v5vfcINQ" IsHidden="true" />
+          <Link Id="CHgEuoyk6UDMa2Cab0vV9y" Ids="K1P9hyuWnk9N8TaMaP8YLI,LyNBGxPhNNqLDB2iGQ3vRQ" />
+          <Link Id="B91IsIdlQBhMd43jzX5ZBN" Ids="UnzvHeaNVZmPjyjTA6NksE,K1P9hyuWnk9N8TaMaP8YLI" IsHidden="true" />
         </Patch>
       </Node>
     </Canvas>
