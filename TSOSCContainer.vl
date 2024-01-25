@@ -1146,7 +1146,6 @@
               </p:NodeReference>
               <Pin Id="MndLQCX2YcYNTPfcbDcFDc" Name="Result" Kind="OutputPin" />
               <Pin Id="NHya72JatDUMUcYKgy3cg6" Name="Input" Kind="InputPin" />
-              <Pin Id="SZ7J7MlBv7zNmx5SJL7YsM" Name="Input 2" Kind="InputPin" />
             </Node>
             <Pad Id="TgvG5BX2wXWMr8YDFiV1MR" Comment="" Bounds="1772,683,103,95" ShowValueBox="true" isIOBox="true">
               <p:Value>
