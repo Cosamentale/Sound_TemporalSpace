@@ -1434,7 +1434,7 @@
             <Pin Id="Sjaa5lho79qNgulEjrwJEO" Name="OutIPExtra" Kind="InputPin" />
             <Pin Id="KGVlCScOiXcLIcRnet347n" Name="SendingEnabled" Kind="InputPin" />
             <Pin Id="OjYVx4f1Mx2NTC124p7rM9" Name="StartRAddress" Kind="InputPin" />
-            <Pin Id="VtkQXIaMvfOMDyZ33iL94b" Name="StartRArgument" Kind="InputPin" />
+            <Pin Id="Be88TonKpf9MIIB6WoId7j" Name="StarrRArgument" Kind="InputPin" />
             <Pin Id="Fia9pQpeJ0oQcSIZs6uhBZ" Name="StopRAddress" Kind="InputPin" />
             <Pin Id="Jj8Kvt0xw0QO0DnLF5kqqN" Name="StopRArgument" Kind="InputPin" />
             <Pin Id="QbES9ZzKVtGQCfhMriRmaf" Name="Data" Kind="OutputPin" />
@@ -1654,6 +1654,23 @@
             <p:ValueBoxSettings>
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="492,-58,67,19" Id="OMul75V9oQ5MjU3QpRWrek">
+            <p:NodeReference LastCategoryFullName="Stride.Input" LastDependency="VL.Stride.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Input" NeedsToBeDirectParent="true">
+                <p:OuterCategoryReference Kind="Category" Name="Stride" NeedsToBeDirectParent="true" />
+              </CategoryReference>
+              <Choice Kind="ProcessAppFlag" Name="KeyPressed" />
+            </p:NodeReference>
+            <Pin Id="IYUnWNqxvAbMA5DdGpUBLp" Name="Keyboard Device" Kind="InputPin" />
+            <Pin Id="Q4LxugNhgYyMkFFGUj0YZQ" Name="Key" Kind="InputPin" />
+            <Pin Id="OOVeRexglAmP3nwIjmuzfI" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="SITCwvwO7wKNGdCjP79PDQ" Comment="Keyboard Device" Bounds="494,-89">
+            <p:TypeAnnotation LastCategoryFullName="Stride.API.Input" LastDependency="VL.Stride.vl">
+              <Choice Kind="TypeFlag" Name="IKeyboardDevice" />
+            </p:TypeAnnotation>
           </Pad>
         </Canvas>
         <ProcessDefinition Id="BBhIWOCsdy8LwDifsUs0WA">
@@ -1875,7 +1892,6 @@
         <Link Id="J9w6Ib72H79Nj5IuB9Kftc" Ids="ICyrLZGcCGlPCv69c7CNse,OjYVx4f1Mx2NTC124p7rM9" />
         <Link Id="GBdOY1ryw1uMyTHGGlQ5j2" Ids="NU7YEofCJRtPk2CF6i97VG,Jj8Kvt0xw0QO0DnLF5kqqN" />
         <Link Id="MPu1OJ5sPEKNY4OYVC6cGv" Ids="HJ9ZV9X8nACNy9s5xXk1DI,Fia9pQpeJ0oQcSIZs6uhBZ" />
-        <Link Id="VeMq62OnUCRMJDyxHmtifa" Ids="CbFCJSa2MI0NU23Tzouyzc,VtkQXIaMvfOMDyZ33iL94b" />
         <Link Id="Vwl3WhLfDn4L4aIkgSsKHn" Ids="KfHRyumaBGHNkmDsqCJzMl,TF9PPtn5ty3PsRlwWhHXkL" />
         <Link Id="MdTXX9ViIqVOcVbJYrCTmo" Ids="EaUDrxR1juKLNudy6HXkNh,QRUyaTouvaLOi1xgTNQAd0" />
         <Link Id="UuE2K0GUsDkMcaLQE5eG2U" Ids="RTAmr7BNM11QKUIpwZoSr8,RGAwAZzQ0L7LWkLMAQXA0f" />
@@ -1891,6 +1907,8 @@
         <Link Id="ONzgVHHNiR5PBhaAewWNHD" Ids="AJJKxXzGDP5NXyK1AMMB7W,HGl02yBeXz0NbWhMNT4VnW" />
         <Link Id="CRTWMZeVq8GO1F45WwqJhn" Ids="DwRHxmpUZpJPU6sRLs4EV4,APqLZ2py0rHOAvEV0p2HQh" />
         <Link Id="NlU0wz2nNeBOrfQrZym5pJ" Ids="Tsl3VdOc2BUN8rKdDBZ3Fz,NU7YEofCJRtPk2CF6i97VG" />
+        <Link Id="VNEUpJLfxXbMaC12OgEaxo" Ids="OOVeRexglAmP3nwIjmuzfI,BPJwpqv61JePSN5Thbja1h" />
+        <Link Id="NKBa6LxZdOJOVOY02SZdTr" Ids="SITCwvwO7wKNGdCjP79PDQ,IYUnWNqxvAbMA5DdGpUBLp" />
       </Patch>
     </Node>
   </Patch>
