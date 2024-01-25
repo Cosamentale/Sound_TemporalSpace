@@ -491,7 +491,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="KfHRyumaBGHNkmDsqCJzMl" Comment="START" Bounds="707,554,67,75" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="KfHRyumaBGHNkmDsqCJzMl" Comment="START" Bounds="734,522,67,75" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -1312,12 +1312,6 @@
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="NhBUEKuP4yoLmiGxCt8KyD" Comment="On Data" Bounds="933,111,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="QRowqQGVIYaMOtI87c5Z8v" Comment="" Bounds="865,94,35,15" ShowValueBox="true" isIOBox="true" Value="0">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="ImmutableTypeFlag" Name="Float32" />
-              <CategoryReference Kind="Category" Name="Primitive" />
-            </p:TypeAnnotation>
-          </Pad>
           <Pad Id="ICyrLZGcCGlPCv69c7CNse" Comment="StartRAddress" Bounds="1059,187,39,15" ShowValueBox="true" isIOBox="true" Value="/startR">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
@@ -1365,6 +1359,15 @@
             <p:TypeAnnotation LastCategoryFullName="IO.Keyboard" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Keys" />
             </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="IRegknO9WDcO4ZcGc1vxB0" Comment="" Bounds="859,121,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
           </Pad>
         </Canvas>
         <ProcessDefinition Id="BBhIWOCsdy8LwDifsUs0WA">
@@ -1552,7 +1555,6 @@
         <Link Id="HNByHJPZZIqMmy6kQqL5uJ" Ids="OfASaThgO1FPYcYWBSRX4W,CbMIiI2tDwkOPiVHgVVqqe" />
         <Link Id="E8q7TQqjT2fM0cscvO73bk" Ids="MbS84FreckHL8X9mPUS6uV,Qm4A1mceyqELIOnYsxutX8" />
         <Link Id="DOsJGv7V7JFNzJ0g5gvY4z" Ids="A88XLtZCWgLLdOZmcH2nrH,NhBUEKuP4yoLmiGxCt8KyD" />
-        <Link Id="JHwDgJPeLwbNnuw4rDfhPI" Ids="Cu63M6bWumjMZqRW7kqJsL,QRowqQGVIYaMOtI87c5Z8v" />
         <Link Id="I74maKF6MR8L6WmtKjVA3v" Ids="Se3u65G2RUjLxTOWUjeLEL,ETrZNLx1FvOLbHcYLeIR3o" />
         <Link Id="J9w6Ib72H79Nj5IuB9Kftc" Ids="ICyrLZGcCGlPCv69c7CNse,OjYVx4f1Mx2NTC124p7rM9" />
         <Link Id="MPu1OJ5sPEKNY4OYVC6cGv" Ids="HJ9ZV9X8nACNy9s5xXk1DI,Fia9pQpeJ0oQcSIZs6uhBZ" />
@@ -1562,9 +1564,10 @@
         <Link Id="Gy67RLEuLH7Lp1aBtqUaMu" Ids="HSEqxvCTo4oNSNuMk8Zw2Z,QvejJEw4sAeNop365Zbluf" />
         <Link Id="Ai9qk1jiTnCL2krGX3vnjz" Ids="HkrX5BZ9BIFMCULGeXD3h7,NU7YEofCJRtPk2CF6i97VG" />
         <Link Id="JGrC9wMLlMkLXtjr5jW4JS" Ids="NU7YEofCJRtPk2CF6i97VG,Be88TonKpf9MIIB6WoId7j" />
-        <Link Id="ODi1KlSBqRLNfRvkZO2mzL" Ids="KfHRyumaBGHNkmDsqCJzMl,QRUyaTouvaLOi1xgTNQAd0" />
-        <Link Id="OZPkM5OkRzOLsIMXOSMr4W" Ids="EaUDrxR1juKLNudy6HXkNh,TF9PPtn5ty3PsRlwWhHXkL" />
         <Link Id="N9ZxESS8hV0PCUnisGJ499" Ids="MbS84FreckHL8X9mPUS6uV,HJ9ZV9X8nACNy9s5xXk1DI" />
+        <Link Id="D7EDRpQt0RkQDk3t8dD5qv" Ids="HkrX5BZ9BIFMCULGeXD3h7,QRUyaTouvaLOi1xgTNQAd0" />
+        <Link Id="Py00w1JSQn8MxcaejkmjeQ" Ids="Cu63M6bWumjMZqRW7kqJsL,IRegknO9WDcO4ZcGc1vxB0" />
+        <Link Id="FTWZu6bVdlZPuntgI6JCkn" Ids="IRegknO9WDcO4ZcGc1vxB0,TF9PPtn5ty3PsRlwWhHXkL" />
       </Patch>
     </Node>
   </Patch>
