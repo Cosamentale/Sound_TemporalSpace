@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="Hrp0JBKQzynMd5OEtyGjCc" LanguageVersion="2023.5.2" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="KGYsRjtlyQaN4zdQm5kzGk" LanguageVersion="2023.5.2" Version="0.128">
   <NugetDependency Id="MhNZruOHnCLOHyIQZg7Ijv" Location="VL.CoreLib" Version="2023.5.2" />
   <Patch Id="MCT7sffQiXiPasDsUeuSeO">
     <Canvas Id="DoibdPrLgzvMJInjLKprJS" DefaultCategory="Main" CanvasType="FullCategory">
@@ -700,7 +700,7 @@
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
             </Pad>
-            <Pad Id="EjhCrOfnIvKLdI1IWsX4cD" Comment="Data Preview" Bounds="534,1019,308,322" ShowValueBox="true" isIOBox="true">
+            <Pad Id="EjhCrOfnIvKLdI1IWsX4cD" Comment="Data Preview" Bounds="534,1019,308,626" ShowValueBox="true" isIOBox="true">
               <p:ValueBoxSettings>
                 <p:maxvisibleentries p:Type="Int32">53</p:maxvisibleentries>
               </p:ValueBoxSettings>
@@ -708,7 +708,7 @@
                 <Item />
               </p:Value>
             </Pad>
-            <Pad Id="LmvkWAK8HMBQNKdKKMCLP2" Comment="Port" Bounds="1873,591,35,15" ShowValueBox="true" isIOBox="true" Value="4444">
+            <Pad Id="LmvkWAK8HMBQNKdKKMCLP2" Comment="Port" Bounds="1771,594,35,15" ShowValueBox="true" isIOBox="true" Value="4444">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
