@@ -122,12 +122,12 @@
             <Pin Id="IVuN2xcAUidNXowkohHVOb" Name="Actual FPS" Kind="OutputPin" />
             <Pin Id="KRqrzAfq8i1LJ6fmV762SB" Name="Supported Formats" Kind="OutputPin" />
           </Node>
-          <Pad Id="RDjpgnLNkgUOU1RoPoHODj" Comment="Device" Bounds="737,276,143,15" ShowValueBox="true" isIOBox="true" Value="HD Webcam">
+          <Pad Id="RDjpgnLNkgUOU1RoPoHODj" Comment="Device" Bounds="737,276,143,15" ShowValueBox="true" isIOBox="true" Value="HD Pro Webcam C920 #1">
             <p:TypeAnnotation LastCategoryFullName="Video.MediaFoundation" LastDependency="VL.Video.MediaFoundation.vl">
               <Choice Kind="TypeFlag" Name="VideoCaptureDeviceEnumEntry" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="TFYCifqZJLBL5d62nbHttD" Comment="WEB CAM ON:OFF" Bounds="892,291,73,70" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="TFYCifqZJLBL5d62nbHttD" Comment="WEB CAM ON:OFF" Bounds="892,291,73,70" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -316,7 +316,7 @@
               <Choice Kind="TypeFlag" Name="Int2" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="EUocpONGcXoOcfIyZZKsQ1" Comment="Play" Bounds="1140,1073,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="EUocpONGcXoOcfIyZZKsQ1" Comment="Play" Bounds="1140,1073,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -324,7 +324,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="JxSSEGXxKcqOkRQaNYxpbO" Comment="Search Pattern" Bounds="1040,966,39,15" ShowValueBox="true" isIOBox="true" Value="*.jpg">
+          <Pad Id="JxSSEGXxKcqOkRQaNYxpbO" Comment="Search Pattern" Bounds="1040,966,39,15" ShowValueBox="true" isIOBox="true" Value="*.png">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -400,7 +400,7 @@
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
               <CategoryReference Kind="Category" Name="Skia" NeedsToBeDirectParent="true" />
             </p:NodeReference>
-            <Pin Id="Ky8ckRO0oOrOD96xJoXXEh" Name="Bounds" Kind="InputPin" DefaultValue="1516, 26, 660, 442">
+            <Pin Id="Ky8ckRO0oOrOD96xJoXXEh" Name="Bounds" Kind="InputPin" DefaultValue="1058, 467, 423, 340">
               <p:TypeAnnotation LastCategoryFullName="System.Windows" LastDependency="VL.CoreLib.Windows.vl">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -494,7 +494,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SceneWindow" />
             </p:NodeReference>
-            <Pin Id="DicTHKzgcLFQYwSPeTLGoa" Name="Bounds" Kind="InputPin" DefaultValue="1537.6, 264, 1522.4, 613.6" />
+            <Pin Id="DicTHKzgcLFQYwSPeTLGoa" Name="Bounds" Kind="InputPin" DefaultValue="1508, 360.8, 1524, 620" />
             <Pin Id="QL4foPdxtXgLcR9zUV52fO" Name="Input" Kind="InputPin" />
             <Pin Id="IL8cH2nx4KOPttqRm93ral" Name="Camera" Kind="InputPin" />
             <Pin Id="Ias8TWNwAYuNln9bL7DikS" Name="Enable Default Camera" Kind="InputPin" />
@@ -936,7 +936,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="UYpy7uq5OBBO5qwXEJZSfO" Name="Bounds" Kind="InputPin" DefaultValue="1980, 49, 384, 514" />
+            <Pin Id="UYpy7uq5OBBO5qwXEJZSfO" Name="Bounds" Kind="InputPin" DefaultValue="1112, 52, 384, 513" />
             <Pin Id="LLOkUkqjMhVLCXMmDjGQz9" Name="Bound to Document" Kind="InputPin" DefaultValue="True" />
             <Pin Id="B20lMU5zpCtPLQO5LusD2E" Name="Input" Kind="InputPin" />
             <Pin Id="F726qXNE42CLWRiLrseRis" Name="Color" Kind="InputPin" />
@@ -1602,7 +1602,7 @@
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
               <CategoryReference Kind="Category" Name="Skia" NeedsToBeDirectParent="true" />
             </p:NodeReference>
-            <Pin Id="UCIHWsldCR4PXubWREZFY7" Name="Bounds" Kind="InputPin" DefaultValue="2172, 30, 884, 417">
+            <Pin Id="UCIHWsldCR4PXubWREZFY7" Name="Bounds" Kind="InputPin" DefaultValue="2172, 29, 884, 416">
               <p:TypeAnnotation LastCategoryFullName="System.Windows" LastDependency="VL.CoreLib.Windows.vl">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -2171,6 +2171,11 @@
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="GVk94Kuopb1PaP03RRdpp5" Comment="" Bounds="591,1580,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="N79FIVPqpuEMRbJKE8NAkt" Comment="Directory" Bounds="935,1066,140,15" ShowValueBox="true" isIOBox="true" Value="..\..\RECORD\Test_Archive\RecordedZ1\\">
+            <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Path" />
+            </p:TypeAnnotation>
+          </Pad>
         </Canvas>
         <ProcessDefinition Id="BBhIWOCsdy8LwDifsUs0WA">
           <Fragment Id="Q0sLfZF8RzhMwXP7k9ageD" Patch="DnYSYGVgOvZOhINmWaowe2" Enabled="true" />
@@ -2456,10 +2461,10 @@
         <Link Id="BclB7TQzG5YPHQuS4scPcG" Ids="KfHRyumaBGHNkmDsqCJzMl,P5Tr4te5pPRPTQ0AVyEe2i" />
         <Link Id="Ui4mR61OZUkNMAlQjLE9HI" Ids="HRScRTyWWCdQdR1oQQyZPo,OMAHB5GbV05N0iqdFdNCpL" />
         <Link Id="F9iG2zFSWARMzdHgQi2yog" Ids="SqwFzuCVhX0OaSpXlSbtkK,Fl1SDnbogKEP220QvJ8n9y" />
-        <Link Id="TQcYagTDSJ5Pp0L9kLcodx" Ids="PDzm2WcnKklOwNLInTAtsJ,ViWoXQOa1CjMnqFultelm2" />
         <Link Id="AkBJaoGvOhlOKJpzlQEz1I" Ids="OYnZGinA7qEQG3eHPleE7i,GVk94Kuopb1PaP03RRdpp5" />
         <Link Id="JPJMJRquxmGOfug8bVaUbq" Ids="KfHRyumaBGHNkmDsqCJzMl,BdUqlL6Ah60PswcvvaKqHK" />
         <Link Id="Hi7uJGd5rEhLpYJwfC6Djj" Ids="QWRaN8U6xNvMZMi2iYNtNk,DR77G24oAcEOGc8eZIHfT8" />
+        <Link Id="AEcqlD83vbfOoGmP3WaTba" Ids="N79FIVPqpuEMRbJKE8NAkt,ViWoXQOa1CjMnqFultelm2" />
       </Patch>
     </Node>
   </Patch>
