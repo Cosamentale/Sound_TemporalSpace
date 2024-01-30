@@ -1,5 +1,5 @@
-
-shader PixelReading_ComputeFX : ComputeShaderBase, Global
+[Summary("")]
+shader PixelReading2_ComputeFX : ComputeShaderBase, Global
 {
     RWBuffer<float> Values;
     Texture2D<float4> reader;
