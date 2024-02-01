@@ -2064,7 +2064,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="UYpy7uq5OBBO5qwXEJZSfO" Name="Bounds" Kind="InputPin" DefaultValue="1524, 27, 1489, 624" />
+            <Pin Id="UYpy7uq5OBBO5qwXEJZSfO" Name="Bounds" Kind="InputPin" DefaultValue="1524, 26, 1488, 624" />
             <Pin Id="LLOkUkqjMhVLCXMmDjGQz9" Name="Bound to Document" Kind="InputPin" DefaultValue="True" />
             <Pin Id="B20lMU5zpCtPLQO5LusD2E" Name="Input" Kind="InputPin" />
             <Pin Id="F726qXNE42CLWRiLrseRis" Name="Color" Kind="InputPin" />
@@ -3235,4 +3235,5 @@
   <NugetDependency Id="UIEPPra9KfKLHAMaXEw4is" Location="VL.IO.OSC" Version="1.0.19" />
   <NugetDependency Id="SeDbUmGFoLILgX3zgqDS1A" Location="VL.Elementa" Version="5.1.3" />
   <DocumentDependency Id="FTl5ae1DbWNMbaumFWIsYt" Location="./TSOSCContainer31012024.vl" />
+  <DocumentDependency Id="LjTMK1EzJCbLePEBDLWONQ" Location="./TSOSCContainer01022024.vl" />
 </Document>
