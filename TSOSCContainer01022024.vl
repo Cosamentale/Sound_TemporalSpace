@@ -238,7 +238,7 @@
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
             </Pad>
-            <ControlPoint Id="LO7FAcAlqcBLKFxJh71tir" Bounds="1270,2110" />
+            <ControlPoint Id="LO7FAcAlqcBLKFxJh71tir" Bounds="1270,1851" />
             <ControlPoint Id="IPwx4kqTqGjLQ3K7C332iu" Bounds="1270,2498" />
             <ControlPoint Id="C2MgZoUFNHEQSyLcq8QNen" Bounds="1378,2043" />
             <Pad Id="DIm0u9KEVCfPGDAf6cW8l4" Bounds="277,495,294,38" ShowValueBox="true" isIOBox="true" Value="//Receiver chain&#xD;&#xA;Input from OSCServer and stringing with XYZ">
@@ -412,7 +412,7 @@
             </Pad>
             <Overlay Id="TaVFuxVxuowQd7zyYhuhEp" Name="coordinate IN" Bounds="346,619,883,306" />
             <Overlay Id="SbdhpqfhP0KMcKE4v06EP5" Name="speed calculation" Bounds="149,949,491,91" />
-            <Overlay Id="JCbo8XJOnvHPdQSlqzZrXy" Name="OSC Client Send" Bounds="1119,1920,437,542" />
+            <Overlay Id="JCbo8XJOnvHPdQSlqzZrXy" Name="OSC Client Send" Bounds="1119,2001,437,461" />
             <Overlay Id="KYGdzSfb92lQW9fqCBXcVv" Name="ZCheck Null" Bounds="155,1450,827,134" />
             <Pad Id="Bby0JNndIcyNcgvXZEpXpX" Comment="" Bounds="1006,1412,35,35" ShowValueBox="true" isIOBox="true" Value="False">
               <p:ValueBoxSettings>
@@ -1989,7 +1989,7 @@
             <Pin Id="UFo5lOSmEuhN8B8x7Yk5wn" Name="Data" Kind="OutputPin" Bounds="157,275" />
             <Pin Id="Q67hdI4VgVSMrq0f2Vl5br" Name="DataPreview" Kind="OutputPin" Bounds="218,328" />
             <Pin Id="RxmqdPT3lsxMWFKrNT19Jn" Name="InIP" Kind="InputPin" Bounds="869,652" />
-            <Pin Id="MqlAVVeDLPSMGoeFb2OBo0" Name="InPort" Kind="InputPin" Bounds="890,671" />
+            <Pin Id="MqlAVVeDLPSMGoeFb2OBo0" Name="InPort" Kind="InputPin" Bounds="890,671" DefaultValue="1111" />
             <Pin Id="FW6X37dNBQfLA0nc9ghADK" Name="ResetDataPreview" Kind="InputPin" Bounds="955,670" />
             <Pin Id="UDwDB274qf0LScQtj5mwKH" Name="ReceiverEnabled" Kind="InputPin" Bounds="697,-41" DefaultValue="False" />
             <Pin Id="C0zlYVFpFNlMAnmj1fbDMt" Name="SendingEnabled" Kind="InputPin" Bounds="1795,291" DefaultValue="False" />
