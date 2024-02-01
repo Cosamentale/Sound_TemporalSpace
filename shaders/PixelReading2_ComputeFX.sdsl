@@ -7,6 +7,9 @@ shader PixelReading2_ComputeFX : ComputeShaderBase, Global
 {
     Filter = MIN_MAG_MIP_POINT;
 };
+float temps;
+float2 po;
+float to;
 float2 tc(float _ti, float _resx2, float v, float itn, float it) {
 return float2(frac(_ti / _resx2),1.- (frac(_ti / _resx2 / itn) / it+v/it));
 }
@@ -14,7 +17,7 @@ return float2(frac(_ti / _resx2),1.- (frac(_ti / _resx2 / itn) / it+v/it));
     {
         uint index = streams.DispatchThreadId.x;
 
-        float ti = Time*30.;
+        float ti = temps*30.;
         float _resx2 = 64.;
         float itn = floor(_resx2 / 12.);
         float it = _resx2 / itn;
@@ -44,7 +47,7 @@ return float2(frac(_ti / _resx2),1.- (frac(_ti / _resx2 / itn) / it+v/it));
         float2 ub10 = tc(ti + 1., _resx2, 10., itn, it);
         float2 ub11 = tc(ti + 1., _resx2, 11., itn, it);
 
-        float a = 0.25;
+        float a = 0.5;
         float ta = smoothstep(0., 1., frac(ti));
         float2 tp = lerp(reader.SampleLevel(samplerState, u7,0).xy, reader.SampleLevel(samplerState, ub7,0).xy, ta);
         float2 p1 = ((lerp(reader.SampleLevel(samplerState, u0,0).xy,reader.SampleLevel(samplerState, ub0,0).xy,ta) - a) + tp);
