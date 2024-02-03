@@ -1,0 +1,23 @@
+[TextureSource]
+[Category("Source")]
+[Summary("")]
+shader Coordoneeinfo_TextureFX : TextureFX
+{
+SamplerState samplerState
+{
+Filter = MIN_MAG_MIP_POINT;
+};
+float2 p0;
+float2 p1;
+float2 p2;
+float2 p3;
+float2 p4;
+stage override float4 Shading()
+{
+float2 uv = (streams.TexCoord.xy);
+float4 col = float4(Texture0.SampleLevel(samplerState, uv, 0).xyz,1.);
+float2 pp = lerp(p0,lerp(p1,lerp(p2,lerp(p3,p4,step(0.98,uv.y)),step(0.96,uv.y)),step(0.94,uv.x)),step(0.92,uv.x));
+float4 r = lerp(col,float4(pp,0.,1.),step(0.9,uv.x)*step(uv.y,0.1));
+return r;
+}
+};

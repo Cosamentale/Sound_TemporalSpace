@@ -1,0 +1,16 @@
+shader ReadCoordonnee_ComputeFX : ComputeShaderBase
+{
+RWBuffer<float> Values;
+Texture2D<float4> reader;
+SamplerState samplerState
+{
+Filter = MIN_MAG_MIP_POINT;
+};
+override void Compute()
+{
+uint index = streams.DispatchThreadId.x;
+float2 p1 = reader.SampleLevel(samplerState, float2(0.95,0.05),0).xy;
+Values[0] = p1.x;
+Values[1] = p1.y;
+}
+};
