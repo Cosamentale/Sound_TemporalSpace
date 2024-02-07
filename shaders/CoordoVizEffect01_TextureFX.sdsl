@@ -47,7 +47,7 @@ float effecto;
     float cb = clamp(blurQuality,0.1,2.);
     float Directions = 32.0*cb; // BLUR DIRECTIONS (Default 16.0 - More is better but slower)
     float Quality = 8.0*cb; // BLUR QUALITY (Default 4.0 - More is better but slower)
-    float2 Radius = bluramout*lerp(blurmask*100.,blur*100.,smoothstep(contrastN,contrastB,Texture1.SampleLevel(samplerState, frac(uv*re/1024.),0).x))/re;
+    float2 Radius = bluramout*lerp(blurmask*100.,blur*100.,smoothstep(contrastN,contrastB,Texture1.SampleLevel(samplerState, uv,0).x))/re;
     float4 Color =float4(0.,0.,0.,0.);
 
     for( float d=0.0; d<Pi; d+=Pi/Directions)

@@ -1,0 +1,4 @@
+D:\TEMPORAL\GIT\Sound_TemporalSpace\csharp\TemporalSpace\bin\Debug\net6.0\TemporalSpace.deps.json
+D:\TEMPORAL\GIT\Sound_TemporalSpace\csharp\TemporalSpace\obj\Debug\net6.0\TemporalSpace.GeneratedMSBuildEditorConfig.editorconfig
+D:\TEMPORAL\GIT\Sound_TemporalSpace\csharp\TemporalSpace\obj\Debug\net6.0\TemporalSpace.AssemblyInfoInputs.cache
+D:\TEMPORAL\GIT\Sound_TemporalSpace\csharp\TemporalSpace\obj\Debug\net6.0\TemporalSpace.AssemblyInfo.cs
