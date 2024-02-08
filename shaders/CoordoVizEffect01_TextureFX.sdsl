@@ -65,6 +65,5 @@ float effecto;
             float r3 = lerp(r1,1.-r1,r2*effecto);
             return float4(r3,r3,r3,1.);
 
-
     }
 };
