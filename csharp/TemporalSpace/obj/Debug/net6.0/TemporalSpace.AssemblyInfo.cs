@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TemporalSpace")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3364d9c677c3fd32d1c61138a9f52cea3a6423bd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5855f585e0349b6f03cacc11a8013363343d863c")]
 [assembly: System.Reflection.AssemblyProductAttribute("TemporalSpace")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TemporalSpace")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
