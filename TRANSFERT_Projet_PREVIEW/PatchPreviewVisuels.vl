@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="CwbIBXbzI4dNNF6TfLglcB" LanguageVersion="2023.5.2" Version="0.128">
+  <NugetDependency Id="ObEnyuzOSIWOGxQsBXLegc" Location="VL.CoreLib" Version="2023.5.2" />
+  <Patch Id="UWJ3NFqSuzBLQJ6LQi631d">
+    <Canvas Id="OW1i2g8XpVAOtkwB1ayGow" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="Bnt51wsMfr9NWP0UBwPwsu">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="IGUN1bMrKN0PXRG9XgnFkH">
+        <Canvas Id="PwBBRLNrqgLOEWSqy8OV8v" CanvasType="Group">
+          <Node Bounds="360,363,245,19" Id="KWgvrMHoW5tNh9axHKG8Uy">
+            <p:NodeReference LastCategoryFullName="Video" LastDependency="VL.Stride.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ImagePlayer (Stride)" />
+            </p:NodeReference>
+            <Pin Id="QMjx4wqShJNLAZQmnQhfsQ" Name="Directory" Kind="InputPin" />
+            <Pin Id="UMBBhca9Q57LyM4aHxHseG" Name="Search Pattern" Kind="InputPin" DefaultValue="*.dds*" />
+            <Pin Id="BwZuIeNVbezM0WOmOmAZLf" Name="Rescan Directory" Kind="InputPin" />
+            <Pin Id="MCs0KDhTQnDQIkm0HmT6sN" Name="Movie FPS" Kind="InputPin" />
+            <Pin Id="JNxZ5rlaa1uL7awBa17uTu" Name="Display FPS" Kind="InputPin" />
+            <Pin Id="Q2xJZbDaIrDOeeZ41c1Ddq" Name="Preload Count" Kind="InputPin" DefaultValue="5" />
+            <Pin Id="CSgazjaLolNNZM3aXPj2eF" Name="Rate" Kind="InputPin" />
+            <Pin Id="UpQm9vx7QWUPYsNa7Xqbs3" Name="Play" Kind="InputPin" />
+            <Pin Id="G7yxSSFFqsUPwfsdLvsGFZ" Name="Seek" Kind="InputPin" />
+            <Pin Id="TQRzwSYZvjYM8SCtEKLcBc" Name="Seek Time" Kind="InputPin" />
+            <Pin Id="FY625APXCgLMqJXyrPfb3B" Name="Loop" Kind="InputPin" DefaultValue="True" />
+            <Pin Id="CmRkpPiBD9BQFwMsgzCugB" Name="Loop Start Time" Kind="InputPin" />
+            <Pin Id="IuqvUQZmT2BMrT7PINaii5" Name="Loop End Time" Kind="InputPin" />
+            <Pin Id="NQgI9slMYA6NHBKAXZhX6O" Name="Output" Kind="OutputPin" />
+            <Pin Id="TxdIl6tztN0LgWaF8S1UAT" Name="On Scanning Complete" Kind="OutputPin" />
+            <Pin Id="Uoui1BPJAe6PoPSjuwctnR" Name="Position" Kind="OutputPin" />
+            <Pin Id="P1AbAC73jKVQUG5lIqWS2u" Name="Duration" Kind="OutputPin" />
+          </Node>
+          <Pad Id="LEn74SMYxd4OPz8AjoANia" Comment="Directory" Bounds="573,194,236,15" ShowValueBox="true" isIOBox="true" Value="D:\TEMPORAL\Index\PreviousSession">
+            <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Path" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="338,410,205,19" Id="Oz1rjh69KBEQLP2nlh6ZeU">
+            <p:NodeReference LastCategoryFullName="Stride.Textures" LastDependency="VL.Stride.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="TextureWindow" />
+            </p:NodeReference>
+            <Pin Id="VJjCaPD32u6PYLQTMtue8S" Name="Bounds" Kind="InputPin" DefaultValue="1.6, 502.4, 707.2, 371.2" />
+            <Pin Id="Q7DgFTzr5n9Ojw0wOXzZH1" Name="Input" Kind="InputPin" />
+            <Pin Id="RbhIhKvW5dfOVPyxEXkOr2" Name="Title" Kind="InputPin" />
+            <Pin Id="Udte10pcF0lQbwN3RERqfl" Name="Clear Color" Kind="InputPin" />
+            <Pin Id="VCZETzvVHSrPzsDyDmxovc" Name="Clear" Kind="InputPin" />
+            <Pin Id="L7UtJA8jUrjOnlMa7Upz6R" Name="Is Premultiplied Alpha" Kind="InputPin" />
+            <Pin Id="JOxUPUM0ZOgPclvypsUXov" Name="Scaling Mode" Kind="InputPin" />
+            <Pin Id="EJJHfmlHLrUQWvYudwPTLu" Name="Enable Keyboard Shortcuts" Kind="InputPin" />
+            <Pin Id="CMPK73fc6SMNEV0wUlNK3k" Name="Enabled" Kind="InputPin" />
+            <Pin Id="Cqt5vBJxUwqOoaFguFqsZd" Name="Show Info String" Kind="InputPin" />
+            <Pin Id="LA8dBg2Qo98PKMnr3PTUjY" Name="Present Interval" Kind="InputPin" />
+            <Pin Id="QtaKgf4TtKmQJo7Jszrc5w" Name="Output" Kind="OutputPin" />
+            <Pin Id="LWRw3jg3B0FOYcLLpKD2V0" Name="Client Bounds" Kind="OutputPin" />
+            <Pin Id="GAHNQpBuZLzMhBgj1Nf8Kr" Name="Input Source" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="570,239,81,26" Id="Ly3KL4ZufHzNed4v0W3CZf">
+            <p:NodeReference LastCategoryFullName="IO.Path" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="GetDirectories" />
+            </p:NodeReference>
+            <Pin Id="LFQRW2z1Ul8QSaqLdeU2WL" Name="Input" Kind="StateInputPin" />
+            <Pin Id="PCBe67KBAXELM13zTaYnQb" Name="Search Pattern" Kind="InputPin" />
+            <Pin Id="NCI28tm4q4ILWF9jkVZBn2" Name="Include Subdirectories" Kind="InputPin" />
+            <Pin Id="FTe7ErdTbCCOTmOlnsYcbJ" Name="Include Hidden" Kind="InputPin" />
+            <Pin Id="S3eMEWGeu9TNY3EG36lVE0" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="568,326,52,19" Id="ETOcGXMpiGsOCgz0XbS1nV">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="Spread" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="GetSlice" />
+            </p:NodeReference>
+            <Pin Id="OY6hzagoUyXOJcbStGnM01" Name="Input" Kind="StateInputPin" />
+            <Pin Id="UC8SDh6Rm5pOMDIvmdyTJC" Name="Default Value" Kind="InputPin" />
+            <Pin Id="GoexwBHQzp9MQMJ6HvpaAe" Name="Index" Kind="InputPin" />
+            <Pin Id="ITTOXjgmYj4MeGCFqq9oU8" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="DmYrvwdEGVoMa9cYM3u7fI" Comment="Rescan Directory" Bounds="409,323,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="KYrvj5no2x9LmgmMX5iCOb" Comment="Play" Bounds="502,279,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="LmNBjdBmnVVM3AObId9jec" Comment="Change ici pour changer de shot" Bounds="617,304,35,15" ShowValueBox="true" isIOBox="true" Value="29">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+        </Canvas>
+        <Patch Id="B2WgofCpFdxN2jIUYOw0DD" Name="Create" />
+        <Patch Id="IZjPqFtcI1HOSVOW0GFJa4" Name="Update" />
+        <!--
+
+    ************************  ************************
+
+-->
+        <ProcessDefinition Id="MM7RNqFb2B7Pu3EtoBqMh1">
+          <Fragment Id="HNIlc9Asy1mORqKEWQACo0" Patch="B2WgofCpFdxN2jIUYOw0DD" Enabled="true" />
+          <Fragment Id="PDFooPYH7D2QHfRo1uIkI6" Patch="IZjPqFtcI1HOSVOW0GFJa4" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="JL5J6RhbnfWPGRLA1KABRW" Ids="NQgI9slMYA6NHBKAXZhX6O,Q7DgFTzr5n9Ojw0wOXzZH1" />
+        <Link Id="V0wuv4AMem6MsvybLy1TLt" Ids="S3eMEWGeu9TNY3EG36lVE0,OY6hzagoUyXOJcbStGnM01" />
+        <Link Id="TKKaPH3b8krPGuhYluNqen" Ids="ITTOXjgmYj4MeGCFqq9oU8,QMjx4wqShJNLAZQmnQhfsQ" />
+        <Link Id="PBE04ryqGgHPSuKeJKshIN" Ids="LEn74SMYxd4OPz8AjoANia,LFQRW2z1Ul8QSaqLdeU2WL" />
+        <Link Id="F5VRnC4vPc4NYZAw30nm9S" Ids="DmYrvwdEGVoMa9cYM3u7fI,BwZuIeNVbezM0WOmOmAZLf" />
+        <Link Id="UJZdbM9N52pM6Ji17sVVJv" Ids="KYrvj5no2x9LmgmMX5iCOb,UpQm9vx7QWUPYsNa7Xqbs3" />
+        <Link Id="Bg9XEDd1FYVP8jvk6TMxeC" Ids="LmNBjdBmnVVM3AObId9jec,GoexwBHQzp9MQMJ6HvpaAe" />
+        <Link Id="Rc1w8eiwYMYLqCVdYiiksy" Ids="DmYrvwdEGVoMa9cYM3u7fI,G7yxSSFFqsUPwfsdLvsGFZ" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="S3PPDrxdr8QMS6LG056BFq" Location="VL.Stride" Version="2023.5.2" />
+</Document>
