@@ -5200,7 +5200,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Renderer" />
               </p:NodeReference>
-              <Pin Id="AbOsOY7qWMmQE55r70jOgo" Name="Bounds" Kind="InputPin" DefaultValue="788, 0, 751, 466" />
+              <Pin Id="AbOsOY7qWMmQE55r70jOgo" Name="Bounds" Kind="InputPin" DefaultValue="1759, 346, 844, 424" />
               <Pin Id="ICrSWRV5SItNxIPZLMRpRe" Name="Bound to Document" Kind="InputPin" />
               <Pin Id="BkSwBeoqMeeOvJ8I52aBxd" Name="Input" Kind="InputPin" />
               <Pin Id="F3WYPK0VoS4LP2sUC6rTN9" Name="Color" Kind="InputPin" />
@@ -5721,7 +5721,6 @@
           <Link Id="JroxTAR1jt0LqFE53G2URa" Ids="QjB8ABDaZ4bO1eqTZlXIRT,SIgzE7lUgUkPY6D0BitoXl" />
           <Link Id="GLvDFFfyvlPOZZfQFFFVCs" Ids="FcBs2WAd9zmNSOqqfd4Pgq,DoggXeB5hSaOOeTautIXgu" />
           <Link Id="EaRPyrLI7V3NeQhZwW9oMr" Ids="QjB8ABDaZ4bO1eqTZlXIRT,BK9ouBHoLKmOEU3ikICIUT" />
-          <Link Id="Mni9pvi2dvjNyFw30cZxVp" Ids="RfDTY5fc097OSKAgGkH19N,UkzUCKb2drqM7OKrGkD6br" />
           <Link Id="FQgufDYeoj6NfJu8EQtU1O" Ids="UYCWAZf9mX2MQhjAmcsehi,DDq4CZLe0mnMzffuA0WWix" />
           <Link Id="R5Nsa2WCOEJLHKn2cSqmyp" Ids="QjB8ABDaZ4bO1eqTZlXIRT,O428mOnnrClOpZ8LlJd5pI" />
           <Link Id="A86h3EogFtTOs41Hmh7xVu" Ids="M1hqDoHuQZ3NVvRGAAMkiV,OYT9gftcWmqLXpbrxvgOcl" />
@@ -10359,7 +10358,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="GRV4AVEBotiLlZYaxoYCUt" Comment="Gain" Bounds="1232,383,35,15" ShowValueBox="true" isIOBox="true" Value="0.9">
+          <Pad Id="GRV4AVEBotiLlZYaxoYCUt" Comment="Gain" Bounds="1232,383,35,15" ShowValueBox="true" isIOBox="true" Value="0.75">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
