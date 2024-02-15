@@ -25,6 +25,7 @@ float variationHue; float globalHue; float3 sha; float3 mid; float3 hig; float n
 float DarknessOffTheBackground;float SaturationOffTheBackground;
 float saturationBright; float saturationDark; float gradiant1;float gradiant2;
 float maskMinSaturation; float maskMaxSaturation;
+float transition;
 float2 res;
 float3 InvLerp(float3 A, float3 B, float3 t){return (t - A) / (B - A);}
 float3 co(float3 InColor ,float3 s, float3 m, float3 h){
@@ -45,12 +46,12 @@ float3 ov3(float3 a, float3 b){
     float rd2(float t){return frac(sin(dot(floor(t),45.236))*7845.236);}
 float no(float t){return lerp(rd(t),rd(t+1.),smoothstep(0.,1.,frac(t)));}
 
-float desat(float3 color)
+float3 desat(float3 color)
 {
    float3 lum = float3(0.299, 0.587, 0.114);
    float d1 = dot(lum, color);
 
-   return d1;
+   return float3(d1,d1,d1);
 }
     stage override float4 Shading()
     {
@@ -71,11 +72,10 @@ float desat(float3 color)
     float bq = clamp(blurQuality,0.2,2.);
       float Directions = 16.0*bq; // BLUR DIRECTIONS (Default 16.0 - More is better but slower)
       float Quality = 4.0*bq; // BLUR QUALITY (Default 4.0 - More is better but slower)
-      float tta = ov(lerp(sin(Texture3.SampleLevel(samplerState, uv,0).x*20.+Time)*0.5+0.5,0.5,0.5),Texture3.SampleLevel(samplerState, uv,0).x);
+      float tta = ov(lerp(sin(Texture3.SampleLevel(samplerState, uv,0).x*20.+Time)*0.5+0.5,0.5,0.8),Texture3.SampleLevel(samplerState, uv,0).x);
       float mt = (smoothstep(minMaskBlurImg,maxMaskBlurImg,tta)-.5)*10.*texBlur;
         float mt2 = (smoothstep(minMaskBlurVid,maxMaskBlurVid,desat(Texture4.SampleLevel(samplerState, uv,0).xyz))-.5)*10.*vidBlur;
         float2 Radius =lerp(10.*blur+mt,-10.*blur-mt+mt2,smoothstep(0.2,0.8, no(uv.x*7.+45.6)))/re;
-      //float2 Radius =lerp(-100.,100.,smoothstep(0.2,0.8, no(uv.x*7.+45.6)))*blur/re;
       float c;
       uz = lerp(uv,uz+float2(XPose,0.),effetzoom);
       for( float d=0.0; d<Pi; d+=Pi/Directions)
@@ -89,15 +89,15 @@ float desat(float3 color)
       c /= Quality * Directions - (Directions-1.);
       float dda= lerp(DarknessOffTheBackground,1.,tta);
       float cm = smoothstep(maskMinSaturation,maskMaxSaturation,c);
-      float3 c2 = lerp(float3(1.,1.,1.),clamp(3.*abs(1.-2.*frac(-c*variationHue+globalHue+lerp(gradiant1*uv.y,gradiant2*uv.x,cm)+float3(0.,-1./3.,1./3.)))-1.,0.,1.),
-      max(lerp(saturationDark,saturationBright,cm),0.))*min(smoothstep(imgMin,imgMax,pow(c,expo)),dda);
+      float3 c2 = lerp(float3(1.,1.,1.),clamp(3.*abs(1.-2.*frac(-c*variationHue+globalHue+lerp(gradiant1*uv.y,gradiant1*uv.x,cm)*gradiant2+float3(0.,-1./3.,1./3.)))-1.,0.,1.),
+      max(lerp(saturationDark,saturationBright,cm),(1.-cm)*SaturationOffTheBackground))*min(smoothstep(imgMin,imgMax,pow(c,expo)),dda);
       float3 r = co(c2,sha,mid,hig);
       float2 un = frac(uv);
       float tau = 3.14159265*2.;
       float3 noi = sin(Texture1.SampleLevel(samplerState, frac(uv*re/1024.), 0).xyz*tau*6.+Time*6.)*0.5+0.5;
       float3 r2 = ov3(r,lerp(noi,0.5,noise));
-      float3 r3 = min(r2,lerp(1.-longEx,1.,Texture2.SampleLevel(samplerState,uv,0).xyz));
-      return float4(r3*fade,1.);
+      float3 r3 = min(r2,lerp(1.-lerp(longEx,1.,pow(transition,0.2)*1.1),1.,Texture2.SampleLevel(samplerState,uv,0).xyz));
+      return float4(lerp(r3,desat(r3),clamp(transition,0.,1.)),1.);
 
     }
 };
