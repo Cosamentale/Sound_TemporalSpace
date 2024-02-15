@@ -10523,7 +10523,7 @@
             <Pin Id="R3tmokBx1iyPrZHMNfBBCg" Name="Value" Kind="InputPin" />
             <Pin Id="LB4wk300u0zQEUWN2whVWJ" Name="Value" Kind="OutputPin" />
           </Node>
-          <Node Bounds="641,646,69,19" Id="QEemGBNJVQqQW3cn65SGdK">
+          <Node Bounds="657,648,69,19" Id="QEemGBNJVQqQW3cn65SGdK">
             <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="FrameDelay" />
@@ -11789,6 +11789,15 @@
             <Pin Id="VpvwNeN3TzOO8jOGhGhnUD" Name="Output" Kind="OutputPin" />
             <Pin Id="PVm4ELq2C0UQYeeiWMKGHL" Name="Count" Kind="OutputPin" />
           </Node>
+          <Pad Id="QRgXwuKLgbwNpAyIROC9ec" Comment="ReceiverEnabled" Bounds="535,286,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <ProcessDefinition Id="BBhIWOCsdy8LwDifsUs0WA">
           <Fragment Id="Q0sLfZF8RzhMwXP7k9ageD" Patch="DnYSYGVgOvZOhINmWaowe2" Enabled="true" />
@@ -12055,6 +12064,8 @@
         <Link Id="GCdVcEgu2ccMh4lZNNsj1d" Ids="Bpr1TPtCEptM17mVff6AWw,OwHrSvdvc7QMwFa8vu6icO" />
         <Link Id="KeG7FScHA63M01LmilNvZa" Ids="UZNSgNaXuFZOmEF2Fgvdlv,KY17LHXsrVTOTBFQVp0Nrj" />
         <Link Id="Tj59nB1cWu9M64P33Rbf4r" Ids="GMZYUC0ChkbMEBUiXz4UnP,RHekPEnhWiFNOw0F5zdrUu" />
+        <Link Id="Gp5pQ0z0HjcMGALxvWKmDp" Ids="QRgXwuKLgbwNpAyIROC9ec,PLgiT4cDvRMPmAC7Iq0XmS" />
+        <Link Id="LL27WUnmzXmOSLIWcTamGT" Ids="QRgXwuKLgbwNpAyIROC9ec,J1WguVYVz0mMGXb6CBTBvC" />
       </Patch>
     </Node>
   </Patch>
