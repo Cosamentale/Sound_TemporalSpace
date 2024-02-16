@@ -1480,6 +1480,28 @@
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
             </Pad>
+            <Pad Id="DR5A3ir8Z8KNRpla03TwLf" Comment="Address" Bounds="2167,1366,139,15" ShowValueBox="true" isIOBox="true" Value="/Mute">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Node Bounds="2146,1402,85,26" Id="GOw2FpuVy2RLTwqUyyZJUI">
+              <p:NodeReference LastCategoryFullName="IO.OSC.OSCClient" LastDependency="VL.IO.OSC.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="SendMessage" />
+              </p:NodeReference>
+              <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+              <Pin Id="BkAohYHFrhdLnhwzAMRRX1" Name="Input" Kind="StateInputPin" />
+              <Pin Id="O3QN8jeG24SOaQKY6rtsa9" Name="Address" Kind="InputPin" />
+              <Pin Id="SJl6O7sshBLLrOqEee81dc" Name="Arguments" Kind="InputPin" />
+              <Pin Id="Gb1G5we54tmND7YSN8TEkX" Name="Bundled Per Frame" Kind="InputPin" DefaultValue="True">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Pin Id="PwAmhKp1CJjN0FMmzpl8W1" Name="Apply" Kind="InputPin" />
+              <Pin Id="BL6Tae1eVy1PGnukw5wxwY" Name="Output" Kind="StateOutputPin" />
+            </Node>
           </Canvas>
           <ProcessDefinition Id="O6mwd7BkZhXPI5jAM5FZbQ">
             <Fragment Id="GowaE5lNjcoMv1Ejw94z31" Patch="CLodlwE5Q9NP5VPCNI7g1E" Enabled="true" />
@@ -1576,6 +1598,9 @@
           <Link Id="C3nbxoN6i91QbG8s48fhd8" Ids="SNjhRHRx8UUPVq9Kr4xYXM,BSbC7hCsDHxMSiRkYmeZQY" IsHidden="true" />
           <Link Id="F087BgLfrIuLBFbVimhgsl" Ids="MEFZpTXw22JQBUPk0MAaWB,RvP0mUp4rwrMUBJm94PK8A" />
           <Link Id="M9skgmfNXVOL294m2ZV27j" Ids="BSbC7hCsDHxMSiRkYmeZQY,MEFZpTXw22JQBUPk0MAaWB" />
+          <Link Id="Cq1uKu4bzU4L1tyEffvaMe" Ids="DR5A3ir8Z8KNRpla03TwLf,O3QN8jeG24SOaQKY6rtsa9" />
+          <Link Id="DUgzCNnjk1xPu12gcR1KHa" Ids="S3BS7BmpbNBMU0eKjbZpeM,BkAohYHFrhdLnhwzAMRRX1" />
+          <Link Id="EN5ODLTCnVUQYHgdH3KnaU" Ids="NYUIjnvOnNiOCZLQ2bHJ2W,SJl6O7sshBLLrOqEee81dc" />
         </Patch>
       </Node>
       <!--
