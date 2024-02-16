@@ -20,12 +20,12 @@
               <Choice Kind="TypeFlag" Name="Path" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="-136,729,205,19" Id="Oz1rjh69KBEQLP2nlh6ZeU">
+          <Node Bounds="-168,732,205,19" Id="Oz1rjh69KBEQLP2nlh6ZeU">
             <p:NodeReference LastCategoryFullName="Stride.Textures" LastDependency="VL.Stride.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="TextureWindow" />
             </p:NodeReference>
-            <Pin Id="VJjCaPD32u6PYLQTMtue8S" Name="Bounds" Kind="InputPin" DefaultValue="1536, 18.4, 1536, 909.6" />
+            <Pin Id="VJjCaPD32u6PYLQTMtue8S" Name="Bounds" Kind="InputPin" DefaultValue="1536, 0, 1536, 960" />
             <Pin Id="Q7DgFTzr5n9Ojw0wOXzZH1" Name="Input" Kind="InputPin" />
             <Pin Id="RbhIhKvW5dfOVPyxEXkOr2" Name="Title" Kind="InputPin" />
             <Pin Id="Udte10pcF0lQbwN3RERqfl" Name="Clear Color" Kind="InputPin" />
@@ -59,10 +59,10 @@
             </p:NodeReference>
             <Pin Id="OY6hzagoUyXOJcbStGnM01" Name="Input" Kind="StateInputPin" />
             <Pin Id="UC8SDh6Rm5pOMDIvmdyTJC" Name="Default Value" Kind="InputPin" />
-            <Pin Id="GoexwBHQzp9MQMJ6HvpaAe" Name="Index" Kind="InputPin" DefaultValue="2" />
+            <Pin Id="GoexwBHQzp9MQMJ6HvpaAe" Name="Index" Kind="InputPin" DefaultValue="3" />
             <Pin Id="ITTOXjgmYj4MeGCFqq9oU8" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="-96,651,845,19" Id="JO0CYUVmAr2LYoaQfnd2iC">
+          <Node Bounds="-105,674,845,19" Id="JO0CYUVmAr2LYoaQfnd2iC">
             <p:NodeReference LastCategoryFullName="Stride.Textures.Source" LastDependency="VL.Stride.Rendering.EffectShaderNodes (D:\GIT\Sound_TemporalSpace\TRANSFERT_Projet_PREVIEW)">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessNode" Name="CordoViz03ColorCorrectionV2" />
@@ -72,15 +72,15 @@
             <Pin Id="TIwjbSmmhGnQN6yAEmGqkI" Name="Input 3" Kind="InputPin" />
             <Pin Id="QcYRwhoBzbhLuoGulomxLy" Name="Input 4" Kind="InputPin" />
             <Pin Id="NGkwVS36DXNPYyu0xi3dpR" Name="Input 5" Kind="InputPin" />
-            <Pin Id="RVhmutdxxeQMNLnjUsuPnX" Name="Sampler State" Kind="InputPin" />
+            <Pin Id="Kl0BT9OzKZsOOLWAZYXdHm" Name="Sampler State" Kind="InputPin" />
             <Pin Id="AqsBwqheuh4MKuA1IfwxUD" Name="Fade" Kind="InputPin" DefaultValue="1.03" />
             <Pin Id="V2zWLWSp6nRPUw3eJAhwzc" Name="Long Ex" Kind="InputPin" DefaultValue="0.97" />
-            <Pin Id="NYVQAuVofjEOqVKt1Q4HFM" Name="Effetzoom" Kind="InputPin" DefaultValue="1" />
+            <Pin Id="NYVQAuVofjEOqVKt1Q4HFM" Name="Effetzoom" Kind="InputPin" DefaultValue="0" />
             <Pin Id="AWuRqWjfGsKLvMj1EQxSZZ" Name="Zoom" Kind="InputPin" />
-            <Pin Id="RZfZKZuRxJgLG8aNWq47fr" Name="XPose" Kind="InputPin" />
+            <Pin Id="H6sLKx5lvNdPgckJoAaQuT" Name="XPose" Kind="InputPin" />
             <Pin Id="TOLk8IBlhcYOOeX3B1uL9v" Name="Poigne" Kind="InputPin" DefaultValue="1" />
-            <Pin Id="DJweXR82sDpOjyflfCeF17" Name="Genoux" Kind="InputPin" />
-            <Pin Id="OUHRNzurHZ2OVKKPNpLD7K" Name="Droit" Kind="InputPin" />
+            <Pin Id="BCK8PPual43OmHP4oFDN62" Name="Genoux" Kind="InputPin" />
+            <Pin Id="Gnqas9oopxpLgNYuIzObHH" Name="Droit" Kind="InputPin" />
             <Pin Id="Gfs1J4s97cBNIlD486yFHk" Name="Img Min" Kind="InputPin" />
             <Pin Id="DG6DQjV9pQ3NQU30eECwsY" Name="Img Max" Kind="InputPin" />
             <Pin Id="MmQm6Mrpo64Pj931ROi9wZ" Name="Expo" Kind="InputPin" />
@@ -109,7 +109,7 @@
             <Pin Id="JuNeqlv3iPLOBY4h2fCjgn" Name="Transition" Kind="InputPin" DefaultValue="0" />
             <Pin Id="CBPbTWlmEnpPnClOfyqJ3f" Name="Res" Kind="InputPin" DefaultValue="1920, 1200" />
             <Pin Id="GVVpVKRrSb8N1xuLnoHJxL" Name="Output Size" Kind="InputPin" DefaultValue="1920, 1200" />
-            <Pin Id="KOsHJgv8lcXNJbpyVKenbe" Name="Enabled" Kind="InputPin" />
+            <Pin Id="IaZb8olKJCjOKmZ1mXhl4F" Name="Enabled" Kind="InputPin" />
             <Pin Id="OKW4C8SzKnnLe04zY2aPuA" Name="Output" Kind="OutputPin" />
           </Node>
           <Pad Id="UCuWJTbneziPVBnLPVPKtX" Comment="Blur" Bounds="707,350,35,15" ShowValueBox="true" isIOBox="true" Value="1.75">
@@ -212,7 +212,7 @@
             <Pin Id="S3oq9VFIj59P6ywa8GNB3I" Name="Value" Kind="InputPin" />
             <Pin Id="Hh3Ssoa4qgAMz0eGOpdDqP" Name="Value" Kind="OutputPin" />
           </Node>
-          <Node Bounds="-172,677,65,19" Id="B4NYTcy8j2oNBrTroST2Ga">
+          <Node Bounds="-159,682,65,19" Id="B4NYTcy8j2oNBrTroST2Ga">
             <p:NodeReference LastCategoryFullName="Stride.Textures.Source" LastDependency="VL.Stride.Rendering.EffectShaderNodes (D:\GIT\Sound_TemporalSpace\TRANSFERT_Projet_PREVIEW)">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessNode" Name="feedback" />
@@ -329,7 +329,7 @@
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="UQwJrQiLD2cNSiTHUpGPw4" Comment="Darkness Off The Background" Bounds="707,572,35,15" ShowValueBox="true" isIOBox="true" Value="0.73">
+          <Pad Id="UQwJrQiLD2cNSiTHUpGPw4" Comment="Darkness Off The Background" Bounds="707,572,35,15" ShowValueBox="true" isIOBox="true" Value="0.62">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
@@ -339,7 +339,7 @@
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="RAnFLIxGPQFMdYztLkWGv3" Comment="Sha" Bounds="755,600,35,43" ShowValueBox="true" isIOBox="true" Value="0.05, -0.04, 0.05">
+          <Pad Id="RAnFLIxGPQFMdYztLkWGv3" Comment="Sha" Bounds="755,600,35,43" ShowValueBox="true" isIOBox="true" Value="0.07, -0.02, 0.06">
             <p:TypeAnnotation LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Vector3" />
             </p:TypeAnnotation>
@@ -366,7 +366,7 @@
             <Pin Id="VV0xr4JEB8ROAT3mwadzKK" Name="Apply" Kind="InputPin" />
             <Pin Id="Etvulag6mvlPdtefsczHnB" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="ROOFxGyynx3QNddSnfAi7r" Comment="Saturation Off The Background" Bounds="836,591,35,15" ShowValueBox="true" isIOBox="true" Value="-0.61">
+          <Pad Id="ROOFxGyynx3QNddSnfAi7r" Comment="Saturation Off The Background" Bounds="836,591,35,15" ShowValueBox="true" isIOBox="true" Value="1.17">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
@@ -438,7 +438,6 @@
         <Link Id="Q8ps5ibtOkVPb91RGYK0oQ" Ids="FwDWRr9n95ULD0t03dLUeg,MmaMiZTMdbZP3Vhm9WNvtU" />
         <Link Id="U8p6xU4K2SmPc5R0cjpKzb" Ids="OPufwNeUDIxLFrCEMPtSQy,TFzI4vPU5cmNDzYo8ILhJt" />
         <Link Id="Bm61NRGP988QU0H4vBq0jS" Ids="ITTOXjgmYj4MeGCFqq9oU8,FNeCxQBLzvlMkEoPfaQOfC" />
-        <Link Id="BamwevTd2KWO2srFDvlDv9" Ids="Fnk6bgio1gXPEuufiMsdlH,VrdwheTOji9QYfisZn7XPp" />
         <Link Id="LDSvB4KfE45LA4tZBTiPli" Ids="Fnk6bgio1gXPEuufiMsdlH,NGkwVS36DXNPYyu0xi3dpR" />
         <Link Id="OKoMEfpDEbRMqrBXCgCoA7" Ids="MD9dMtYlDY3OqBb22xzA1A,Qd41iVLJdtmMAiHGGoO0y7" />
         <Link Id="PoU0lu5IwoBQAL1uHjY3wu" Ids="KhWIq93tB3NLt2VNbXLj3B,MlZtJSeH1Z5OtE6MY9qCqb" />
@@ -459,7 +458,8 @@
         <Link Id="NhBfp8PzBbnPRmaox12V7B" Ids="RqGxRV1shoDPFgFXAeLkE6,MWwqKJ5o3PhOA9mRqpH4IW" />
         <Link Id="IduavfikVEiP3epCResAMJ" Ids="QEsbx91MZ9KPhmZTQDzVo3,TURwAb8rP11MjqPtCPCGm2" />
         <Link Id="NpvY9twjSB9NoXSeJjVnYA" Ids="IHGiWTQCeoRNRjzqwqyx6Y,DQAajv4JAAtLREcmbYjo1i" />
-        <Link Id="S62Ad7FJ1nfNv8SLMuPc7g" Ids="A1jTg4t0IjENbt8tcbsW2V,Q7DgFTzr5n9Ojw0wOXzZH1" />
+        <Link Id="ToZH6uPB2NiNsULusVS07k" Ids="A1jTg4t0IjENbt8tcbsW2V,Q7DgFTzr5n9Ojw0wOXzZH1" />
+        <Link Id="EoIATIPzhGxPOwHHHAktmd" Ids="Fnk6bgio1gXPEuufiMsdlH,VrdwheTOji9QYfisZn7XPp" />
       </Patch>
     </Node>
   </Patch>
