@@ -194,7 +194,7 @@ float bez( float2 pos, float2 A,  float2 B,  float2 C ){
       po1 += smoothstep(0.002,0.001,distance(ug*fac,ppo4*fac));
       po1 += smoothstep(0.0004,0.,sdl(ug,ppo5,ppo6));
       po1 += smoothstep(0.0005,0.,bez(ug,ppo2,ppo5,ppo6));
-        float2 Radius =lerp(10.*blur+mt,-10.*blur-mt,tra2+po1*2.)/re;
+      float2 Radius =lerp(10.*blur+mt,-10.*blur-mt,tra2+po1*2.)/re;
       float c;
       uz += (noi.zw-0.5)/re;
       for( float d=0.0; d<Pi; d+=Pi/Directions)

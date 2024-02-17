@@ -15,7 +15,7 @@
       </p:NodeReference>
       <Patch Id="IGUN1bMrKN0PXRG9XgnFkH">
         <Canvas Id="PwBBRLNrqgLOEWSqy8OV8v" CanvasType="Group">
-          <Pad Id="LEn74SMYxd4OPz8AjoANia" Comment="Directory" Bounds="-290,104,236,15" ShowValueBox="true" isIOBox="true" Value="..\..\..\captures\Temporal\Shiat02\">
+          <Pad Id="LEn74SMYxd4OPz8AjoANia" Comment="Directory" Bounds="-290,104,236,15" ShowValueBox="true" isIOBox="true" Value="..\..\..\captures\Temporal\Shot03\">
             <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Path" />
             </p:TypeAnnotation>
@@ -39,7 +39,7 @@
             </p:NodeReference>
             <Pin Id="OY6hzagoUyXOJcbStGnM01" Name="Input" Kind="StateInputPin" />
             <Pin Id="UC8SDh6Rm5pOMDIvmdyTJC" Name="Default Value" Kind="InputPin" />
-            <Pin Id="GoexwBHQzp9MQMJ6HvpaAe" Name="Index" Kind="InputPin" DefaultValue="5" />
+            <Pin Id="GoexwBHQzp9MQMJ6HvpaAe" Name="Index" Kind="InputPin" DefaultValue="4" />
             <Pin Id="ITTOXjgmYj4MeGCFqq9oU8" Name="Result" Kind="OutputPin" />
           </Node>
           <Node Bounds="-126,756,1045,19" Id="JO0CYUVmAr2LYoaQfnd2iC">
@@ -116,7 +116,7 @@
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="H35mwKPbVyGOFmh4jPZwnL" Comment="Zoom" Bounds="308,493,35,15" ShowValueBox="true" isIOBox="true" Value="0.1">
+          <Pad Id="H35mwKPbVyGOFmh4jPZwnL" Comment="Zoom" Bounds="308,493,35,15" ShowValueBox="true" isIOBox="true" Value="0.4">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
@@ -312,7 +312,7 @@
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="B7RuoRza6RBOpenp4wnl7T" Comment="Gradiant 1" Bounds="900,612,35,15" ShowValueBox="true" isIOBox="true" Value="-0.21">
+          <Pad Id="B7RuoRza6RBOpenp4wnl7T" Comment="Gradiant 1" Bounds="900,612,36,15" ShowValueBox="true" isIOBox="true" Value="-0.21">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
@@ -342,7 +342,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="TextureWindow" />
             </p:NodeReference>
-            <Pin Id="O2ViQl5qoMlOVsauFevo5Y" Name="Bounds" Kind="InputPin" DefaultValue="-44.8, 42.4, 1536, 800.8" />
+            <Pin Id="O2ViQl5qoMlOVsauFevo5Y" Name="Bounds" Kind="InputPin" DefaultValue="0, 23.2, 1536, 800.8" />
             <Pin Id="UayUJ5SjZHEPUIa1CM0J8U" Name="Input" Kind="InputPin" />
             <Pin Id="CaitpNBTiNIOOssEzzGPgB" Name="Title" Kind="InputPin" />
             <Pin Id="NtPjsDG47GiPX7YArrqyn4" Name="Clear Color" Kind="InputPin" />
@@ -380,35 +380,6 @@
           <ControlPoint Id="PlVl7UaDhaqQL0DaHSqKli" Bounds="474,532" />
           <ControlPoint Id="GT7igBHdVKgOswTbTuUUC6" Bounds="467,614" />
           <ControlPoint Id="CNAPYXbuv0UN0BJkurvHwR" Bounds="467,595" />
-          <Node Bounds="212,409,585,19" Id="ShD60Dz1Ps0OJOSaWINSa7">
-            <p:NodeReference LastCategoryFullName="Stride.Textures.Source" LastDependency="VL.Stride.Rendering.EffectShaderNodes (D:\GIT\Sound_TemporalSpace\TRANSFERT_Projet_PREVIEW)">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessNode" Name="Coordoneeinfo" />
-            </p:NodeReference>
-            <Pin Id="Gz8IjhBlXejN3oQk2VwyNk" Name="Input" Kind="InputPin" />
-            <Pin Id="N9rCYRxr55ANRR9bi1emEn" Name="Sampler State" Kind="InputPin" />
-            <Pin Id="MZzu9yMjlU0OAVwNtGDfWP" Name="P0" Kind="InputPin" DefaultValue="0.1, 0" />
-            <Pin Id="M8wtued3WCfLrgMgCuA0Em" Name="P1" Kind="InputPin" DefaultValue="0.2, 0" />
-            <Pin Id="QfxtMvfGsNUNtuIUWIStcJ" Name="P2" Kind="InputPin" DefaultValue="0.3, 0" />
-            <Pin Id="PBJPRYF8QonLWrvRB8h0XB" Name="P3" Kind="InputPin" DefaultValue="0.4, 0" />
-            <Pin Id="SOg2JlcsVckMGhdYT7X3gv" Name="P4" Kind="InputPin" DefaultValue="0.5, 0" />
-            <Pin Id="LBS1NtguGasQWShuLX5h6k" Name="P0S" Kind="InputPin" DefaultValue="0, 0" />
-            <Pin Id="T93UArSJCb6PgBWCEiGH7D" Name="P1S" Kind="InputPin" DefaultValue="0, 0.1" />
-            <Pin Id="CVeu5dnMqkwN5SZCeD9qyI" Name="P2S" Kind="InputPin" DefaultValue="0, 0.2" />
-            <Pin Id="DKnzIdwStRqPQoCCrTpwl8" Name="P3S" Kind="InputPin" DefaultValue="0, 0.3" />
-            <Pin Id="IHIor4cUFiROCRhyfjCSS4" Name="P4S" Kind="InputPin" DefaultValue="0, 0.4" />
-            <Pin Id="DNc7ee8TzAOLtB9dKdnozk" Name="P5S" Kind="InputPin" DefaultValue="0, 0.5" />
-            <Pin Id="MzFQeyRHeLPOlkjtfHSvZQ" Name="P6S" Kind="InputPin" DefaultValue="0, 0.6" />
-            <Pin Id="JkcdqOKiVRKPrrACGdbGpy" Name="P7S" Kind="InputPin" DefaultValue="0, 0.7" />
-            <Pin Id="Qjfr6OLMPWrNUWXNlhqZWR" Name="P8S" Kind="InputPin" DefaultValue="0, 0.8" />
-            <Pin Id="SQuJfYupixDLwvhJZ2p77U" Name="P9S" Kind="InputPin" />
-            <Pin Id="PBfWg4drvZFPnGhB3QkfX1" Name="P10S" Kind="InputPin" DefaultValue="0.1, 0" />
-            <Pin Id="NVAZa97yLPBN8hpaXk8iCo" Name="P11S" Kind="InputPin" DefaultValue="0.2, 0" />
-            <Pin Id="GK6PIVA0TTfLK75pOenXL0" Name="P12S" Kind="InputPin" DefaultValue="0.3, 0" />
-            <Pin Id="NozfbKPKMrJOm0UrIrO6Q3" Name="Output Size" Kind="InputPin" />
-            <Pin Id="CMs3nraMt3pQcDf6QTbrG6" Name="Enabled" Kind="InputPin" />
-            <Pin Id="UWykU7xZHBLP8GW7O4SRS1" Name="Output" Kind="OutputPin" />
-          </Node>
         </Canvas>
         <Patch Id="B2WgofCpFdxN2jIUYOw0DD" Name="Create" />
         <Patch Id="IZjPqFtcI1HOSVOW0GFJa4" Name="Update" />
@@ -462,7 +433,6 @@
         <Link Id="KG3xWyISJrOMBKYTvf7KE3" Ids="KvOoW7I14vRL1DxGILnaov,TOLk8IBlhcYOOeX3B1uL9v" />
         <Link Id="QFU72zbn7mSMw6Iwrq0pIh" Ids="NNWcOzVBJsZO7Toiu1Bfas,G0yLXzp3scYMQ1tOk6q0tI" />
         <Link Id="S9wCd4dRsU5L5URaU31hFi" Ids="CzZiSbsyMoYQQLm1xy9ith,JWovtlMAlgQPHr1lMPs20o" />
-        <Link Id="LoGTmh60Ld5O8IAKgqtdsl" Ids="Fnk6bgio1gXPEuufiMsdlH,Gz8IjhBlXejN3oQk2VwyNk" />
         <Link Id="VoeZvktSj4yQavPrabUBMN" Ids="OKW4C8SzKnnLe04zY2aPuA,UayUJ5SjZHEPUIa1CM0J8U" />
       </Patch>
     </Node>
