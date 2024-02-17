@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PROTO_V2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0834ada1502689fe4c25c8f1a82343a8aa45a8c9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+37cfac5bf15dbba4781f6e39a48cb3faa6c5ec1c")]
 [assembly: System.Reflection.AssemblyProductAttribute("PROTO_V2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PROTO_V2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
