@@ -99,8 +99,7 @@ float lev(float color, float4 l){
     return color;}
     float dot2( in float2 v ) { return dot(v,v); }
 float cro( in float2 a, in float2 b ) { return a.x*b.y - a.y*b.x; }
-float bez( float2 pos, float2 A,  float2 B,  float2 C )
-{
+float bez( float2 pos, float2 A,  float2 B,  float2 C ){
     float2 a = B - A;
     float2 b = A - 2.0*B + C;
     float2 c = a * 2.0;
@@ -129,41 +128,37 @@ float bez( float2 pos, float2 A,  float2 B,  float2 C )
         float3  t = clamp(float3(m+m,-n-m,n-m)*z-kx,0.0,1.0);
         res = min( dot2(d+(c+b*t.x)*t.x),
                    dot2(d+(c+b*t.y)*t.y) );}
-      return sqrt( res );
-    }
+      return sqrt( res );}
     stage override float4 Shading()
     {
     float2 uv = (streams.TexCoord.xy);
     float2 un = frac(uv);
     float tau = 3.14159265*2.;
-      float2 re = res;
+    float2 re = res;
     float4 noi = sin(Texture1.SampleLevel(samplerState, frac(uv*re/1024.), 0)*tau*6.+Time*6.)*0.5+0.5;
     float2 uc = uv;
     float4 rf = float4(0.,0.,0.,0.);
     float m = step(0.045,distance(0.22,uv.x))*step(0.045,distance(0.6985,uv.x));
-  if(m>0.5){
-
+    if(m>0.5){
     float2 ptt = float2(0.0,0.02);
-    float2 pp0 = Texture0.SampleLevel(samplerState, float2(0.91,0.05), 0);
-    float2 p0 = float2(pp0.x,1.-pp0.y)+ptt;
-    float2 pp1 = Texture0.SampleLevel(samplerState, float2(0.93,0.05), 0);
-    float2 p1 = float2(pp1.x,1.-pp1.y)+ptt;
-    float2 pp2 = Texture0.SampleLevel(samplerState, float2(0.95,0.05), 0);
-    float2 p2 = float2(pp2.x,1.-pp2.y)+ptt;
-    float2 pp3 = Texture0.SampleLevel(samplerState, float2(0.97,0.05), 0);
-    float2 p3 = float2(pp3.x,1.-pp3.y)+ptt;
-    float2 pp4 = Texture0.SampleLevel(samplerState, float2(0.99,0.05), 0);
-    float2 p4 = float2(pp4.x,1.-pp4.y)+ptt;
-    //float2 al1 = lerp(p0,lerp(p1,lerp(p2,lerp(p3,p4,step(0.8,uv.x)),step(0.6,uv.x)),step(0.4,uv.x)),step(0.2,uv.x));
-    //float al2 = lerp(al1.x,al1.y,step(0.5,uv.y));
-    //float currentVelocity = 0.0;
-  //  float alpha = SmoothDamp(Texture2.SampleLevel(samplerState,uv,0).a,al2,currentVelocity, lerp(0.08,0.12,step(0.65,uv.x)), 1./60.,10.);
-  //  alpha = lerp(alpha,lerp(Texture2.SampleLevel(samplerState,uv,0).a,al2,0.05),alphatest);
-    /*float2 p0 = float2(Texture2.SampleLevel(samplerState,float2(0.1,0.25),0).a,Texture2.SampleLevel(samplerState,float2(0.1,0.75),0).a);
-    float2 p1 = float2(Texture2.SampleLevel(samplerState,float2(0.3,0.25),0).a,Texture2.SampleLevel(samplerState,float2(0.3,0.75),0).a);
-    float2 p2 = float2(Texture2.SampleLevel(samplerState,float2(0.5,0.25),0).a,Texture2.SampleLevel(samplerState,float2(0.5,0.75),0).a);
-    float2 p3 = float2(Texture2.SampleLevel(samplerState,float2(0.7,0.25),0).a,Texture2.SampleLevel(samplerState,float2(0.7,0.75),0).a);
-    float2 p4 = float2(Texture2.SampleLevel(samplerState,float2(0.9,0.25),0).a,Texture2.SampleLevel(samplerState,float2(0.9,0.75),0).a);*/
+    float2 p0 = Texture0.SampleLevel(samplerState,  float2(0.825,0.01), 0)+ptt;
+    float2 p1 = Texture0.SampleLevel(samplerState,  float2(0.835,0.01), 0)+ptt;
+    float2 p2 = Texture0.SampleLevel(samplerState,  float2(0.845,0.01), 0)+ptt;
+    float2 p3 = Texture0.SampleLevel(samplerState,  float2(0.855,0.01), 0)+ptt;
+    float2 p4 = Texture0.SampleLevel(samplerState,  float2(0.865,0.01), 0)+ptt;
+    float2 p0s = Texture0.SampleLevel(samplerState, float2(0.875,0.01), 0)+ptt;
+    float2 p1s = Texture0.SampleLevel(samplerState, float2(0.885,0.01), 0)+ptt;
+    float2 p2s = Texture0.SampleLevel(samplerState, float2(0.895,0.01), 0)+ptt;
+    float2 p3s = Texture0.SampleLevel(samplerState, float2(0.905,0.01), 0)+ptt;
+    float2 p4s = Texture0.SampleLevel(samplerState, float2(0.915,0.01), 0)+ptt;
+    float2 p5s = Texture0.SampleLevel(samplerState, float2(0.925,0.01), 0)+ptt;
+    float2 p6s = Texture0.SampleLevel(samplerState, float2(0.935,0.01), 0)+ptt;
+    float2 p7s = Texture0.SampleLevel(samplerState, float2(0.945,0.01), 0)+ptt;
+    float2 p8s = Texture0.SampleLevel(samplerState, float2(0.955,0.01), 0)+ptt;
+    float2 p9s = Texture0.SampleLevel(samplerState, float2(0.965,0.01), 0)+ptt;
+    float2 p10s = Texture0.SampleLevel(samplerState,float2(0.975,0.01), 0)+ptt;
+    float2 p11s = Texture0.SampleLevel(samplerState,float2(0.985,0.01), 0)+ptt;
+    float2 p12s = Texture0.SampleLevel(samplerState,float2(0.995,0.01), 0)+ptt;
     float2 pf = lerp(lerp(p0,lerp(p1,p2,clamp(droit,0.,1.)),clamp(poigne,0.,1.)),lerp(p3,p4,clamp(droit,0.,1.)),clamp(genoux,0.,1.));
     float2 pf1 = pf-zoom;
     float2 pf2 = pf+zoom;
@@ -171,7 +166,6 @@ float bez( float2 pos, float2 A,  float2 B,  float2 C )
     uz = lerp(uv,uz+float2(XPose,0.),effetzoom);
     float2 fac = float2(1920./1200.,1.);
     float2 gt = (p0+p1+p2+p3+p4)/5.;
-
     float a1 = step(0.5,sin(Time)*0.5+0.5);
     float bq = clamp(blurQuality,0.2,2.);
       float Directions = 16.0*bq;
@@ -180,7 +174,6 @@ float bez( float2 pos, float2 A,  float2 B,  float2 C )
       float mt = (smoothstep(minMaskBlurImg,maxMaskBlurImg,tta)-.5)*10.*texBlur;
         float tra1 = (pow(distance(frac(uv.x*22.5),0.5),0.25)-0.5)*4.;
         float tra2 = max(pow(1.-sdl(uz,lerp(p0,p1,a1),p2),150.),pow(1.-sdl(uz,lerp(p2,p4,a1),p3),150.));
-
         float2 ug = uz+(tta-0.5)*0.0025;
         float trp = 16.;
         float rpo = rd(Time*trp);

@@ -51,12 +51,12 @@
             <Pin Id="HrXODE8lgH2LDI0Oi0bAq4" Name="Input 2" Kind="InputPin" />
             <Pin Id="TIwjbSmmhGnQN6yAEmGqkI" Name="Input 3" Kind="InputPin" />
             <Pin Id="QcYRwhoBzbhLuoGulomxLy" Name="Input 4" Kind="InputPin" />
-            <Pin Id="M54wA58akL8PRrUDB0M6dz" Name="Sampler State" Kind="InputPin" />
+            <Pin Id="PvaslvDmBcdOrPckeUP5fW" Name="Sampler State" Kind="InputPin" />
             <Pin Id="AqsBwqheuh4MKuA1IfwxUD" Name="Fade" Kind="InputPin" DefaultValue="1.93" />
             <Pin Id="V2zWLWSp6nRPUw3eJAhwzc" Name="Long Ex" Kind="InputPin" DefaultValue="0.44" />
             <Pin Id="NYVQAuVofjEOqVKt1Q4HFM" Name="Effetzoom" Kind="InputPin" DefaultValue="1" />
             <Pin Id="AWuRqWjfGsKLvMj1EQxSZZ" Name="Zoom" Kind="InputPin" />
-            <Pin Id="LKhWdtzd2vtMF7N21Y9fVX" Name="XPose" Kind="InputPin" />
+            <Pin Id="BJnVREav3MfMGRoRXi9mRf" Name="XPose" Kind="InputPin" />
             <Pin Id="TOLk8IBlhcYOOeX3B1uL9v" Name="Poigne" Kind="InputPin" DefaultValue="0.2" />
             <Pin Id="G0yLXzp3scYMQ1tOk6q0tI" Name="Genoux" Kind="InputPin" />
             <Pin Id="JWovtlMAlgQPHr1lMPs20o" Name="Droit" Kind="InputPin" DefaultValue="1" />
@@ -80,11 +80,11 @@
             <Pin Id="DQAajv4JAAtLREcmbYjo1i" Name="Mask Max Saturation" Kind="InputPin" />
             <Pin Id="JuNeqlv3iPLOBY4h2fCjgn" Name="Transition" Kind="InputPin" DefaultValue="0" />
             <Pin Id="CBPbTWlmEnpPnClOfyqJ3f" Name="Res" Kind="InputPin" DefaultValue="1920, 1200" />
-            <Pin Id="Lj87fLQdVtRNQDdJp0XhjU" Name="Alphatest" Kind="InputPin" DefaultValue="0" />
             <Pin Id="KcWWzI3gn72QCoE1EknnDy" Name="Level" Kind="InputPin" />
             <Pin Id="GVVpVKRrSb8N1xuLnoHJxL" Name="Output Size" Kind="InputPin" DefaultValue="1920, 1200" />
-            <Pin Id="O8Ur6sl8rwTP88s0kfoI9q" Name="Enabled" Kind="InputPin" />
+            <Pin Id="BfXfKEoha9jPhnVlz6wqWq" Name="Enabled" Kind="InputPin" />
             <Pin Id="OKW4C8SzKnnLe04zY2aPuA" Name="Output" Kind="OutputPin" />
+            <Pin Id="Lj87fLQdVtRNQDdJp0XhjU" Name="Alphatest" Kind="InputPin" DefaultValue="0" />
             <Pin Id="I5gYrzI7CqJODTrOXKYE8Y" Name="Darkness Off The Background" Kind="InputPin" DefaultValue="0.61" />
             <Pin Id="PPYlR9oJzEoODRZXJRylAx" Name="Saturation Off The Background" Kind="InputPin" DefaultValue="0" />
             <Pin Id="BE8JBk8qxLuLhpqn9fHJDV" Name="Min Mask Blur Vid" Kind="InputPin" DefaultValue="0.01" />
@@ -342,7 +342,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="TextureWindow" />
             </p:NodeReference>
-            <Pin Id="O2ViQl5qoMlOVsauFevo5Y" Name="Bounds" Kind="InputPin" DefaultValue="1536, 18.4, 1536, 909.6" />
+            <Pin Id="O2ViQl5qoMlOVsauFevo5Y" Name="Bounds" Kind="InputPin" DefaultValue="-44.8, 42.4, 1536, 800.8" />
             <Pin Id="UayUJ5SjZHEPUIa1CM0J8U" Name="Input" Kind="InputPin" />
             <Pin Id="CaitpNBTiNIOOssEzzGPgB" Name="Title" Kind="InputPin" />
             <Pin Id="NtPjsDG47GiPX7YArrqyn4" Name="Clear Color" Kind="InputPin" />
@@ -380,6 +380,35 @@
           <ControlPoint Id="PlVl7UaDhaqQL0DaHSqKli" Bounds="474,532" />
           <ControlPoint Id="GT7igBHdVKgOswTbTuUUC6" Bounds="467,614" />
           <ControlPoint Id="CNAPYXbuv0UN0BJkurvHwR" Bounds="467,595" />
+          <Node Bounds="212,409,585,19" Id="ShD60Dz1Ps0OJOSaWINSa7">
+            <p:NodeReference LastCategoryFullName="Stride.Textures.Source" LastDependency="VL.Stride.Rendering.EffectShaderNodes (D:\GIT\Sound_TemporalSpace\TRANSFERT_Projet_PREVIEW)">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessNode" Name="Coordoneeinfo" />
+            </p:NodeReference>
+            <Pin Id="Gz8IjhBlXejN3oQk2VwyNk" Name="Input" Kind="InputPin" />
+            <Pin Id="N9rCYRxr55ANRR9bi1emEn" Name="Sampler State" Kind="InputPin" />
+            <Pin Id="MZzu9yMjlU0OAVwNtGDfWP" Name="P0" Kind="InputPin" DefaultValue="0.1, 0" />
+            <Pin Id="M8wtued3WCfLrgMgCuA0Em" Name="P1" Kind="InputPin" DefaultValue="0.2, 0" />
+            <Pin Id="QfxtMvfGsNUNtuIUWIStcJ" Name="P2" Kind="InputPin" DefaultValue="0.3, 0" />
+            <Pin Id="PBJPRYF8QonLWrvRB8h0XB" Name="P3" Kind="InputPin" DefaultValue="0.4, 0" />
+            <Pin Id="SOg2JlcsVckMGhdYT7X3gv" Name="P4" Kind="InputPin" DefaultValue="0.5, 0" />
+            <Pin Id="LBS1NtguGasQWShuLX5h6k" Name="P0S" Kind="InputPin" DefaultValue="0, 0" />
+            <Pin Id="T93UArSJCb6PgBWCEiGH7D" Name="P1S" Kind="InputPin" DefaultValue="0, 0.1" />
+            <Pin Id="CVeu5dnMqkwN5SZCeD9qyI" Name="P2S" Kind="InputPin" DefaultValue="0, 0.2" />
+            <Pin Id="DKnzIdwStRqPQoCCrTpwl8" Name="P3S" Kind="InputPin" DefaultValue="0, 0.3" />
+            <Pin Id="IHIor4cUFiROCRhyfjCSS4" Name="P4S" Kind="InputPin" DefaultValue="0, 0.4" />
+            <Pin Id="DNc7ee8TzAOLtB9dKdnozk" Name="P5S" Kind="InputPin" DefaultValue="0, 0.5" />
+            <Pin Id="MzFQeyRHeLPOlkjtfHSvZQ" Name="P6S" Kind="InputPin" DefaultValue="0, 0.6" />
+            <Pin Id="JkcdqOKiVRKPrrACGdbGpy" Name="P7S" Kind="InputPin" DefaultValue="0, 0.7" />
+            <Pin Id="Qjfr6OLMPWrNUWXNlhqZWR" Name="P8S" Kind="InputPin" DefaultValue="0, 0.8" />
+            <Pin Id="SQuJfYupixDLwvhJZ2p77U" Name="P9S" Kind="InputPin" />
+            <Pin Id="PBfWg4drvZFPnGhB3QkfX1" Name="P10S" Kind="InputPin" DefaultValue="0.1, 0" />
+            <Pin Id="NVAZa97yLPBN8hpaXk8iCo" Name="P11S" Kind="InputPin" DefaultValue="0.2, 0" />
+            <Pin Id="GK6PIVA0TTfLK75pOenXL0" Name="P12S" Kind="InputPin" DefaultValue="0.3, 0" />
+            <Pin Id="NozfbKPKMrJOm0UrIrO6Q3" Name="Output Size" Kind="InputPin" />
+            <Pin Id="CMs3nraMt3pQcDf6QTbrG6" Name="Enabled" Kind="InputPin" />
+            <Pin Id="UWykU7xZHBLP8GW7O4SRS1" Name="Output" Kind="OutputPin" />
+          </Node>
         </Canvas>
         <Patch Id="B2WgofCpFdxN2jIUYOw0DD" Name="Create" />
         <Patch Id="IZjPqFtcI1HOSVOW0GFJa4" Name="Update" />
@@ -430,10 +459,11 @@
         <Link Id="NpvY9twjSB9NoXSeJjVnYA" Ids="IHGiWTQCeoRNRjzqwqyx6Y,DQAajv4JAAtLREcmbYjo1i" />
         <Link Id="EoIATIPzhGxPOwHHHAktmd" Ids="Fnk6bgio1gXPEuufiMsdlH,VrdwheTOji9QYfisZn7XPp" />
         <Link Id="VmkBSGi13j0OIZlmIIywia" Ids="AfDPDqAfMAJPq9AV3EjXUd,KcWWzI3gn72QCoE1EknnDy" />
-        <Link Id="IJRtTIEAJn0LkJHI3WIvVn" Ids="OKW4C8SzKnnLe04zY2aPuA,UayUJ5SjZHEPUIa1CM0J8U" />
         <Link Id="KG3xWyISJrOMBKYTvf7KE3" Ids="KvOoW7I14vRL1DxGILnaov,TOLk8IBlhcYOOeX3B1uL9v" />
         <Link Id="QFU72zbn7mSMw6Iwrq0pIh" Ids="NNWcOzVBJsZO7Toiu1Bfas,G0yLXzp3scYMQ1tOk6q0tI" />
         <Link Id="S9wCd4dRsU5L5URaU31hFi" Ids="CzZiSbsyMoYQQLm1xy9ith,JWovtlMAlgQPHr1lMPs20o" />
+        <Link Id="LoGTmh60Ld5O8IAKgqtdsl" Ids="Fnk6bgio1gXPEuufiMsdlH,Gz8IjhBlXejN3oQk2VwyNk" />
+        <Link Id="VoeZvktSj4yQavPrabUBMN" Ids="OKW4C8SzKnnLe04zY2aPuA,UayUJ5SjZHEPUIa1CM0J8U" />
       </Patch>
     </Node>
   </Patch>
