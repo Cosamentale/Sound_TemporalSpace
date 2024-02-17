@@ -21,8 +21,9 @@ stage override float4 Shading()
 {
 float2 uv = (streams.TexCoord.xy);
 float4 col = float4(Texture0.SampleLevel(samplerState, uv, 0).xyz,1.);
-float2 pp = lerp(p0,lerp(p1,lerp(p2,lerp(p3,lerp(p4,lerp(p5,lerp(p6,lerp(p7,lerp(p8,p9,step(0.98,uv.x)),step(0.98,uv.x)),step(0.98,uv.x)),step(0.98,uv.x)),step(0.98,uv.x)),step(0.96,uv.x)),step(0.94,uv.x)),step(0.92,uv.x));
-float4 r = lerp(col,float4(pp,0.,1.),step(0.9,uv.x)*step(uv.y,0.1));
+float2 pp = lerp(p0,lerp(p1,lerp(p2,lerp(p3,lerp(p4,lerp(p5,lerp(p6,lerp(p7,lerp(p8,p9,step(0.99,uv.x)),
+step(0.98,uv.x)),step(0.97,uv.x)),step(0.96,uv.x)),step(0.95,uv.x)),step(0.94,uv.x)),step(0.93,uv.x)),step(0.91,uv.x)),step(0.90,uv.x));
+float4 r = lerp(col,float4(pp,0.,1.),step(0.89,uv.x)*step(uv.y,0.1));
 return r;
 }
 };
