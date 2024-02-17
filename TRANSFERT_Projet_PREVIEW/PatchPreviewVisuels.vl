@@ -42,7 +42,7 @@
             <Pin Id="GoexwBHQzp9MQMJ6HvpaAe" Name="Index" Kind="InputPin" DefaultValue="5" />
             <Pin Id="ITTOXjgmYj4MeGCFqq9oU8" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="-119,727,1045,19" Id="JO0CYUVmAr2LYoaQfnd2iC">
+          <Node Bounds="-126,756,1045,19" Id="JO0CYUVmAr2LYoaQfnd2iC">
             <p:NodeReference LastCategoryFullName="Stride.Textures.Source" LastDependency="VL.Stride.Rendering.EffectShaderNodes (D:\GIT\Sound_TemporalSpace\TRANSFERT_Projet_PREVIEW)">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessNode" Name="CordoViz03ColorCorrectionV2" />
@@ -91,32 +91,32 @@
             <Pin Id="TIJcZuugcrLPFEA08ocKA4" Name="Max Mask Blur Vid" Kind="InputPin" DefaultValue="0.67" />
             <Pin Id="Qd41iVLJdtmMAiHGGoO0y7" Name="Vid Blur" Kind="InputPin" DefaultValue="0.26" />
           </Node>
-          <Pad Id="UCuWJTbneziPVBnLPVPKtX" Comment="Blur" Bounds="707,350,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+          <Pad Id="UCuWJTbneziPVBnLPVPKtX" Comment="Blur" Bounds="526,494,35,15" ShowValueBox="true" isIOBox="true" Value="0">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="Sp5KCoq1uloMvKcPxvJs41" Comment="Var Hue" Bounds="703,498,35,15" ShowValueBox="true" isIOBox="true" Value="0.35">
+          <Pad Id="Sp5KCoq1uloMvKcPxvJs41" Comment="Var Hue" Bounds="898,517,35,15" ShowValueBox="true" isIOBox="true" Value="0.35">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="VlXLjn3VSHqMZkp2XpHSp3" Comment="Global Hue" Bounds="706,516,35,15" ShowValueBox="true" isIOBox="true" Value="-0.18">
+          <Pad Id="VlXLjn3VSHqMZkp2XpHSp3" Comment="Global Hue" Bounds="898,535,35,15" ShowValueBox="true" isIOBox="true" Value="-0.18">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="KCfWrwCZvOTNz3KzSlO8QA" Comment="Noise" Bounds="707,538,31,15" ShowValueBox="true" isIOBox="true" Value="0.82">
+          <Pad Id="KCfWrwCZvOTNz3KzSlO8QA" Comment="Noise" Bounds="898,553,35,15" ShowValueBox="true" isIOBox="true" Value="0.82">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="O3k5JFyrLVXPQYNUNWIxAk" Comment="Tex Blur" Bounds="704,416,35,15" ShowValueBox="true" isIOBox="true" Value="1.54">
+          <Pad Id="O3k5JFyrLVXPQYNUNWIxAk" Comment="Tex Blur" Bounds="524,560,35,15" ShowValueBox="true" isIOBox="true" Value="1.54">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="H35mwKPbVyGOFmh4jPZwnL" Comment="Zoom" Bounds="309,493,35,15" ShowValueBox="true" isIOBox="true" Value="0.1">
+          <Pad Id="H35mwKPbVyGOFmh4jPZwnL" Comment="Zoom" Bounds="308,493,35,15" ShowValueBox="true" isIOBox="true" Value="0.1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
@@ -272,18 +272,18 @@
             <Pin Id="AYypNYsmfGCQTKrqoASPUY" Name="Frame Count" Kind="OutputPin" />
             <Pin Id="GJmw5yCrTh7ME1pJ7eqcMD" Name="Frame to Display" Kind="InputPin" />
           </Node>
-          <Pad Id="KhWIq93tB3NLt2VNbXLj3B" Comment="Max Mask Blur Img" Bounds="705,380,35,15" ShowValueBox="true" isIOBox="true" Value="1">
+          <Pad Id="KhWIq93tB3NLt2VNbXLj3B" Comment="Max Mask Blur Img" Bounds="524,524,35,15" ShowValueBox="true" isIOBox="true" Value="1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <ControlPoint Id="RdodnBD4fmGLQjfjAh0PPG" Bounds="334,648" />
-          <Pad Id="CElHMHLlnSoNbX89bGufk4" Comment="Min Mask Blur Img" Bounds="705,397,35,15" ShowValueBox="true" isIOBox="true" Value="-0">
+          <ControlPoint Id="RdodnBD4fmGLQjfjAh0PPG" Bounds="472,554" />
+          <Pad Id="CElHMHLlnSoNbX89bGufk4" Comment="Min Mask Blur Img" Bounds="524,542,35,15" ShowValueBox="true" isIOBox="true" Value="-0">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="VY5aTE3bEBgLkLpta4FOal" Comment="Blur Quality" Bounds="707,331,35,15" ShowValueBox="true" isIOBox="true" Value="1">
+          <Pad Id="VY5aTE3bEBgLkLpta4FOal" Comment="Blur Quality" Bounds="526,475,35,15" ShowValueBox="true" isIOBox="true" Value="1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
@@ -330,17 +330,17 @@
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="RqGxRV1shoDPFgFXAeLkE6" Comment="Gradiant 2" Bounds="893,634,35,15" ShowValueBox="true" isIOBox="true" Value="1.03">
+          <Pad Id="RqGxRV1shoDPFgFXAeLkE6" Comment="Gradiant 2" Bounds="898,633,36,15" ShowValueBox="true" isIOBox="true" Value="1.03">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="QEsbx91MZ9KPhmZTQDzVo3" Comment="Mask Min Saturation" Bounds="863,730,35,15" ShowValueBox="true" isIOBox="true" Value="-0.34">
+          <Pad Id="QEsbx91MZ9KPhmZTQDzVo3" Comment="Mask Min Saturation" Bounds="896,675,36,15" ShowValueBox="true" isIOBox="true" Value="-0.34">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="IHGiWTQCeoRNRjzqwqyx6Y" Comment="Mask Max Saturation" Bounds="862,757,35,15" ShowValueBox="true" isIOBox="true" Value="0.41">
+          <Pad Id="IHGiWTQCeoRNRjzqwqyx6Y" Comment="Mask Max Saturation" Bounds="898,654,35,15" ShowValueBox="true" isIOBox="true" Value="0.41">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
@@ -375,24 +375,24 @@
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="NNWcOzVBJsZO7Toiu1Bfas" Comment="Genoux" Bounds="307,532,37,15" ShowValueBox="true" isIOBox="true" Value="0">
+          <Pad Id="NNWcOzVBJsZO7Toiu1Bfas" Comment="Genoux" Bounds="307,531,35,15" ShowValueBox="true" isIOBox="true" Value="0">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="CzZiSbsyMoYQQLm1xy9ith" Comment="Droit" Bounds="307,552,35,15" ShowValueBox="true" isIOBox="true" Value="1">
+          <Pad Id="CzZiSbsyMoYQQLm1xy9ith" Comment="Droit" Bounds="307,550,35,15" ShowValueBox="true" isIOBox="true" Value="1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <ControlPoint Id="HuVPoA3WSTnLZV7f0wSyPI" Bounds="617,526" />
-          <ControlPoint Id="BcJgnAp5IfkPFe91N1401j" Bounds="620,507" />
-          <ControlPoint Id="KC1XoHheCWwNV43s5vvosr" Bounds="616,546" />
-          <ControlPoint Id="FEzMFnYBQySP5x3WSw6aMP" Bounds="650,428" />
-          <ControlPoint Id="RXo9oV3UKeqMLP14SnkaPp" Bounds="653,408" />
-          <ControlPoint Id="PlVl7UaDhaqQL0DaHSqKli" Bounds="653,389" />
-          <ControlPoint Id="GT7igBHdVKgOswTbTuUUC6" Bounds="654,361" />
-          <ControlPoint Id="CNAPYXbuv0UN0BJkurvHwR" Bounds="654,342" />
+          <ControlPoint Id="HuVPoA3WSTnLZV7f0wSyPI" Bounds="739,540" />
+          <ControlPoint Id="BcJgnAp5IfkPFe91N1401j" Bounds="744,524" />
+          <ControlPoint Id="KC1XoHheCWwNV43s5vvosr" Bounds="739,558" />
+          <ControlPoint Id="FEzMFnYBQySP5x3WSw6aMP" Bounds="469,572" />
+          <ControlPoint Id="RXo9oV3UKeqMLP14SnkaPp" Bounds="472,552" />
+          <ControlPoint Id="PlVl7UaDhaqQL0DaHSqKli" Bounds="472,533" />
+          <ControlPoint Id="GT7igBHdVKgOswTbTuUUC6" Bounds="473,505" />
+          <ControlPoint Id="CNAPYXbuv0UN0BJkurvHwR" Bounds="473,486" />
         </Canvas>
         <Patch Id="B2WgofCpFdxN2jIUYOw0DD" Name="Create" />
         <Patch Id="IZjPqFtcI1HOSVOW0GFJa4" Name="Update" />
