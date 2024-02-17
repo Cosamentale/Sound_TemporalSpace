@@ -34,7 +34,7 @@ float saturationBright; float saturationDark; float gradiant1;float gradiant2;
 float maskMinSaturation; float maskMaxSaturation;
 float transition;
 float2 res;
-float alphatest;
+//float alphatest;
 float3 InvLerp(float3 A, float3 B, float3 t){return (t - A) / (B - A);}
 float3 co(float3 InColor ,float3 s, float3 m, float3 h){
     float3 OffShadows  = InColor + s;
@@ -154,32 +154,32 @@ float bez( float2 pos, float2 A,  float2 B,  float2 C )
     float2 p3 = float2(pp3.x,1.-pp3.y)+ptt;
     float2 pp4 = Texture0.SampleLevel(samplerState, float2(0.99,0.05), 0);
     float2 p4 = float2(pp4.x,1.-pp4.y)+ptt;
-    float2 al1 = lerp(p0,lerp(p1,lerp(p2,lerp(p3,p4,step(0.8,uv.x)),step(0.6,uv.x)),step(0.4,uv.x)),step(0.2,uv.x));
-    float al2 = lerp(al1.x,al1.y,step(0.5,uv.y));
-    float currentVelocity = 0.0;
-    float alpha = SmoothDamp(Texture2.SampleLevel(samplerState,uv,0).a,al2,currentVelocity, lerp(0.08,0.12,step(0.65,uv.x)), 1./60.,10.);
-    alpha = lerp(alpha,lerp(Texture2.SampleLevel(samplerState,uv,0).a,al2,0.05),alphatest);
-    float2 pa0 = float2(Texture2.SampleLevel(samplerState,float2(0.1,0.25),0).a,Texture2.SampleLevel(samplerState,float2(0.1,0.75),0).a);
-    float2 pa1 = float2(Texture2.SampleLevel(samplerState,float2(0.3,0.25),0).a,Texture2.SampleLevel(samplerState,float2(0.3,0.75),0).a);
-    float2 pa2 = float2(Texture2.SampleLevel(samplerState,float2(0.5,0.25),0).a,Texture2.SampleLevel(samplerState,float2(0.5,0.75),0).a);
-    float2 pa3 = float2(Texture2.SampleLevel(samplerState,float2(0.7,0.25),0).a,Texture2.SampleLevel(samplerState,float2(0.7,0.75),0).a);
-    float2 pa4 = float2(Texture2.SampleLevel(samplerState,float2(0.9,0.25),0).a,Texture2.SampleLevel(samplerState,float2(0.9,0.75),0).a);
-    float2 pf = lerp(lerp(pa0,lerp(pa1,pa2,clamp(droit,0.,1.)),clamp(poigne,0.,1.)),lerp(pa3,pa4,clamp(droit,0.,1.)),clamp(genoux,0.,1.));
+    //float2 al1 = lerp(p0,lerp(p1,lerp(p2,lerp(p3,p4,step(0.8,uv.x)),step(0.6,uv.x)),step(0.4,uv.x)),step(0.2,uv.x));
+    //float al2 = lerp(al1.x,al1.y,step(0.5,uv.y));
+    //float currentVelocity = 0.0;
+  //  float alpha = SmoothDamp(Texture2.SampleLevel(samplerState,uv,0).a,al2,currentVelocity, lerp(0.08,0.12,step(0.65,uv.x)), 1./60.,10.);
+  //  alpha = lerp(alpha,lerp(Texture2.SampleLevel(samplerState,uv,0).a,al2,0.05),alphatest);
+    /*float2 p0 = float2(Texture2.SampleLevel(samplerState,float2(0.1,0.25),0).a,Texture2.SampleLevel(samplerState,float2(0.1,0.75),0).a);
+    float2 p1 = float2(Texture2.SampleLevel(samplerState,float2(0.3,0.25),0).a,Texture2.SampleLevel(samplerState,float2(0.3,0.75),0).a);
+    float2 p2 = float2(Texture2.SampleLevel(samplerState,float2(0.5,0.25),0).a,Texture2.SampleLevel(samplerState,float2(0.5,0.75),0).a);
+    float2 p3 = float2(Texture2.SampleLevel(samplerState,float2(0.7,0.25),0).a,Texture2.SampleLevel(samplerState,float2(0.7,0.75),0).a);
+    float2 p4 = float2(Texture2.SampleLevel(samplerState,float2(0.9,0.25),0).a,Texture2.SampleLevel(samplerState,float2(0.9,0.75),0).a);*/
+    float2 pf = lerp(lerp(p0,lerp(p1,p2,clamp(droit,0.,1.)),clamp(poigne,0.,1.)),lerp(p3,p4,clamp(droit,0.,1.)),clamp(genoux,0.,1.));
     float2 pf1 = pf-zoom;
     float2 pf2 = pf+zoom;
     float2 uz = map2(uv,pf1,pf2);
     uz = lerp(uv,uz+float2(XPose,0.),effetzoom);
     float2 fac = float2(1920./1200.,1.);
-    float2 gt = (pa0+pa1+pa2+pa3+pa4)/5.;
+    float2 gt = (p0+p1+p2+p3+p4)/5.;
 
-float a1 = step(0.5,sin(Time)*0.5+0.5);
+    float a1 = step(0.5,sin(Time)*0.5+0.5);
     float bq = clamp(blurQuality,0.2,2.);
       float Directions = 16.0*bq;
       float Quality = 4.0*bq;
       float tta = ov(Texture3.SampleLevel(samplerState, uv,0).x,lerp(sin(Texture3.SampleLevel(samplerState, uv,0).x*20.+Time)*0.5+0.5,0.5,0.9));
       float mt = (smoothstep(minMaskBlurImg,maxMaskBlurImg,tta)-.5)*10.*texBlur;
         float tra1 = (pow(distance(frac(uv.x*22.5),0.5),0.25)-0.5)*4.;
-        float tra2 = max(pow(1.-sdl(uz,lerp(pa0,pa1,a1),pa2),150.),pow(1.-sdl(uz,lerp(pa2,pa4,a1),pa3),150.));
+        float tra2 = max(pow(1.-sdl(uz,lerp(p0,p1,a1),p2),150.),pow(1.-sdl(uz,lerp(p2,p4,a1),p3),150.));
 
         float2 ug = uz+(tta-0.5)*0.0025;
         float trp = 16.;
@@ -220,7 +220,7 @@ float a1 = step(0.5,sin(Time)*0.5+0.5);
       float3 r2 = ov3(r,lerp(noi,0.5,noise));
       float3 r3 = min(r2,lerp(1.-lerp(longEx,1.,pow(transition,0.2)*1.1),1.,Texture2.SampleLevel(samplerState,uc,0).xyz));
       float3 r4 = lerp(r3,desat(r3),pow(transition,9.))*smoothstep(1.,0.9,transition)*pow(clamp(fade,0.,1.),lerp(2.,lerp(3.,40,step(0.69,uv.x)),step(0.22,uv.x)));
-      rf = float4(r4*(1.-po1*0.1),alpha);
+      rf = float4(r4*(1.-po1*0.1),1.);
       }
       return rf;
     }
