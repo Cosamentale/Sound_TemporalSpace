@@ -236,7 +236,7 @@ float bez( float2 pos, float2 A,  float2 B,  float2 C ){
     po4 += smoothstep(0.003*zp,0.,min(min(distance(ugf,pp10*fac),distance(ugf,pp11*fac)),
     distance(ugf,pp12*fac)));
       float pof = po1*step(0.1,ligne)+po2*step(0.25,ligne)+po3*step(0.5,ligne)+po4*step(0.75,ligne);
-      float2 Radius =lerp(10.*blur+mt,-10.*blur-mt,pof*2.)/re;
+      float2 Radius =lerp(10.*blur+mt,-10.*blur-mt,pof*0.5)/re;
       float c;
       uz += (noi.zw-0.5)/re;
       for( float d=0.0; d<Pi; d+=Pi/Directions)
@@ -256,7 +256,9 @@ float bez( float2 pos, float2 A,  float2 B,  float2 C ){
       float3 r2 = ov3(r,lerp(noi,0.5,noise));
       float3 r3 = min(r2,lerp(1.-lerp(longEx,1.,pow(transition,0.2)*1.1),1.,Texture2.SampleLevel(samplerState,uc,0).xyz));
       float3 r4 = lerp(r3,desat(r3),pow(transition,9.))*smoothstep(1.,0.9,transition)*pow(clamp(fade,0.,1.),lerp(2.,lerp(3.,40,step(0.69,uv.x)),step(0.22,uv.x)));
-      rf = float4(lerp(r4,1.-r4,pof*0.05)*(1.-pof*0.2),1.);
+      float4 rpo5  = pow(rd4(Time*trp+98.47),10.);
+      float pol = lerp(0.5,lerp(lerp(lerp(lerp(0.5,rpo5.x,po1),rpo5.y,po2),rpo5.z,po3),rpo5.w,po4),0.2);
+      rf = float4(ov3(float3(pol,pol,pol),r4),1.);
       }
       return rf;
     }
