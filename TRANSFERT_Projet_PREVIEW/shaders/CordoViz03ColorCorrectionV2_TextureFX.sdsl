@@ -221,7 +221,7 @@ float bez( float2 pos, float2 A,  float2 B,  float2 C ){
     float4 noi = sin(Texture1.SampleLevel(samplerState, frac(uv*re/1024.), 0)*tau*6.+Time*6.)*0.5+0.5;
     float2 uc = uv;
     float4 rf = float4(0.,0.,0.,0.);
-    float m = step(0.045,distance(0.22,uv.x))*step(0.045,distance(0.6985,uv.x));
+    float m = step(0.038,distance(0.228,uv.x))*step(0.0375,distance(0.7025,uv.x));
     if(m>0.5){
     float2 ptt = float2(0.0,0.02);
     float2 p0 = Texture0.SampleLevel(samplerState,  float2(0.825,0.01), 0)+ptt;
@@ -372,4 +372,5 @@ float bez( float2 pos, float2 A,  float2 B,  float2 C ){
       }
       return rf;
     }
+
 };

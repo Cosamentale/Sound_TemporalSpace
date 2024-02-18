@@ -3,7 +3,7 @@
   <PropertyGroup>
     <VLAssetBehavior>PointToOutput</VLAssetBehavior>
     <VLCleanBuildDirectory>True</VLCleanBuildDirectory>
-    <VLExportPath>C:\Users\celia\Desktop\BUILD\DivideBythree</VLExportPath>
+    <VLExportPath>C:\Users\celia\Desktop\BUILD\DivideBytwo</VLExportPath>
     <VLTargetOS>Windows</VLTargetOS>
     <OutputType>WinExe</OutputType>
     <PlatformTarget>AnyCPU</PlatformTarget>
