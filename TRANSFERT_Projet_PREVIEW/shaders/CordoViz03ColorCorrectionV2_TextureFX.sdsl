@@ -357,7 +357,7 @@ float bez( float2 pos, float2 A,  float2 B,  float2 C ){
               c +=Texture0.SampleLevel(samplerState, uz+md*Radius*i*1.9,0).z;
           }
       }
-      float2 uto = uc*res/64.-1.;
+      float2 uto = uc*res/64.-float2(1.,1.);
       float toto = max(min(smoothstep(0.4,0.6,pow(desat(Texture4.SampleLevel(samplerState,clamp(floor(uto*16.)/16.,0.,1.),0).x),0.75)),
       max(min(step(distance(uto.x,0.5),0.5),step(distance(uto.y,0.5),0.5)),0.85)),max(step(0.52,distance(uto.x,0.5)),step(0.52,distance(uto.y,0.5))));
       c /= Quality * Directions - (Directions-1.);

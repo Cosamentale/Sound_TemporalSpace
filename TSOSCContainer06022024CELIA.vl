@@ -1308,7 +1308,7 @@
                 <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
               </p:ValueBoxSettings>
             </Pad>
-            <Pad Id="VEbuZ2uodLDLErFjUYLLgW" Comment="" Bounds="1572,579,88,15" ShowValueBox="true" isIOBox="true" Value="169.254.230.175">
+            <Pad Id="VEbuZ2uodLDLErFjUYLLgW" Comment="" Bounds="1572,579,88,15" ShowValueBox="true" isIOBox="true" Value="169.254.28.52">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
