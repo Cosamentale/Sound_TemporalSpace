@@ -34,7 +34,7 @@ float saturationBright; float saturationDark; float gradiant1;float gradiant2;
 float maskMinSaturation; float maskMaxSaturation;
 float transition;
 float2 res;
-float ligne;float epaisseurLigne;
+float ligne;float ligneTime;float epaisseurLigne;
 //float alphatest;
 float3 InvLerp(float3 A, float3 B, float3 t){return (t - A) / (B - A);}
 float3 co(float3 InColor ,float3 s, float3 m, float3 h){
@@ -131,6 +131,87 @@ float bez( float2 pos, float2 A,  float2 B,  float2 C ){
         res = min( dot2(d+(c+b*t.x)*t.x),
                    dot2(d+(c+b*t.y)*t.y) );}
       return sqrt( res );}
+
+      float spo8(float2 v[8], float2 p)
+      {
+          float d = dot(p - v[0], p - v[0]);
+          float s = 1.0;
+          for (int i = 0, j = 7; i < 8; j = i, i++)
+          {
+              float2 e = v[j] - v[i];
+              float2 w = p - v[i];
+              float2 b = w - e * clamp(dot(w, e) / dot(e, e), 0.0, 1.0);
+              d = min(d, dot(b, b));
+              bool3 c = bool3(p.y >= v[i].y, p.y < v[j].y, e.x * w.y > e.y * w.x);
+              if (all(c) || all(!c))
+                  s *= -1.0;
+          }
+          return s * sqrt(d);
+      }
+      float spo5(float2 v[5], float2 p)
+      {
+          float d = dot(p - v[0], p - v[0]);
+          float s = 1.0;
+          for (int i = 0, j = 4; i < 5; j = i, i++)
+          {
+              float2 e = v[j] - v[i];
+              float2 w = p - v[i];
+              float2 b = w - e * clamp(dot(w, e) / dot(e, e), 0.0, 1.0);
+              d = min(d, dot(b, b));
+              bool3 c = bool3(p.y >= v[i].y, p.y < v[j].y, e.x * w.y > e.y * w.x);
+              if (all(c) || all(!c))
+                  s *= -1.0;
+          }
+          return s * sqrt(d);
+      }
+      float spo3(float2 v[3], float2 p)
+      {
+          float d = dot(p - v[0], p - v[0]);
+          float s = 1.0;
+          for (int i = 0, j = 2; i < 3; j = i, i++)
+          {
+              float2 e = v[j] - v[i];
+              float2 w = p - v[i];
+              float2 b = w - e * clamp(dot(w, e) / dot(e, e), 0.0, 1.0);
+              d = min(d, dot(b, b));
+              bool3 c = bool3(p.y >= v[i].y, p.y < v[j].y, e.x * w.y > e.y * w.x);
+              if (all(c) || all(!c))
+                  s *= -1.0;
+          }
+          return s * sqrt(d);
+      }
+      float spo4(float2 v[4], float2 p)
+      {
+          float d = dot(p - v[0], p - v[0]);
+          float s = 1.0;
+          for (int i = 0, j = 3; i < 4; j = i, i++)
+          {
+              float2 e = v[j] - v[i];
+              float2 w = p - v[i];
+              float2 b = w - e * clamp(dot(w, e) / dot(e, e), 0.0, 1.0);
+              d = min(d, dot(b, b));
+              bool3 c = bool3(p.y >= v[i].y, p.y < v[j].y, e.x * w.y > e.y * w.x);
+              if (all(c) || all(!c))
+                  s *= -1.0;
+          }
+          return s * sqrt(d);
+      }
+      float spo13(float2 v[13], float2 p)
+      {
+          float d = dot(p - v[0], p - v[0]);
+          float s = 1.0;
+          for (int i = 0, j = 12; i < 13; j = i, i++)
+          {
+              float2 e = v[j] - v[i];
+              float2 w = p - v[i];
+              float2 b = w - e * clamp(dot(w, e) / dot(e, e), 0.0, 1.0);
+              d = min(d, dot(b, b));
+              bool3 c = bool3(p.y >= v[i].y, p.y < v[j].y, e.x * w.y > e.y * w.x);
+              if (all(c) || all(!c))
+                  s *= -1.0;
+          }
+          return s * sqrt(d);
+      }
     stage override float4 Shading()
     {
     float2 uv = (streams.TexCoord.xy);
@@ -156,10 +237,10 @@ float bez( float2 pos, float2 A,  float2 B,  float2 C ){
     float2 p3s = Texture0.SampleLevel(samplerState, float2(0.925,0.01), 0)+ptt;
     float2 p6s = Texture0.SampleLevel(samplerState, float2(0.935,0.01), 0)+ptt;
     float2 p7s = Texture0.SampleLevel(samplerState, float2(0.945,0.01), 0)+ptt;
-    float2 p10s = Texture0.SampleLevel(samplerState, float2(0.955,0.01), 0)+ptt;
-    float2 p8s = Texture0.SampleLevel(samplerState, float2(0.965,0.01), 0)+ptt;
+    float2 p8s = Texture0.SampleLevel(samplerState, float2(0.955,0.01), 0)+ptt;
+    float2 p9s = Texture0.SampleLevel(samplerState, float2(0.965,0.01), 0)+ptt;
     float2 p11s = Texture0.SampleLevel(samplerState,float2(0.975,0.01), 0)+ptt;
-    float2 p9s = Texture0.SampleLevel(samplerState,float2(0.985,0.01), 0)+ptt;
+    float2 p10s = Texture0.SampleLevel(samplerState,float2(0.985,0.01), 0)+ptt;
     float2 p12s = Texture0.SampleLevel(samplerState,float2(0.995,0.01), 0)+ptt;
     float2 pf = lerp(lerp(p0,lerp(p1,p2,clamp(droit,0.,1.)),clamp(poigne,0.,1.)),lerp(p3,p4,clamp(droit,0.,1.)),clamp(genoux,0.,1.));
     float2 pf1 = pf-zoom;
@@ -177,12 +258,15 @@ float bez( float2 pos, float2 A,  float2 B,  float2 C ){
         float tra1 = (pow(distance(frac(uv.x*22.5),0.5),0.25)-0.5)*4.;
         float tra2 = max(pow(1.-sdl(uz,lerp(p0,p1,a1),p2),150.),pow(1.-sdl(uz,lerp(p2,p4,a1),p3),150.));
         float2 ug = uz;
-        float trp = 16.;
+        float trp = 8.;
         float4 rpo  = rd4(Time*trp);
         float4 rpo2 = rd4(Time*trp+78.45);
         float4 rpo3 = rd4(Time*trp+425.36);
         float2 ugf = ug*fac;
         float zp = lerp(0.5,3.,zoom)*epaisseurLigne;
+        float rpof = rd(Time*trp*floor(ligneTime));
+        float pof = 0.;
+        if(rpof<0.5){
         float2 pp1 = lerp(p0s,lerp(p1s,lerp(p2s,lerp(p3s,lerp(p4s,lerp(p5s,lerp(p6s,lerp(p7s,lerp(p8s,lerp(p9s,lerp(p10s,lerp(p11s,p12s,
         step(0.92,rpo.x)),step(0.85,rpo.x)),step(0.77,rpo.x)),step(0.69,rpo.x)),step(0.62,rpo.x)),step(0.53,rpo.x)),step(0.46,rpo.x)),step(0.38,rpo.x))
         ,step(0.3,rpo.x)),step(0.23,rpo.x)),step(0.15,rpo.x)),step(0.08,rpo.x));
@@ -219,24 +303,52 @@ float bez( float2 pos, float2 A,  float2 B,  float2 C ){
         float2 pp12 = lerp(p0s,lerp(p1s,lerp(p2s,lerp(p3s,lerp(p4s,lerp(p5s,lerp(p6s,lerp(p7s,lerp(p8s,lerp(p9s,lerp(p10s,lerp(p11s,p12s,
         step(0.92,rpo3.w)),step(0.85,rpo3.w)),step(0.77,rpo3.w)),step(0.69,rpo3.w)),step(0.62,rpo3.w)),step(0.53,rpo3.w)),step(0.46,rpo3.w)),step(0.38,rpo3.w))
         ,step(0.3,rpo3.w)),step(0.23,rpo3.w)),step(0.15,rpo3.w)),step(0.08,rpo3.w));
-      float po1 =smoothstep(0.0005*zp,0.,min(sdl(ug,pp1,pp2),sdl(ug,pp2,pp3)));
+        float po1 = 0.; float po2 = 0.;float po3 = 0.; float po4 =0.;
+        if(ligne>0.1){
+       po1 =smoothstep(0.0005*zp,0.,min(sdl(ug,pp1,pp2),sdl(ug,pp2,pp3)));
       po1 += smoothstep(0.001*zp,0.,bez(ug,pp1,pp2,pp3));
       po1 += smoothstep(0.003*zp,0.,min(min(distance(ugf,pp1*fac),distance(ugf,pp2*fac)),
-      distance(ugf,pp3*fac)));
-    float po2 =smoothstep(0.0005*zp,0.,min(sdl(ug,pp4,pp5),sdl(ug,pp5,pp6)));
+      distance(ugf,pp3*fac)));}
+      if (ligne>0.25){
+     po2 =smoothstep(0.0005*zp,0.,min(sdl(ug,pp4,pp5),sdl(ug,pp5,pp6)));
     po2 += smoothstep(0.001*zp,0.,bez(ug,pp4,pp5,pp6));
     po2 += smoothstep(0.003*zp,0.,min(min(distance(ugf,pp4*fac),distance(ugf,pp5*fac)),
-    distance(ugf,pp6*fac)));
-    float po3 =smoothstep(0.0005*zp,0.,min(sdl(ug,pp7,pp8),sdl(ug,pp8,pp9)));
+    distance(ugf,pp6*fac)));}
+    if(ligne>0.5){
+     po3 =smoothstep(0.0005*zp,0.,min(sdl(ug,pp7,pp8),sdl(ug,pp8,pp9)));
     po3 += smoothstep(0.001*zp,0.,bez(ug,pp7,pp8,pp9));
     po3 += smoothstep(0.003*zp,0.,min(min(distance(ugf,pp7*fac),distance(ugf,pp8*fac)),
-    distance(ugf,pp9*fac)));
-    float po4 =smoothstep(0.0005*zp,0.,min(sdl(ug,pp10,pp11),sdl(ug,pp11,pp12)));
+    distance(ugf,pp9*fac)));}
+    if(ligne>0.75){
+     po4 =smoothstep(0.0005*zp,0.,min(sdl(ug,pp10,pp11),sdl(ug,pp11,pp12)));
     po4 += smoothstep(0.001*zp,0.,bez(ug,pp10,pp11,pp12));
     po4 += smoothstep(0.003*zp,0.,min(min(distance(ugf,pp10*fac),distance(ugf,pp11*fac)),
-    distance(ugf,pp12*fac)));
-      float pof = po1*step(0.1,ligne)+po2*step(0.25,ligne)+po3*step(0.5,ligne)+po4*step(0.75,ligne);
-      float2 Radius =lerp(10.*blur+mt,-10.*blur-mt,pof*0.5)/re;
+    distance(ugf,pp12*fac)));}
+       pof = po1+po2+po3+po4;
+      }else{
+      float2 pr0s[8];pr0s[0] = p1s;pr0s[1] = p2s;pr0s[2] = p3s;pr0s[3] = p7s;pr0s[4] = p6s;pr0s[5] = p5s;pr0s[6] = p4s;pr0s[7] = p0s;
+      float2 pr2s[5];pr2s[0] = p0s;pr2s[1] = p3s;pr2s[2] = p10s;pr2s[3] = p12s;pr2s[4] = p6s;
+      float2 pr3s[13];pr3s[0] =p0s;pr3s[1] = p1s;pr3s[2] = p2s;pr3s[3] = p3s;pr3s[4] = p7s;pr3s[5] = p9s;pr3s[6] = p10s;pr3s[7] = p12s;
+      pr3s[8] =p11s;pr3s[9] = p8s;pr3s[10] = p6s;pr3s[11] = p5s;pr3s[12] = p4s;
+      float2 pr4s[3];pr4s[0] = p1s;pr4s[1] = p2s;pr4s[2] = p3s;
+      float2 pr5s[3];pr5s[0] = p4s;pr5s[1] = p5s;pr5s[2] = p6s;
+      float2 pr6s[3];pr6s[0] = p7s;pr6s[1] = p8s;pr6s[2] = p10s;
+      float2 pr7s[3];pr7s[0] = p8s;pr7s[1] = p11s;pr7s[2] = p12s;
+      float2 pr8s[4];pr8s[0] = p1s;pr8s[1] = p7s;pr8s[2] = p8s;pr8s[3] = p4s;
+      float2 pr9s[4];pr9s[0] = p1s;pr9s[1] = p10s;pr9s[2] = p12s;pr9s[3] = p4s;
+      float ps1 = 0.;float ps2 = 0;float ps3 = 0.;float ps4 =0.;float ps5 = 0.;float ps6 = 0.;float ps7= 0.;float ps8 = 0.; float ps9 = 0.;
+             if(rpo.x>1.-ligne){ps1 = smoothstep(0.001*zp,0.,length(spo8(pr0s,ug)));}
+             if(rpo.y>1.-ligne){ps2 = smoothstep(0.001*zp,0.,length(spo5(pr2s,ug)));}
+             if(rpo.z>1.-ligne){ps3 = smoothstep(0.001*zp,0.,length(spo13(pr3s,ug)));}
+             if(rpo.w>1.-ligne){ps4 = smoothstep(0.001*zp,0.,length(spo3(pr4s,ug)));}
+             if(rpo2.x>1.-ligne){ps5 = smoothstep(0.001*zp,0.,length(spo3(pr5s,ug)));}
+             if(rpo2.y>1.-ligne){ps6 = smoothstep(0.001*zp,0.,length(spo3(pr6s,ug)));}
+             if(rpo2.z>1.-ligne){ps7 = smoothstep(0.001*zp,0.,length(spo3(pr7s,ug)));}
+             if(rpo2.w>1.-ligne){ps8 = smoothstep(0.001*zp,0.,length(spo4(pr8s,ug)));}
+             if(rpo3.x>1.-ligne){ps9 = smoothstep(0.001*zp,0.,length(spo4(pr9s,ug)));}
+      pof = ps1+ps2+ps3+ps4+ps5+ps6+ps7+ps8+ps9;
+      }
+      float2 Radius =lerp(10.*blur+mt,-10.*blur-mt,pof*2.)/re;
       float c;
       uz += (noi.zw-0.5)/re;
       for( float d=0.0; d<Pi; d+=Pi/Directions)
@@ -251,14 +363,12 @@ float bez( float2 pos, float2 A,  float2 B,  float2 C ){
       c= clamp(c,0.,1.);
       float cm = smoothstep(maskMinSaturation,maskMaxSaturation,c);
       float3 c2 = lerp(float3(1.,1.,1.),clamp(3.*abs(1.-2.*frac(-c*variationHue+globalHue+lerp(gradiant1*uv.y,gradiant1*uv.x,cm)*gradiant2
-      +smoothstep(0.2,0.,distance(0.5,c))*0.25+float3(0.,-1./3.,1./3.)))-1.,0.,1.),lerp(saturationDark,saturationBright,cm))*lev(1.-pow(c,expo),level);
+      +smoothstep(0.2,0.,distance(0.5,c))*0.25+float3(0.,-1./3.,1./3.)))-1.,0.,1.),lerp(saturationDark,saturationBright,cm))*lev(1-pow(c,expo),level);
       float3 r = co(c2,sha,mid,hig);
       float3 r2 = ov3(r,lerp(noi,0.5,noise));
       float3 r3 = min(r2,lerp(1.-lerp(longEx,1.,pow(transition,0.2)*1.1),1.,Texture2.SampleLevel(samplerState,uc,0).xyz));
       float3 r4 = lerp(r3,desat(r3),pow(transition,9.))*smoothstep(1.,0.9,transition)*pow(clamp(fade,0.,1.),lerp(2.,lerp(3.,40,step(0.69,uv.x)),step(0.22,uv.x)));
-      float4 rpo5  = pow(rd4(Time*trp+98.47),10.);
-      float pol = lerp(0.5,lerp(lerp(lerp(lerp(0.5,rpo5.x,po1),rpo5.y,po2),rpo5.z,po3),rpo5.w,po4),0.2);
-      rf = float4(ov3(float3(pol,pol,pol),r4),1.);
+      rf = float4(lerp(r4,1.-r4,pof*0.05)*(1.-pof*0.2),1.);
       }
       return rf;
     }
