@@ -32,10 +32,8 @@ float blur; float blurQuality;float texBlur;
 float variationHue; float globalHue; float3 sha; float3 mid; float3 hig; float noise;
 float saturationBright; float saturationDark; float gradiant1;float gradiant2;
 float maskMinSaturation; float maskMaxSaturation;
-float transition;
 float2 res;
 float ligne;float ligneTime;float epaisseurLigne;
-//float alphatest;
 float3 InvLerp(float3 A, float3 B, float3 t){return (t - A) / (B - A);}
 float3 co(float3 InColor ,float3 s, float3 m, float3 h){
     float3 OffShadows  = InColor + s;
@@ -359,18 +357,21 @@ float bez( float2 pos, float2 A,  float2 B,  float2 C ){
               c +=Texture0.SampleLevel(samplerState, uz+md*Radius*i*1.9,0).z;
           }
       }
+      float2 uto = uc*res/64.-1.;
+      float toto = max(min(smoothstep(0.4,0.6,pow(desat(Texture4.SampleLevel(samplerState,clamp(floor(uto*16.)/16.,0.,1.),0).x),0.75)),
+      max(min(step(distance(uto.x,0.5),0.5),step(distance(uto.y,0.5),0.5)),0.85)),max(step(0.52,distance(uto.x,0.5)),step(0.52,distance(uto.y,0.5))));
       c /= Quality * Directions - (Directions-1.);
-      c= clamp(c,0.,1.);
+      c = clamp(c,0.,1.);
+      c = max(c,(1.-toto));
       float cm = smoothstep(maskMinSaturation,maskMaxSaturation,c);
       float3 c2 = lerp(float3(1.,1.,1.),clamp(3.*abs(1.-2.*frac(-c*variationHue+globalHue+lerp(gradiant1*uv.y,gradiant1*uv.x,cm)*gradiant2
       +smoothstep(0.2,0.,distance(0.5,c))*0.25+float3(0.,-1./3.,1./3.)))-1.,0.,1.),lerp(saturationDark,saturationBright,cm))*lev(pow(c,expo),level);
       float3 r = co(c2,sha,mid,hig);
       float3 r2 = ov3(r,lerp(noi,0.5,noise));
-      float3 r3 = min(r2,lerp(1.-lerp(longEx,1.,pow(transition,0.2)*1.1),1.,Texture2.SampleLevel(samplerState,uc,0).xyz));
-      float3 r4 = lerp(r3,desat(r3),pow(transition,9.))*smoothstep(1.,0.9,transition)*pow(clamp(fade,0.,1.),lerp(2.,lerp(3.,40,step(0.69,uv.x)),step(0.22,uv.x)));
-      rf = float4(lerp(r4,1.-r4,pof*0.05)*(1.-pof*0.2),1.);
+      float3 r3 = min(r2,lerp(1.-longEx,1.,Texture2.SampleLevel(samplerState,uc,0).xyz));
+      float3 r4 =lerp(r3,1.-r3,pof*0.05)*(1.-pof*0.2)*pow(clamp(fade,0.,1.),lerp(2.,lerp(3.,40,step(0.69,uv.x)),step(0.22,uv.x)));
+      rf = float4(r4,1.);
       }
       return rf;
     }
-
 };
