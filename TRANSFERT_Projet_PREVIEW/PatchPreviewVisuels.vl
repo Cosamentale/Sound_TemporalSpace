@@ -53,7 +53,7 @@
             <Pin Id="QcYRwhoBzbhLuoGulomxLy" Name="Input 4" Kind="InputPin" />
             <Pin Id="VNkSP1xmHl4NbwRjXlQXsT" Name="Input 5" Kind="InputPin" />
             <Pin Id="CkPsblheIYWN9SCX4cAmQZ" Name="Sampler State" Kind="InputPin" />
-            <Pin Id="AqsBwqheuh4MKuA1IfwxUD" Name="Fade" Kind="InputPin" DefaultValue="1.93" />
+            <Pin Id="AqsBwqheuh4MKuA1IfwxUD" Name="Fade" Kind="InputPin" DefaultValue="0.976" />
             <Pin Id="V2zWLWSp6nRPUw3eJAhwzc" Name="Long Ex" Kind="InputPin" DefaultValue="0.44" />
             <Pin Id="NYVQAuVofjEOqVKt1Q4HFM" Name="Effetzoom" Kind="InputPin" DefaultValue="1" />
             <Pin Id="AWuRqWjfGsKLvMj1EQxSZZ" Name="Zoom" Kind="InputPin" />
@@ -79,7 +79,8 @@
             <Pin Id="MWwqKJ5o3PhOA9mRqpH4IW" Name="Gradiant 2" Kind="InputPin" />
             <Pin Id="TURwAb8rP11MjqPtCPCGm2" Name="Mask Min Saturation" Kind="InputPin" />
             <Pin Id="DQAajv4JAAtLREcmbYjo1i" Name="Mask Max Saturation" Kind="InputPin" />
-            <Pin Id="JuNeqlv3iPLOBY4h2fCjgn" Name="Transition" Kind="InputPin" DefaultValue="0" />
+            <Pin Id="S8mvwBLhI6WOz1AadmgGaJ" Name="Mask Minhue" Kind="InputPin" />
+            <Pin Id="Ob1Vl8NvYmhOJwKNCgB0it" Name="Mask Maxhue" Kind="InputPin" />
             <Pin Id="CBPbTWlmEnpPnClOfyqJ3f" Name="Res" Kind="InputPin" DefaultValue="1920, 1200" />
             <Pin Id="G7JU7IZ7b3WQZ6Bt180lSJ" Name="Ligne" Kind="InputPin" DefaultValue="0.32" />
             <Pin Id="BzAHTtYbseTPONNT3KTmYE" Name="Ligne Time" Kind="InputPin" DefaultValue="5.12" />
@@ -88,6 +89,7 @@
             <Pin Id="GVVpVKRrSb8N1xuLnoHJxL" Name="Output Size" Kind="InputPin" DefaultValue="1920, 1200" />
             <Pin Id="NDF7zYAKEFXQH20JrVdTrG" Name="Enabled" Kind="InputPin" />
             <Pin Id="OKW4C8SzKnnLe04zY2aPuA" Name="Output" Kind="OutputPin" />
+            <Pin Id="JuNeqlv3iPLOBY4h2fCjgn" Name="Transition" Kind="InputPin" DefaultValue="0" />
             <Pin Id="Lj87fLQdVtRNQDdJp0XhjU" Name="Alphatest" Kind="InputPin" DefaultValue="0" />
             <Pin Id="I5gYrzI7CqJODTrOXKYE8Y" Name="Darkness Off The Background" Kind="InputPin" DefaultValue="0.61" />
             <Pin Id="PPYlR9oJzEoODRZXJRylAx" Name="Saturation Off The Background" Kind="InputPin" DefaultValue="0" />
@@ -120,12 +122,12 @@
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="H35mwKPbVyGOFmh4jPZwnL" Comment="Zoom" Bounds="84,419,35,15" ShowValueBox="true" isIOBox="true" Value="0.41">
+          <Pad Id="H35mwKPbVyGOFmh4jPZwnL" Comment="Zoom" Bounds="84,419,35,15" ShowValueBox="true" isIOBox="true" Value="0.2">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="M0MPqem00e7L7TOVHVOunF" Comment="Expo" Bounds="713,869,39,18" ShowValueBox="true" isIOBox="true" Value="0.57">
+          <Pad Id="M0MPqem00e7L7TOVHVOunF" Comment="Expo" Bounds="713,869,39,18" ShowValueBox="true" isIOBox="true" Value="0.55">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
@@ -316,12 +318,12 @@
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="B7RuoRza6RBOpenp4wnl7T" Comment="Gradiant 1" Bounds="900,612,36,15" ShowValueBox="true" isIOBox="true" Value="-0.21">
+          <Pad Id="B7RuoRza6RBOpenp4wnl7T" Comment="Gradiant 1" Bounds="900,612,36,15" ShowValueBox="true" isIOBox="true" Value="-0.06">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="RqGxRV1shoDPFgFXAeLkE6" Comment="Gradiant 2" Bounds="898,633,36,15" ShowValueBox="true" isIOBox="true" Value="1.03">
+          <Pad Id="RqGxRV1shoDPFgFXAeLkE6" Comment="Gradiant 2" Bounds="898,633,36,15" ShowValueBox="true" isIOBox="true" Value="4.68">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
@@ -336,7 +338,7 @@
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="AfDPDqAfMAJPq9AV3EjXUd" Comment="Level" Bounds="716,799,35,57" ShowValueBox="true" isIOBox="true" Value="-0.09, 0.32, 0.54, 0.12">
+          <Pad Id="AfDPDqAfMAJPq9AV3EjXUd" Comment="Level" Bounds="716,799,35,57" ShowValueBox="true" isIOBox="true" Value="-0.04, 0.35, 0.56, 0.3">
             <p:TypeAnnotation LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Vector4" />
             </p:TypeAnnotation>
@@ -364,12 +366,12 @@
           <ControlPoint Id="PlVl7UaDhaqQL0DaHSqKli" Bounds="474,532" />
           <ControlPoint Id="GT7igBHdVKgOswTbTuUUC6" Bounds="468,613" />
           <ControlPoint Id="CNAPYXbuv0UN0BJkurvHwR" Bounds="469,592" />
-          <Node Bounds="-156,842,205,19" Id="O2gemKe7a8QLVxedQMKkyz">
+          <Node Bounds="-144,890,205,19" Id="O2gemKe7a8QLVxedQMKkyz">
             <p:NodeReference LastCategoryFullName="Stride.Textures" LastDependency="VL.Stride.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="TextureWindow" />
             </p:NodeReference>
-            <Pin Id="DXYllBihWE6PKnJEeK4bhk" Name="Bounds" Kind="InputPin" DefaultValue="0, 0, 1536, 864" />
+            <Pin Id="DXYllBihWE6PKnJEeK4bhk" Name="Bounds" Kind="InputPin" DefaultValue="831.2, 32.8, 700, 415.2" />
             <Pin Id="FdVaXZJ4nRXQDnzc7qjeex" Name="Input" Kind="InputPin" />
             <Pin Id="G7QngqC1TiHMVPzH6DP2VR" Name="Title" Kind="InputPin" />
             <Pin Id="Awf7ExG9DitOywMQ3r9dMu" Name="Clear Color" Kind="InputPin" />
