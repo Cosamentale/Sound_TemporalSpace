@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PROTO_V2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1718361e70e438ae7ceb2a8f4923eb7564ff5163")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+023015728bef75f2add28b514a6c6adfdc930c2b")]
 [assembly: System.Reflection.AssemblyProductAttribute("PROTO_V2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PROTO_V2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
