@@ -3,7 +3,7 @@
   <PropertyGroup>
     <VLAssetBehavior>PointToOutput</VLAssetBehavior>
     <VLCleanBuildDirectory>True</VLCleanBuildDirectory>
-    <VLExportPath>E:\BUILD</VLExportPath>
+    <VLExportPath>$(MsBuildThisFileDirectory)..\..\Build4V</VLExportPath>
     <VLTargetOS>Windows</VLTargetOS>
     <OutputType>WinExe</OutputType>
     <PlatformTarget>AnyCPU</PlatformTarget>
