@@ -1,0 +1,40 @@
+[TextureSource]
+[Category("Source")]
+[Summary("")]
+[WantsMips("Texture0")]
+shader TextureGeneration_TextureFX : TextureFX
+{
+SamplerState samplerState
+{
+Filter = MIN_MAG_MIP_POINT;
+};
+float _time;
+float3 _pos0;
+float3 _pos1;
+float3 _pos2;
+float3 _pos3;
+float3 _pos4;
+float3 _pos5;
+float3 _pos6;
+float3 _pos7;
+float3 _pos8;
+float3 _pos9;
+float3 _pos10;
+float3 _pos11;
+float mod(float x, float y){return x - y * floor(x / y);}
+    stage override float4 Shading()
+    {
+    float2 uv = streams.TexCoord.xy;
+    float2 id = uv*64.;
+	float itn = floor(64. / 12.);
+	float4 t1 = float4(Texture0.SampleLevel(samplerState, uv, 0).xyz,1.);
+  float m1 = step(frac(_time / 64.), uv.x);
+	float m2 = max(step(itn*frac((_time-(64.-1.)) / (64.* itn)), mod(uv.y*64., itn)), step(frac(_time/itn/64.),1. / itn-1./64.));
+
+	float3 pp = lerp(lerp(lerp(lerp(lerp(lerp(lerp(lerp(lerp(lerp(lerp(_pos0, _pos1, step(itn, id.y)), _pos2, step(2.*itn, id.y)), _pos3, step(3.*itn, id.y)), _pos4, step(4.*itn, id.y)),_pos5, step(5.*itn, id.y)),
+	_pos6, step(6.*itn, id.y)), _pos7, step(7.*itn, id.y)), _pos8, step(8.*itn, id.y)), _pos9, step(9.*itn, id.y)), _pos10, step(10.*itn, id.y)), _pos11, step(11.*itn, id.y));
+	float4 v1 = lerp(t1,float4(pp*float3(0.1,0.1,1.),1.),m2*m1);
+
+        return v1;
+    }
+};

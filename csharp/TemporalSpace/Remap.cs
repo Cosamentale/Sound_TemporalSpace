@@ -5,8 +5,8 @@ namespace TemporalSpace;
 
 public static class Remap
 {
-    public static float RemapValue(float value, float a1, float a2, float b1, float b2)
+    public static float RemapValue(float value, float min1, float max1, float min2, float max2)
     {
-        return b1 + (value - a1) * (b2 - b1) / (a2 - a1);
+        return min2 + (value - min1) * (max2 - min1) / (max1 - min1);
     }
 }

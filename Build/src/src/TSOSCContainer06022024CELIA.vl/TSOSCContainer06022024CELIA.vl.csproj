@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+  <Import Project="..\..\..\..\TSOSCContainer06022024CELIA.vl.props" Condition="Exists('..\..\..\..\TSOSCContainer06022024CELIA.vl.props')" />
+  <ItemGroup />
+  <ItemGroup>
+    <PackageReference Include="SkiaSharp" />
+    <PackageReference Include="SkiaSharp.Svg" />
+    <PackageReference Include="Stride.Core.Mathematics" />
+    <PackageReference Include="System.Interactive" />
+    <PackageReference Include="System.Management" />
+    <PackageReference Include="System.Reactive" />
+    <PackageReference Include="VL.CoreLib" />
+    <PackageReference Include="VL.IO.OSC" />
+    <PackageReference Include="VL.Skia" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="VL.AppServices" HintPath="D:\vvvv_gamma_5.2\VL.AppServices.dll" />
+    <Reference Include="VL.CoreLib.vl" HintPath="D:\vvvv_gamma_5.2\package-cache\VL.CoreLib.2023.5.2\VL.CoreLib.vl.dll" />
+    <Reference Include="VL.CoreLib.Windows" HintPath="D:\vvvv_gamma_5.2\packs\dependencies\VL.CoreLib.Windows.dll" />
+    <Reference Include="VL.CoreLib.Windows.vl" HintPath="D:\vvvv_gamma_5.2\package-cache\VL.CoreLib.Windows.2023.5.2\VL.CoreLib.Windows.vl.dll" />
+    <Reference Include="VL.IO.OSC.vl" HintPath="D:\vvvv_gamma_5.2\package-cache\VL.IO.OSC.1.0.19\VL.IO.OSC.vl.dll" />
+    <Reference Include="VL.Skia.vl" HintPath="D:\vvvv_gamma_5.2\package-cache\VL.Skia.2023.5.2\VL.Skia.vl.dll" />
+  </ItemGroup>
+  <Target Name="AddAliases" BeforeTargets="ResolveReferences">
+    <ItemGroup>
+      <ReferencePath Condition="'%(FileName)'=='VL.AppServices'" Aliases="e2" />
+      <ReferencePath Condition="'%(FileName)'=='VL.CoreLib.vl'" Aliases="e10" />
+      <ReferencePath Condition="'%(FileName)'=='VL.CoreLib'" Aliases="e11" />
+      <ReferencePath Condition="'%(FileName)'=='VL.Core'" Aliases="e1" />
+      <ReferencePath Condition="'%(FileName)'=='Stride.Core.Mathematics'" Aliases="e3" />
+      <ReferencePath Condition="'%(FileName)'=='VL.IO.OSC.vl'" Aliases="e14" />
+      <ReferencePath Condition="'%(FileName)'=='VL.IO.OSC'" Aliases="e15" />
+      <ReferencePath Condition="'%(FileName)'=='VL.Skia.vl'" Aliases="e16" />
+      <ReferencePath Condition="'%(FileName)'=='VL.Skia'" Aliases="e17" />
+      <ReferencePath Condition="'%(FileName)'=='VL.Core.Skia'" Aliases="e18" />
+      <ReferencePath Condition="'%(FileName)'=='VL.Core.Skia.Windows'" Aliases="e21" />
+      <ReferencePath Condition="'%(FileName)'=='VL.CoreLib.Windows.vl'" Aliases="e19" />
+      <ReferencePath Condition="'%(FileName)'=='VL.CoreLib.Windows'" Aliases="e20" />
+    </ItemGroup>
+  </Target>
+  <Import Project="..\..\..\..\TSOSCContainer06022024CELIA.vl.targets" Condition="Exists('..\..\..\..\TSOSCContainer06022024CELIA.vl.targets')" />
+</Project>

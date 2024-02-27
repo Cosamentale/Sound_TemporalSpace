@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <OutputType>WinExe</OutputType>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishDir>..\..\RecordReplayer_V11</PublishDir>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <Platforms>AnyCPU;x64;x86</Platforms>
+    <ApplicationManifest>App.manifest</ApplicationManifest>
+    <ApplicationIcon>D:\vvvv_gamma_5.2\Resources\icons\vvvv_MAINICON.ico</ApplicationIcon>
+  </PropertyGroup>
+  <Import Project="..\..\..\..\RecordReplayer_V11.props" Condition="Exists('..\..\..\..\RecordReplayer_V11.props')" />
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\csharp\PROTO_V2\PROTO_V2.csproj" />
+    <ProjectReference Include="..\..\..\..\csharp\TemporalSpace\TemporalSpace.csproj" />
+    <ProjectReference Include="..\TSOSCContainer06022024CELIA.vl\TSOSCContainer06022024CELIA.vl.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="ExCSS-Core" />
+    <PackageReference Include="SharpDX.MediaFoundation">
+      <ExcludeAssets>all</ExcludeAssets>
+      <GeneratePathProperty>true</GeneratePathProperty>
+    </PackageReference>
+    <PackageReference Include="VL.Audio" />
+    <PackageReference Include="VL.CoreLib.Windows" />
+    <PackageReference Include="VL.Elementa" />
+    <PackageReference Include="VL.ImGui.Skia" />
+    <PackageReference Include="VL.Stride" />
+    <PackageReference Include="VL.Stride.Runtime" />
+    <PackageReference Include="VL.Stride.Windows" />
+    <PackageReference Include="VL.Video.MediaFoundation" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="$(PkgSharpDX_MediaFoundation)\lib\net45\SharpDX.MediaFoundation.dll">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Gma.System.MouseKeyHook" HintPath="D:\vvvv_gamma_5.2\packs\dependencies\Gma.System.MouseKeyHook.dll" />
+    <Reference Include="Mastonet" HintPath="D:\vvvv_gamma_5.2\packs\dependencies\Mastonet.dll" />
+    <Reference Include="SharpClipboard" HintPath="D:\vvvv_gamma_5.2\packs\dependencies\SharpClipboard.dll" />
+    <Reference Include="SharpDX" HintPath="D:\vvvv_gamma_5.2\packs\dependencies\SharpDX.dll" />
+    <Reference Include="SimMetricsCore" HintPath="D:\vvvv_gamma_5.2\packs\dependencies\SimMetricsCore.dll" />
+    <Reference Include="Stride.Games" HintPath="D:\vvvv_gamma_5.2\packs\dependencies\Stride.Games.dll" />
+    <Reference Include="Stride.Graphics" HintPath="D:\vvvv_gamma_5.2\packs\dependencies\Stride.Graphics.dll" />
+    <Reference Include="Stride.Input" HintPath="D:\vvvv_gamma_5.2\packs\dependencies\Stride.Input.dll" />
+    <Reference Include="Stride.Video" HintPath="D:\vvvv_gamma_5.2\packs\dependencies\Stride.Video.dll" />
+    <Reference Include="Stride.VirtualReality" HintPath="D:\vvvv_gamma_5.2\packs\dependencies\Stride.VirtualReality.dll" />
+    <Reference Include="VL.App.WindowsForms" HintPath="D:\vvvv_gamma_5.2\VL.App.WindowsForms.dll" />
+    <Reference Include="VL.AppServices" HintPath="D:\vvvv_gamma_5.2\VL.AppServices.dll" />
+    <Reference Include="VL.Audio.vl" HintPath="D:\vvvv_gamma_5.2\package-cache\VL.Audio.1.2.2\VL.Audio.vl.dll" />
+    <Reference Include="VL.CoreLib.vl" HintPath="D:\vvvv_gamma_5.2\package-cache\VL.CoreLib.2023.5.2\VL.CoreLib.vl.dll" />
+    <Reference Include="VL.CoreLib.Windows.vl" HintPath="D:\vvvv_gamma_5.2\package-cache\VL.CoreLib.Windows.2023.5.2\VL.CoreLib.Windows.vl.dll" />
+    <Reference Include="VL.EditingFramework.vl" HintPath="D:\vvvv_gamma_5.2\package-cache\VL.EditingFramework.2023.5.2\VL.EditingFramework.vl.dll" />
+    <Reference Include="VL.Elementa.vl" HintPath="C:\Users\celia\AppData\Local\Temp\vvvv-package-cache\2023.5.2\VL.Elementa.5.1.3\VL.Elementa.vl.dll" />
+    <Reference Include="VL.FuzzySearch.vl" HintPath="D:\vvvv_gamma_5.2\package-cache\VL.FuzzySearch.2023.5.2\VL.FuzzySearch.vl.dll" />
+    <Reference Include="VL.HDE.vl" HintPath="D:\vvvv_gamma_5.2\package-cache\VL.HDE.2023.5.2\VL.HDE.vl.dll" />
+    <Reference Include="VL.ImGui.Skia.vl" HintPath="D:\vvvv_gamma_5.2\package-cache\VL.ImGui.Skia.2023.5.2\VL.ImGui.Skia.vl.dll" />
+    <Reference Include="VL.ImGui.vl" HintPath="D:\vvvv_gamma_5.2\package-cache\VL.ImGui.2023.5.2\VL.ImGui.vl.dll" />
+    <Reference Include="VL.IO.OSC.vl" HintPath="D:\vvvv_gamma_5.2\package-cache\VL.IO.OSC.1.0.19\VL.IO.OSC.vl.dll" />
+    <Reference Include="VL.Lang" HintPath="D:\vvvv_gamma_5.2\VL.Lang.dll" />
+    <Reference Include="VL.Skia.vl" HintPath="D:\vvvv_gamma_5.2\package-cache\VL.Skia.2023.5.2\VL.Skia.vl.dll" />
+    <Reference Include="VL.Stride.Runtime.vl" HintPath="D:\vvvv_gamma_5.2\package-cache\VL.Stride.Runtime.2023.5.2\VL.Stride.Runtime.vl.dll" />
+    <Reference Include="VL.Stride.vl" HintPath="D:\vvvv_gamma_5.2\package-cache\VL.Stride.2023.5.2\VL.Stride.vl.dll" />
+    <Reference Include="VL.Stride.Windows.vl" HintPath="D:\vvvv_gamma_5.2\package-cache\VL.Stride.Windows.2023.5.2\VL.Stride.Windows.vl.dll" />
+    <Reference Include="VL.UI.Core" HintPath="D:\vvvv_gamma_5.2\VL.UI.Core.dll" />
+    <Reference Include="VL.UI.PatchEditor.Utils" HintPath="D:\vvvv_gamma_5.2\VL.UI.PatchEditor.Utils.dll" />
+    <Reference Include="VL.Video.MediaFoundation.vl" HintPath="D:\vvvv_gamma_5.2\package-cache\VL.Video.MediaFoundation.2023.5.2\VL.Video.MediaFoundation.vl.dll" />
+  </ItemGroup>
+  <Target Name="AddAliases" BeforeTargets="ResolveReferences">
+    <ItemGroup>
+      <ReferencePath Condition="'%(FileName)'=='VL.AppServices'" Aliases="e2" />
+      <ReferencePath Condition="'%(FileName)'=='VL.CoreLib.vl'" Aliases="e10" />
+      <ReferencePath Condition="'%(FileName)'=='VL.CoreLib'" Aliases="e11" />
+      <ReferencePath Condition="'%(FileName)'=='VL.Core'" Aliases="e1" />
+      <ReferencePath Condition="'%(FileName)'=='Stride.Core.Mathematics'" Aliases="e3" />
+      <ReferencePath Condition="'%(FileName)'=='VL.Video.MediaFoundation.vl'" Aliases="e22" />
+      <ReferencePath Condition="'%(FileName)'=='VL.Video.MediaFoundation'" Aliases="e23" />
+      <ReferencePath Condition="'%(FileName)'=='VL.Stride.Windows.vl'" Aliases="e24" />
+      <ReferencePath Condition="'%(FileName)'=='Stride.Graphics'" Aliases="e26" />
+      <ReferencePath Condition="'%(FileName)'=='VL.Stride.Windows'" Aliases="e63" />
+      <ReferencePath Condition="'%(FileName)'=='VL.Stride.Runtime.vl'" Aliases="e38" />
+      <ReferencePath Condition="'%(FileName)'=='VL.Stride.Runtime'" Aliases="e39" />
+      <ReferencePath Condition="'%(FileName)'=='Stride.Games'" Aliases="e41" />
+      <ReferencePath Condition="'%(FileName)'=='Stride.Engine'" Aliases="e42" />
+      <ReferencePath Condition="'%(FileName)'=='Stride.Core'" Aliases="e4" />
+      <ReferencePath Condition="'%(FileName)'=='Stride.Physics'" Aliases="e48" />
+      <ReferencePath Condition="'%(FileName)'=='Stride.VirtualReality'" Aliases="e43" />
+      <ReferencePath Condition="'%(FileName)'=='VL.EditingFramework.vl'" Aliases="e46" />
+      <ReferencePath Condition="'%(FileName)'=='VL.Skia.vl'" Aliases="e16" />
+      <ReferencePath Condition="'%(FileName)'=='VL.Skia'" Aliases="e17" />
+      <ReferencePath Condition="'%(FileName)'=='VL.Core.Skia'" Aliases="e18" />
+      <ReferencePath Condition="'%(FileName)'=='VL.Core.Skia.Windows'" Aliases="e21" />
+      <ReferencePath Condition="'%(FileName)'=='VL.CoreLib.Windows.vl'" Aliases="e19" />
+      <ReferencePath Condition="'%(FileName)'=='VL.CoreLib.Windows'" Aliases="e20" />
+      <ReferencePath Condition="'%(FileName)'=='Stride.Rendering'" Aliases="e40" />
+      <ReferencePath Condition="'%(FileName)'=='Stride'" Aliases="e27" />
+      <ReferencePath Condition="'%(FileName)'=='VL.UI.Core'" Aliases="e93" />
+      <ReferencePath Condition="'%(FileName)'=='Stride.Core.Serialization'" Aliases="e29" />
+      <ReferencePath Condition="'%(FileName)'=='Stride.Input'" Aliases="e44" />
+      <ReferencePath Condition="'%(FileName)'=='Stride.Shaders'" Aliases="e28" />
+      <ReferencePath Condition="'%(FileName)'=='vvvv.geometry3Sharp'" Aliases="e45" />
+      <ReferencePath Condition="'%(FileName)'=='VL.Stride'" Aliases="e37" />
+      <ReferencePath Condition="'%(FileName)'=='Stride.Assets'" Aliases="e68" />
+      <ReferencePath Condition="'%(FileName)'=='Stride.Core.Assets'" Aliases="e66" />
+      <ReferencePath Condition="'%(FileName)'=='Stride.Core.BuildEngine.Common'" Aliases="e65" />
+      <ReferencePath Condition="'%(FileName)'=='Stride.Assets.Models'" Aliases="e70" />
+      <ReferencePath Condition="'%(FileName)'=='Stride.Core.Design'" Aliases="e67" />
+      <ReferencePath Condition="'%(FileName)'=='Stride.Video'" Aliases="e60" />
+      <ReferencePath Condition="'%(FileName)'=='VL.Stride.vl'" Aliases="e25" />
+      <ReferencePath Condition="'%(FileName)'=='VL.ImGui.Skia.vl'" Aliases="e79" />
+      <ReferencePath Condition="'%(FileName)'=='VL.ImGui.Skia'" Aliases="e80" />
+      <ReferencePath Condition="'%(FileName)'=='VL.ImGui.vl'" Aliases="e81" />
+      <ReferencePath Condition="'%(FileName)'=='VL.ImGui'" Aliases="e82" />
+      <ReferencePath Condition="'%(FileName)'=='ImGui.NET'" Aliases="e83" />
+      <ReferencePath Condition="'%(FileName)'=='VL.IO.OSC.vl'" Aliases="e14" />
+      <ReferencePath Condition="'%(FileName)'=='VL.IO.OSC'" Aliases="e15" />
+      <ReferencePath Condition="'%(FileName)'=='VL.Elementa.vl'" Aliases="e84" />
+      <ReferencePath Condition="'%(FileName)'=='Elementa'" Aliases="e85" />
+      <ReferencePath Condition="'%(FileName)'=='ExCSS'" Aliases="e86" />
+      <ReferencePath Condition="'%(FileName)'=='VL.Audio.vl'" Aliases="e87" />
+      <ReferencePath Condition="'%(FileName)'=='VL.Audio'" Aliases="e88" />
+      <ReferencePath Condition="'%(FileName)'=='VL.HDE.vl'" Aliases="e89" />
+      <ReferencePath Condition="'%(FileName)'=='VL.UI.PatchEditor.Utils'" Aliases="e91" />
+      <ReferencePath Condition="'%(FileName)'=='VL.Lang'" Aliases="e92" />
+      <ReferencePath Condition="'%(FileName)'=='Gma.System.MouseKeyHook'" Aliases="e96" />
+      <ReferencePath Condition="'%(FileName)'=='SharpClipboard'" Aliases="e97" />
+      <ReferencePath Condition="'%(FileName)'=='VL.FuzzySearch.vl'" Aliases="e94" />
+      <ReferencePath Condition="'%(FileName)'=='SimMetricsCore'" Aliases="e95" />
+      <ReferencePath Condition="'%(FileName)'=='Mastonet'" Aliases="e90" />
+      <ReferencePath Condition="'%(FileName)'=='VL.App.WindowsForms'" Aliases="e111" />
+      <ReferencePath Condition="'%(FileName)'=='PROTO_V2'" Aliases="e9" />
+      <ReferencePath Condition="'%(FileName)'=='TemporalSpace'" Aliases="e8" />
+    </ItemGroup>
+  </Target>
+  <Import Project="..\..\..\..\RecordReplayer_V11.targets" Condition="Exists('..\..\..\..\RecordReplayer_V11.targets')" />
+</Project>
