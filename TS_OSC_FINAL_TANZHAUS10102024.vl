@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="TbAJdQHFxCEN1wF5yH16uf" LanguageVersion="2023.5.2" Version="0.128">
-  <NugetDependency Id="MhNZruOHnCLOHyIQZg7Ijv" Location="VL.CoreLib" Version="2023.5.2" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="TbAJdQHFxCEN1wF5yH16uf" LanguageVersion="2024.6.5" Version="0.128">
+  <NugetDependency Id="MhNZruOHnCLOHyIQZg7Ijv" Location="VL.CoreLib" Version="2024.6.5" />
   <Patch Id="MCT7sffQiXiPasDsUeuSeO">
     <Canvas Id="DoibdPrLgzvMJInjLKprJS" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -19,6 +19,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="OSCReceiver" />
               </p:NodeReference>
+              <Pin Id="FCZM4tsGPdTLn128R6q7m9" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="ATCrjRG58THPlorFRiPaop" Name="Input" Kind="InputPin" />
               <Pin Id="VUQINEJSY6hOZvK7KluNMC" Name="Address" Kind="InputPin" />
               <Pin Id="BWH6xirNL9RQKx5NbtbUEp" Name="Learn" Kind="InputPin" />
@@ -32,6 +33,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="OSCReceiver" />
               </p:NodeReference>
+              <Pin Id="CcE2Ja8IuxtOdMMPb06fiK" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="CIRtPmYQC4pLDAthfwVy6n" Name="Input" Kind="InputPin" />
               <Pin Id="RzcFRlrxm7YNFQPhIet469" Name="Address" Kind="InputPin" />
               <Pin Id="Qdf60l3ybKxLkjNci5yzJW" Name="Learn" Kind="InputPin" />
@@ -45,6 +47,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="OSCReceiver" />
               </p:NodeReference>
+              <Pin Id="MWa9vEaMrfTLISFCoD3mXf" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="PQjbwdzUYGFLqAiWSEPOhF" Name="Input" Kind="InputPin" />
               <Pin Id="DLD56mZzEEILnhlNKlGJqU" Name="Address" Kind="InputPin" />
               <Pin Id="NdVTgdz30M9NLUQtMomipF" Name="Learn" Kind="InputPin" />
@@ -241,6 +244,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="FrameDelay" />
               </p:NodeReference>
+              <Pin Id="FDt4TobllKDN5re32S9anb" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="SfFn2HImDLhLt0ib6QSpYb" Name="Initial Value" Kind="InputPin" />
               <Pin Id="Ve25RmxCi0qP9BbCAnr5bN" Name="Value" Kind="InputPin" />
               <Pin Id="NvzTluiL5KwNnrxGQiC7BE" Name="Value" Kind="OutputPin" />
@@ -383,6 +387,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="OneEuroFilter" />
               </p:NodeReference>
+              <Pin Id="EasYZNRnuIoMJ3sjVuF12o" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="BKDe8HxCsOZLpkRzbMfqxC" Name="Clock" Kind="InputPin" />
               <Pin Id="Is1V7a7HfV8LT9NzMKy4Dc" Name="New Clock" Kind="InputPin" />
               <Pin Id="HVW1cCRjQDQPB5PpDhtZA1" Name="Goto Position" Kind="InputPin" />
@@ -406,6 +411,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="OneEuroFilter" />
               </p:NodeReference>
+              <Pin Id="QaezxqAILs1NUl11MExXOy" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="VfzEH17rDwoNiv3gcIHciU" Name="Clock" Kind="InputPin" />
               <Pin Id="LowryxV0Gv7MPpnIlIhRVC" Name="New Clock" Kind="InputPin" />
               <Pin Id="RKuVIzZBB0HNyje1V3AUrF" Name="Goto Position" Kind="InputPin" />
@@ -451,6 +457,7 @@
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="Damper" />
                   </p:NodeReference>
+                  <Pin Id="O18b2wTIGNdL2q3777Tj2q" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="NDjKspdunWXO3itBfmdrUr" Name="Clock" Kind="InputPin" />
                   <Pin Id="Mc3QmzlJS1ELge04g8fNll" Name="New Clock" Kind="InputPin" />
                   <Pin Id="NWLmvbVvwRuM1L4zkPYUMb" Name="Goto Position" Kind="InputPin" />
@@ -482,6 +489,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Damper" />
               </p:NodeReference>
+              <Pin Id="DT0Kpfi4jlHL8Pmo45kMJ3" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="Q3Rlj0powrOMA0E7ON0ktB" Name="Clock" Kind="InputPin" />
               <Pin Id="RliUN2nv2pOMpgVdBKKJal" Name="New Clock" Kind="InputPin" />
               <Pin Id="QVuj9NlJvmwORfLwBIFXmb" Name="Goto Position" Kind="InputPin" />
@@ -570,6 +578,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="FrameDelay" />
               </p:NodeReference>
+              <Pin Id="Cbfp3AwYtEWQKwLtLoihMK" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="KziVwsNzzukPT7TgRDTavJ" Name="Initial Value" Kind="InputPin" />
               <Pin Id="MQ58q7EXglnPDmpHxxWa3j" Name="Value" Kind="InputPin" />
               <Pin Id="UBnm4l7LErYNa9MVZeCJDT" Name="Value" Kind="OutputPin" />
@@ -580,6 +589,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Damper" />
               </p:NodeReference>
+              <Pin Id="BkZgaENtomRPPujVrdZEG0" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="ULaPDYpoFbaOQmfWEv58C3" Name="Clock" Kind="InputPin" />
               <Pin Id="EZJORkL4PFkQJGvw1RWb4U" Name="New Clock" Kind="InputPin" />
               <Pin Id="IsSf3q6dy9IPg5eTQDNP8K" Name="Goto Position" Kind="InputPin" />
@@ -603,6 +613,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Damper" />
               </p:NodeReference>
+              <Pin Id="VMvXbykQpgeOVPzDx9XGgX" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="RrtyTNTDq7dNQhBqtvk7oF" Name="Clock" Kind="InputPin" />
               <Pin Id="IVmZEOgEUqkPSU7b7yuXPd" Name="New Clock" Kind="InputPin" />
               <Pin Id="DVp97x3YF7ZPxnoVTSSujl" Name="Goto Position" Kind="InputPin" />
@@ -621,6 +632,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Damper" />
               </p:NodeReference>
+              <Pin Id="U6PAhiRFyz2NXIDxm0u4m3" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="Dg9kxDitmAWNcM6PYCr1DG" Name="Clock" Kind="InputPin" />
               <Pin Id="PwVWehda7UeQHob9a132Ev" Name="New Clock" Kind="InputPin" />
               <Pin Id="RTigQvgoYIcNVnh0qzuvS1" Name="Goto Position" Kind="InputPin" />
@@ -681,6 +693,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="OSCReceiver" />
               </p:NodeReference>
+              <Pin Id="QeRDRHArXq9QMhQx7rWf05" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="TDnHiYU7YjCNjJzH9o87WK" Name="Input" Kind="InputPin" />
               <Pin Id="Px5Ed0kYTDIQUw2at0hANM" Name="Address" Kind="InputPin" />
               <Pin Id="VjRbTIqNGsJMhQJV8B7pcF" Name="Learn" Kind="InputPin" />
@@ -708,6 +721,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="OneEuroFilter" />
               </p:NodeReference>
+              <Pin Id="M4E0tKZmpVtMSSFQctNgB9" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="JK4LcieIjP8Py4OXfv84uE" Name="Clock" Kind="InputPin" />
               <Pin Id="RSBJLsVO2gNMJoF5fEV5V7" Name="New Clock" Kind="InputPin" />
               <Pin Id="Lmxdy1IsIK9Pttj1rqfC6Q" Name="Goto Position" Kind="InputPin" />
@@ -721,6 +735,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Damper" />
               </p:NodeReference>
+              <Pin Id="DgB754gK7tMPy5JHMJKfZY" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="F6cgqVYu93VMsIFH9uzOwX" Name="Clock" Kind="InputPin" />
               <Pin Id="Diq4jkQqnC4MqqVThA7zqp" Name="New Clock" Kind="InputPin" />
               <Pin Id="IfcvPXDpH1GNl277HJvZ5r" Name="Goto Position" Kind="InputPin" />
@@ -1013,6 +1028,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="OSCReceiver" />
               </p:NodeReference>
+              <Pin Id="O3VWUXkijJ7PPZVoGIen5j" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="H9lsr9PdWTuPY5IGf6p6ID" Name="Input" Kind="InputPin" />
               <Pin Id="UgVjsnJRcuML3exnFrxyx3" Name="Address" Kind="InputPin" />
               <Pin Id="GIzag2mEsASLNazI4TwQrg" Name="Learn" Kind="InputPin" />
@@ -1293,6 +1309,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="OSCServer" />
               </p:NodeReference>
+              <Pin Id="GfUu4oPKBflOAq3D0QvBJL" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="SAfE475SmhSPGVvjfvtJfC" Name="Listening IP" Kind="InputPin" />
               <Pin Id="BlxBaDniXk3PHfm2sXolDO" Name="Port" Kind="InputPin" />
               <Pin Id="QTbbic1XqjKN0WYlEfTpgF" Name="Enable Data Preview" Kind="InputPin" />
@@ -1322,6 +1339,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="OSCClient" />
               </p:NodeReference>
+              <Pin Id="MrvHYEcTBVNN2h5IZcjFsx" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="OiuPdYkMXJbLftUFOZQ1FC" Name="Server" Kind="InputPin" />
               <Pin Id="OFJ4QeWWBaOPnBPxcO65xq" Name="Port" Kind="InputPin" />
               <Pin Id="Tl6RY9lqDiaQLh3PA3MljZ" Name="Servers" Kind="InputPin" />
@@ -1468,6 +1486,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="LFO" />
               </p:NodeReference>
+              <Pin Id="J3e5pn1jlGoOydSuSkC6xa" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="BEnxvQQON2uNLQQfaHXMMC" Name="Clock" Kind="InputPin" />
               <Pin Id="L2W1pfquY9OLM9sEnZ2AGE" Name="New Clock" Kind="InputPin" />
               <Pin Id="ULWO8V6Mah7LF9SaCcnBcc" Name="Period" Kind="InputPin" />
@@ -1554,6 +1573,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="PersonData" />
               </p:NodeReference>
+              <Pin Id="I5wblCTNPLeOhVG9kDQAby" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="NpC95pMsW9pM9Ipq9V8TEj" Name="ServerInput" Kind="InputPin" />
               <Pin Id="FWn7lm6SAqKMUFJqe3Urun" Name="/PValue" Kind="InputPin" />
               <Pin Id="CyWpbFHihkRMXFPApwwIeb" Name="ClientInputVCV" Kind="InputPin" />
@@ -1574,6 +1594,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="PersonData" />
               </p:NodeReference>
+              <Pin Id="ICfkqUbBTu0Or2Ph80jHac" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="R00kYjBTYPrLfsj2NOuevt" Name="ServerInput" Kind="InputPin" />
               <Pin Id="Jyr8em1h4N1QW2rSfTKCvd" Name="/PValue" Kind="InputPin" />
               <Pin Id="Jyt8UZN9cY9OK6BSOLOrvt" Name="ClientInputVCV" Kind="InputPin" />
@@ -1594,6 +1615,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="PersonData" />
               </p:NodeReference>
+              <Pin Id="M6aBeE3zpmYPxOtkC0LUbp" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="BbSSW2K8Cb0QcuqoofZQtM" Name="ServerInput" Kind="InputPin" />
               <Pin Id="DynxaBsFGf4Lg9OBow4506" Name="/PValue" Kind="InputPin" />
               <Pin Id="QLRqz1jZvpYNp84vOuprzJ" Name="ClientInputVCV" Kind="InputPin" />
@@ -1614,6 +1636,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="OSCClient" />
               </p:NodeReference>
+              <Pin Id="Gsfzyt7kRt0MvHSmeZInUb" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="FZdkO00ngLaP3Of1PwuiEs" Name="Server" Kind="InputPin" />
               <Pin Id="EPHFQ3rBjvRPByluRVoyGW" Name="Port" Kind="InputPin" />
               <Pin Id="T2jKZ1gfRuzNlSwoJ4ZAuA" Name="Servers" Kind="InputPin" />
@@ -1795,6 +1818,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="OSCServer" />
               </p:NodeReference>
+              <Pin Id="Pk6Ft8D1C7nMtcC9hgj2Xx" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="Jp2theMPK9TPkf0Ynh6cWf" Name="Listening IP" Kind="InputPin" />
               <Pin Id="KeSNlLq14hZPsMEOCQbIgT" Name="Port" Kind="InputPin" />
               <Pin Id="T8sgfGlD3mDOb9jwX7AiUd" Name="Enable Data Preview" Kind="InputPin" />
@@ -1843,6 +1867,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="OSCReceiver" />
               </p:NodeReference>
+              <Pin Id="S8xfLJVLoXBLA96AuI65rI" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="FKvjPDUvfNALMw1J7DH1Yu" Name="Input" Kind="InputPin" />
               <Pin Id="H5H4TBtzDrBQVw7TmRi1e5" Name="Address" Kind="InputPin" />
               <Pin Id="EnGqkvwaOHILEhr13sAtua" Name="Learn" Kind="InputPin" />
@@ -2111,6 +2136,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="FrameDelay" />
               </p:NodeReference>
+              <Pin Id="QW6RPwQu536OKJnCPaQZe1" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="De2W9mEeXAfMYhwvDJ6Pnl" Name="Initial Value" Kind="InputPin" />
               <Pin Id="HNOXbJuft3zLdvNoGNtBuW" Name="Value" Kind="InputPin" />
               <Pin Id="NcDJsIZWKTnM6qo7B33aoT" Name="Value" Kind="OutputPin" />
@@ -2149,6 +2175,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Damper" />
               </p:NodeReference>
+              <Pin Id="MxotSmsrB8YLmAOXGx8Do1" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="DqBWQ5xI74dLnOHDcV4ceO" Name="Clock" Kind="InputPin" />
               <Pin Id="MNksavlJzYJLaExiTKvFEQ" Name="New Clock" Kind="InputPin" />
               <Pin Id="N56lGPXpSkEL1uJbfF65z3" Name="Goto Position" Kind="InputPin" />
@@ -2223,6 +2250,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="FrameDelay" />
               </p:NodeReference>
+              <Pin Id="FhN866XFSORNXRfMS3qHXX" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="KFKcth0hkOBNtUXmDmLbRF" Name="Initial Value" Kind="InputPin" />
               <Pin Id="RkKbmWg2idtNBvtArg3hPa" Name="Value" Kind="InputPin" />
               <Pin Id="AgJv1TVAsYQPz9n75cICkd" Name="Value" Kind="OutputPin" />
@@ -2384,6 +2412,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="OSCBridger" />
               </p:NodeReference>
+              <Pin Id="BNd7zUTAFqUNgrwA1U7Kqr" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="AlDzSHrDyTvM9k6LINxuHa" Name="ServerInput" Kind="InputPin" />
               <Pin Id="MJeR1gmEkwRMVdoHNLvLSH" Name="PersonAddress" Kind="InputPin" />
               <Pin Id="Tp6q1fdsWIpQaURvmckL3w" Name="PartAddress" Kind="InputPin" />
@@ -2414,6 +2443,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="OSCBridger" />
               </p:NodeReference>
+              <Pin Id="EYw1YySLAujLheHgpegA8I" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="AND6q4h81kLNyVhMtv8DDc" Name="ServerInput" Kind="InputPin" />
               <Pin Id="MQek7BrkVPgNsMbDCxwusm" Name="PersonAddress" Kind="InputPin" />
               <Pin Id="FqR90KsjQpwPpNSKfQIPCi" Name="PartAddress" Kind="InputPin" />
@@ -2439,6 +2469,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="OSCBridger" />
               </p:NodeReference>
+              <Pin Id="QHpyWMuA3GXQCjZq1yoJU9" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="RstuK8sapTeQVoLuvvHGoD" Name="ServerInput" Kind="InputPin" />
               <Pin Id="QTfosMamlLaOsvcm9PordU" Name="PersonAddress" Kind="InputPin" />
               <Pin Id="JxUeG1K6xocMg33yKo9QyD" Name="PartAddress" Kind="InputPin" />
@@ -2464,6 +2495,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="OSCBridger" />
               </p:NodeReference>
+              <Pin Id="JgRv03GaMxMOM1ec4SLfsW" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="UDskZGxtGAONo5pY6AM00s" Name="ServerInput" Kind="InputPin" />
               <Pin Id="ATW5s8swfGdO1XU3nFSpje" Name="PersonAddress" Kind="InputPin" />
               <Pin Id="HXkDVtzelicPQ284mh5zZz" Name="PartAddress" Kind="InputPin" />
@@ -2489,6 +2521,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="OSCBridger" />
               </p:NodeReference>
+              <Pin Id="L6oKDbWH9HWNc1rGfkzZvy" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="EbVOB4SMgT0Otfr1ijNzDG" Name="ServerInput" Kind="InputPin" />
               <Pin Id="Jp2q3glh9FaMqcQ9kWaI6z" Name="PersonAddress" Kind="InputPin" />
               <Pin Id="QDQyEGF4kH8PqeRUzu7EfJ" Name="PartAddress" Kind="InputPin" />
@@ -2514,6 +2547,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="OSCBridger" />
               </p:NodeReference>
+              <Pin Id="Dhf2LWS4UGjPS74q8OvQ5r" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="B0VczULTylsLxqSoBDX0N0" Name="ServerInput" Kind="InputPin" />
               <Pin Id="LzerPRagUqNQJBw1Ct4zVp" Name="PersonAddress" Kind="InputPin" />
               <Pin Id="MDFiko1NLRPMRErIAKaBbe" Name="PartAddress" Kind="InputPin" />
@@ -2539,6 +2573,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="OSCBridger" />
               </p:NodeReference>
+              <Pin Id="FrwRRt4FnyZPSjtwXikYSe" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="VsZfj6mGiW6NGFn8v86xO4" Name="ServerInput" Kind="InputPin" />
               <Pin Id="PrksmuSSoy3PBWQTu4zWGw" Name="PersonAddress" Kind="InputPin" />
               <Pin Id="JiZ57ACkeriMxRKxle5ICU" Name="PartAddress" Kind="InputPin" />
@@ -2564,6 +2599,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="OSCBridger" />
               </p:NodeReference>
+              <Pin Id="KFI8m6EnBg4OnSeR4zy67i" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="OcwFbDfS82ILHLSb9oAJj7" Name="ServerInput" Kind="InputPin" />
               <Pin Id="M8riF9OkiBfPAYt19CoFyK" Name="PersonAddress" Kind="InputPin" />
               <Pin Id="GD1otJZEvINMOgIsiN4Qow" Name="PartAddress" Kind="InputPin" />
@@ -2589,6 +2625,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="OSCBridger" />
               </p:NodeReference>
+              <Pin Id="QcsdwMJgqANMyQ5zXn4ik3" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="NS5wkglDmGHNK1xVue9Fg1" Name="ServerInput" Kind="InputPin" />
               <Pin Id="RqfJBGA3ZGoQSS12tlfTkn" Name="PersonAddress" Kind="InputPin" />
               <Pin Id="PtfwxgezH8YNnUFSFRkGvq" Name="PartAddress" Kind="InputPin" />
@@ -2614,6 +2651,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="OSCBridger" />
               </p:NodeReference>
+              <Pin Id="U29JFurjLrSN6nyuJ1Qr7o" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="GsYkI90pBtCMCoG7YeKJrW" Name="ServerInput" Kind="InputPin" />
               <Pin Id="Al3gyBy3dtnQWrOTeSJCHC" Name="PersonAddress" Kind="InputPin" />
               <Pin Id="Rb0WDvYtOQyLrvk9Ytg8JB" Name="PartAddress" Kind="InputPin" />
@@ -2639,6 +2677,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="OSCBridger" />
               </p:NodeReference>
+              <Pin Id="UOh2MIW6ihsOs88GUciGTl" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="OLeVDK8EWeRMeq28kZyuOz" Name="ServerInput" Kind="InputPin" />
               <Pin Id="NRCO1sC2UTvMJOuDqa3DpK" Name="PersonAddress" Kind="InputPin" />
               <Pin Id="BYQNnTTyU7pLPi98mBO4Xb" Name="PartAddress" Kind="InputPin" />
@@ -2664,6 +2703,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="OSCBridger" />
               </p:NodeReference>
+              <Pin Id="FzGAfyiwxBrLpGZ0ud9BtT" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="P1O92mw27ohMv0Vw3dYjbm" Name="ServerInput" Kind="InputPin" />
               <Pin Id="D8CMVsQWg8pPD8Hj1i8mVg" Name="PersonAddress" Kind="InputPin" />
               <Pin Id="RqffEuRsqNMNN8TFXn39ea" Name="PartAddress" Kind="InputPin" />
@@ -3003,6 +3043,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="MiscBridges" />
               </p:NodeReference>
+              <Pin Id="J8cJeggZjWwP6aTZtFmHV9" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="E3G5RznmmxxL25f7qoXkVV" Name="ClientInput" Kind="InputPin" />
               <Pin Id="EGZnda31CpCM58FlBwrpbB" Name="PValue" Kind="InputPin" />
               <Pin Id="EKZFZc2JBYaPh4n3dyziNI" Name="SpeedSpread" Kind="InputPin" />
@@ -3020,6 +3061,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="MiscBridges" />
               </p:NodeReference>
+              <Pin Id="CBkJcQhohnDPIY0m29gsgK" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="PtBlEUZp9hJPEg56VIn69r" Name="ClientInput" Kind="InputPin" />
               <Pin Id="QsL2xMJorOmO95V3lAkOx0" Name="PValue" Kind="InputPin" />
               <Pin Id="IzcuXz4PBL2PxLdM0H9Fz3" Name="SpeedSpread" Kind="InputPin" />
@@ -3041,6 +3083,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="PCheck" />
               </p:NodeReference>
+              <Pin Id="C1jWRIZfuf6OmZdCMmpvHS" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="VzR4yZE7UlyOOIhVNavrSA" Name="ValuetoVCV" Kind="InputPin" />
               <Pin Id="CiFcR97TmMOMdEIDNGi7KT" Name="Input" Kind="InputPin" />
               <Pin Id="JzAt2ll1iPYOyT4OUyvsru" Name="Address" Kind="InputPin" />
@@ -3324,6 +3367,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Calculation" />
               </p:NodeReference>
+              <Pin Id="OkxFExFOMHsM9ATbcyW2ua" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="L3NYOHmC5akNCQlBBYwuEk" Name="ClientInput" Kind="InputPin" />
               <Pin Id="BgiqWRxJKczNBAbywSrkJl" Name="SpreadInput" Kind="InputPin" />
               <Pin Id="A0OE1uRp3djLJ9rnCoEBBm" Name="PValue" Kind="InputPin" />
@@ -3341,6 +3385,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Calculation" />
               </p:NodeReference>
+              <Pin Id="LggW2em8nFvMEi7G8Igq2m" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="QLCpIf9ySlvLfaRespqctu" Name="ClientInput" Kind="InputPin" />
               <Pin Id="D6l8DU0oD97O0bpBz4NsKC" Name="SpreadInput" Kind="InputPin" />
               <Pin Id="EEuBMJzcRR9LY13PWUulOx" Name="PValue" Kind="InputPin" />
@@ -3619,6 +3664,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="OSCReceiver" />
               </p:NodeReference>
+              <Pin Id="KE4hft6eg7uM3cogmYEF7g" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="FzEZsjwXVzzM7lJl7iQvQG" Name="Input" Kind="InputPin" />
               <Pin Id="M0SapKmX4f8Ok8bCspQubM" Name="Address" Kind="InputPin" />
               <Pin Id="CQFDbiysMBbMc0P63nVvsA" Name="Learn" Kind="InputPin" />
@@ -3690,6 +3736,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="OSCReceiver" />
               </p:NodeReference>
+              <Pin Id="LsIKhI5AlgfMhYM2XZTc1k" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="L2VIZxSWFbaNAAL4KXakUW" Name="Input" Kind="InputPin" />
               <Pin Id="CCaeWLyRGaxMTn0eKWbpyP" Name="Address" Kind="InputPin" />
               <Pin Id="JeBTOVn3A2eN9uTGNrXq4r" Name="Learn" Kind="InputPin" />
@@ -3835,6 +3882,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="OSCServer" />
             </p:NodeReference>
+            <Pin Id="Mdb89gIerLdLKqnBjitbkh" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="GEmxSG1ReshMn0MKwkyznn" Name="Listening IP" Kind="InputPin" />
             <Pin Id="H8TbcCu2gaJLtix5piRh2d" Name="Port" Kind="InputPin" />
             <Pin Id="Fv1uS1wsuMvMrth21k2vcP" Name="Enable Data Preview" Kind="InputPin" />
@@ -3859,6 +3907,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="OSCClient" />
             </p:NodeReference>
+            <Pin Id="FLaZM79YteYNdxPlHfKcDD" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="QHvQTezuzPYNK9WmmCOnxM" Name="Server" Kind="InputPin" />
             <Pin Id="Ugu1uptDDwLL2HCsmZqVej" Name="Port" Kind="InputPin" />
             <Pin Id="HD21bnxrQIHLlbY06jYAjy" Name="Servers" Kind="InputPin" />
@@ -3875,7 +3924,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="SYupJ2dEw1BLGcpsWUd5Hg" Comment="Data Preview" Bounds="707,1077,268,1116" ShowValueBox="true" isIOBox="true">
+          <Pad Id="SYupJ2dEw1BLGcpsWUd5Hg" Comment="Data Preview" Bounds="708,1077,268,1116" ShowValueBox="true" isIOBox="true">
             <p:ValueBoxSettings>
               <p:maxvisibleentries p:Type="Int32">67</p:maxvisibleentries>
             </p:ValueBoxSettings>
@@ -3976,6 +4025,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="LFO" />
             </p:NodeReference>
+            <Pin Id="KFCpLegjgmwN1eWeC0t2VE" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="SQtD6rQkSfDQbNtc0Sqvg3" Name="Clock" Kind="InputPin" />
             <Pin Id="TOEZV65t4XpOUnrA2wA1Me" Name="New Clock" Kind="InputPin" />
             <Pin Id="D7jP4cOD7vyPgBfQiSjEwC" Name="Period" Kind="InputPin" />
@@ -4023,7 +4073,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <ControlPoint Id="KWyIW6Kf1rcPs5U7i65DDV" Bounds="685,2201" />
+          <ControlPoint Id="KWyIW6Kf1rcPs5U7i65DDV" Bounds="708,2201" />
           <Pad Id="Flepy4nDhetQZfEAJm1F2A" Comment="" Bounds="1526,451,35,15" ShowValueBox="true" isIOBox="true" Value="6666">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
@@ -4034,6 +4084,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="PersonData" />
             </p:NodeReference>
+            <Pin Id="VkxGdFurFtjLof1ejeqjyu" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="CmtHBi5cBtvO6ESPP9gBGc" Name="ServerInput" Kind="InputPin" />
             <Pin Id="MI4XQx2CxorQFKUjdOMEAb" Name="/PValue" Kind="InputPin" />
             <Pin Id="UYQIPEy1Y6iNGOer8KsH4R" Name="ClientInputVCV" Kind="InputPin" />
@@ -4054,6 +4105,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="PersonData" />
             </p:NodeReference>
+            <Pin Id="OLxCXrnH0L5PVWP4oZNu9G" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="SCNqFO2CvXmPBQlhSVyPh1" Name="ServerInput" Kind="InputPin" />
             <Pin Id="KEXAyE8uuA8NyTfl7Ad2pF" Name="/PValue" Kind="InputPin" />
             <Pin Id="QBtsY34ufbXLGfWdbQjE2N" Name="ClientInputVCV" Kind="InputPin" />
@@ -4074,6 +4126,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="PersonData" />
             </p:NodeReference>
+            <Pin Id="NVwk1MctCErL4y96adMvgH" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="FtoWUDFBsLDLy5A2jbJPHp" Name="ServerInput" Kind="InputPin" />
             <Pin Id="ErG4ESTfkHSLzUzrZbwkRc" Name="/PValue" Kind="InputPin" />
             <Pin Id="MpXXbiMSLQTMuiFvXzE31l" Name="ClientInputVCV" Kind="InputPin" />
@@ -4094,6 +4147,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="OSCClient" />
             </p:NodeReference>
+            <Pin Id="Uy5cAiTjxXdNam5988V12E" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="LwSw57yC9msNh06GyiV6RH" Name="Server" Kind="InputPin" />
             <Pin Id="C0UXaizBWU2LJjk9pI9oiP" Name="Port" Kind="InputPin" />
             <Pin Id="QPKGqfrMCaHNCSUQ8nDeNI" Name="Servers" Kind="InputPin" />
@@ -4254,6 +4308,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="OSCServer" />
             </p:NodeReference>
+            <Pin Id="OYTbn5hnaYYNRYtGuA0d10" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="BrBH7aBAmGtMEQIUOMXbmJ" Name="Listening IP" Kind="InputPin" />
             <Pin Id="NnO8Epwdmf3MtEfyEtgIGa" Name="Port" Kind="InputPin" />
             <Pin Id="NwywPd3izUjOx91k1IbYkX" Name="Enable Data Preview" Kind="InputPin" />
@@ -4303,6 +4358,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ReceivetoSend" />
             </p:NodeReference>
+            <Pin Id="RJpRYsRDZ5jLLSmm5v6ytr" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="Bb12HXSUoqZNI9fW9oUBVC" Name="ServerInput" Kind="InputPin" />
             <Pin Id="TTFN3QdlNE3N9LuK2wCIUH" Name="Address" Kind="InputPin" />
             <Pin Id="E8ffmZOzDQ3M3emuwueoc8" Name="Input 2" Kind="InputPin" />
@@ -4319,6 +4375,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ReceivetoSend" />
             </p:NodeReference>
+            <Pin Id="Voae3askFMlMjmanTwgS82" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="ED93LVmqukiPnzhsOVef5L" Name="ServerInput" Kind="InputPin" />
             <Pin Id="TqIaJ0i1BY6Qb2ZDnTWZdv" Name="Address" Kind="InputPin" />
             <Pin Id="TOjc3LwCdGVMXeUV5YDx6O" Name="Input 2" Kind="InputPin" />
@@ -4383,6 +4440,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="OSCReceiver" />
             </p:NodeReference>
+            <Pin Id="HIppZ3iZ8AmL1wht44DTbN" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="E32x7bPpjqCOhWRZjYxI7d" Name="Input" Kind="InputPin" />
             <Pin Id="OEZrqjsWc2ROwozuv5N3we" Name="Address" Kind="InputPin" />
             <Pin Id="VHLPYKMi5F6OUpPfmnBtD3" Name="Learn" Kind="InputPin" />
@@ -4408,6 +4466,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ReceivetoSend" />
             </p:NodeReference>
+            <Pin Id="UsJPicb43lCMRNS6ZuvmYn" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="Kwjho91Jz36QYRXkqIHqbc" Name="ServerInput" Kind="InputPin" />
             <Pin Id="ChjzXlWFTI1PjArgkfbNSB" Name="Address" Kind="InputPin" />
             <Pin Id="DrcjgexLuEnNW0JQslOqGt" Name="Input 2" Kind="InputPin" />
@@ -4506,6 +4565,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="UPETNDUnt2bMxOVQQiscoA" Location="VL.IO.OSC" Version="1.0.19" />
-  <NugetDependency Id="LLC2VbcvymnMr3H1922Zv9" Location="VL.Skia" Version="2023.5.2" />
+  <NugetDependency Id="UPETNDUnt2bMxOVQQiscoA" Location="VL.IO.OSC" Version="1.1.3" />
+  <NugetDependency Id="LLC2VbcvymnMr3H1922Zv9" Location="VL.Skia" Version="2024.6.5" />
 </Document>
