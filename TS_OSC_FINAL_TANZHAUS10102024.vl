@@ -3912,7 +3912,7 @@
             <Pin Id="Ugu1uptDDwLL2HCsmZqVej" Name="Port" Kind="InputPin" />
             <Pin Id="HD21bnxrQIHLlbY06jYAjy" Name="Servers" Kind="InputPin" />
             <Pin Id="ML6Bcx4g4ztLhVnlWiO2uS" Name="Ports" Kind="InputPin" />
-            <Pin Id="RuohUsxmiUDQHJhyW11afS" Name="Maximum Bundle Size" Kind="InputPin" />
+            <Pin Id="RuohUsxmiUDQHJhyW11afS" Name="Maximum Bundle Size" Kind="InputPin" DefaultValue="2048" />
             <Pin Id="ARlJ8vVKyosOqwlOHEcQa9" Name="Enabled" Kind="InputPin" />
             <Pin Id="IHmPMATlc7ALMz4q9nHJP5" Name="Output" Kind="StateOutputPin" />
             <Pin Id="HNbvovJhBQ9NnJ1aGgOvPJ" Name="Data" Kind="OutputPin" />
@@ -3928,7 +3928,673 @@
             <p:ValueBoxSettings>
               <p:maxvisibleentries p:Type="Int32">67</p:maxvisibleentries>
             </p:ValueBoxSettings>
-            <p:Value />
+            <p:Value>
+              <Item>
+                <Item>/P0X</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P0Y</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1AnkleLeftS</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1AnkleLeftX</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1AnkleLeftY</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1AnkleLeftZ</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1AnkleRightS</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1AnkleRightX</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1AnkleRightY</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1AnkleRightZ</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1Check</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1ElbowLeftS</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1ElbowLeftX</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1ElbowLeftY</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1ElbowLeftZ</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1ElbowRightS</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1ElbowRightX</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1ElbowRightY</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1ElbowRightZ</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1HandLeftS</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1HandLeftX</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1HandLeftY</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1HandLeftZ</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1HandRightS</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1HandRightX</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1HandRightY</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1HandRightZ</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1HeadS</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1HeadX</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1HeadY</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1HeadZ</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1HipS</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1HipX</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1HipY</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1HipZ</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1KneeLeftS</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1KneeLeftX</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1KneeLeftY</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1KneeLeftZ</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1KneeRightS</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1KneeRightX</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1KneeRightY</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1KneeRightZ</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1X</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P1Y</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2AnkleLeftS</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2AnkleLeftX</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2AnkleLeftY</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2AnkleLeftZ</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2AnkleRightS</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2AnkleRightX</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2AnkleRightY</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2AnkleRightZ</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2Check</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2ElbowLeftS</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2ElbowLeftX</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2ElbowLeftY</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2ElbowLeftZ</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2ElbowRightS</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2ElbowRightX</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2ElbowRightY</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2ElbowRightZ</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2HandLeftS</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2HandLeftX</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2HandLeftY</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2HandLeftZ</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2HandRightS</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2HandRightX</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2HandRightY</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2HandRightZ</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2HeadS</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2HeadX</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2HeadY</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2HeadZ</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2HipS</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2HipX</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2HipY</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2HipZ</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2KneeLeftS</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2KneeLeftX</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2KneeLeftY</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2KneeLeftZ</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2KneeRightS</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2KneeRightX</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2KneeRightY</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2KneeRightZ</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2X</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P2Y</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3AnkleLeftS</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3AnkleLeftX</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3AnkleLeftY</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3AnkleLeftZ</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3AnkleRightS</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3AnkleRightX</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3AnkleRightY</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3AnkleRightZ</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3Check</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3ElbowLeftS</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3ElbowLeftX</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3ElbowLeftY</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3ElbowLeftZ</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3ElbowRightS</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3ElbowRightX</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3ElbowRightY</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3ElbowRightZ</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3HandLeftS</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3HandLeftX</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3HandLeftY</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3HandLeftZ</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3HandRightS</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3HandRightX</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3HandRightY</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3HandRightZ</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3HeadS</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3HeadX</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3HeadY</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3HeadZ</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3HipS</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3HipX</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3HipY</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3HipZ</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3KneeLeftS</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3KneeLeftX</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3KneeLeftY</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3KneeLeftZ</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3KneeRightS</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3KneeRightX</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3KneeRightY</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3KneeRightZ</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3X</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P3Y</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P4X</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+              <Item>
+                <Item>/P4Y</Item>
+                <Item>f</Item>
+                <Item>0.0 s</Item>
+              </Item>
+            </p:Value>
           </Pad>
           <Pad Id="C77xqL4kxfHQHqu3sYcun0" Comment="Enabled" Bounds="1988,932,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -3960,7 +4626,7 @@
           <Overlay Id="RnzCmGLb9btMhfbgWB2Lkr" Name="//CHECKLIST" Bounds="658,230,399,377">
             <p:ColorIndex p:Type="Int32">5</p:ColorIndex>
           </Overlay>
-          <Node Bounds="1881,777,65,19" Id="QQmNQNKpWoDNvcGLCbMXua">
+          <Node Bounds="1832,807,46,19" Id="QQmNQNKpWoDNvcGLCbMXua">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="Spread" NeedsToBeDirectParent="true" />
@@ -3975,7 +4641,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="AuarnOfujoPM0blYvXgKAx" Comment="" Bounds="1883,820,101,49" ShowValueBox="true" isIOBox="true">
+          <Pad Id="AuarnOfujoPM0blYvXgKAx" Comment="" Bounds="1834,848,101,49" ShowValueBox="true" isIOBox="true">
             <p:ValueBoxSettings>
               <p:maxvisibleentries p:Type="Int32">6</p:maxvisibleentries>
             </p:ValueBoxSettings>
@@ -3983,7 +4649,7 @@
               <Item></Item>
             </p:Value>
           </Pad>
-          <Node Bounds="1796,847,40,19" Id="MqI3HRlJ7VYQUly0LRFvtE">
+          <Node Bounds="1959,807,40,19" Id="MqI3HRlJ7VYQUly0LRFvtE">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="Spread" NeedsToBeDirectParent="true" />
@@ -3993,11 +4659,7 @@
             <Pin Id="BmIBxtD0iAIQOlolJ58noO" Name="Input" Kind="InputPin" />
             <Pin Id="LZSVfPHfSNBNCmxL7jACKq" Name="Input 2" Kind="InputPin" />
           </Node>
-          <Pad Id="HLQqg42Y0ojLXoqBZLHGEF" Comment="" Bounds="1846,890,109,49" ShowValueBox="true" isIOBox="true">
-            <p:Value>
-              <Item></Item>
-            </p:Value>
-          </Pad>
+          <Pad Id="HLQqg42Y0ojLXoqBZLHGEF" Comment="" Bounds="1961,848,109,49" ShowValueBox="true" isIOBox="true" Value="2222, 4444" />
           <Pad Id="AhynXt9c4YOLiAAsUICGmv" Comment="Max/Noel IP" Bounds="1315,369,94,15" ShowValueBox="true" isIOBox="true" Value="169.254.88.20">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
@@ -4020,7 +4682,7 @@
             <Pin Id="FonkRJ7OC5YMQu2tJBUYUm" Name="Apply" Kind="InputPin" />
             <Pin Id="OnpaBsUJNBfM5DmwilJNa0" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="1835,462,85,19" Id="NvRjItDr50UPen1jPnKaBf">
+          <Node Bounds="1835,365,85,19" Id="NvRjItDr50UPen1jPnKaBf">
             <p:NodeReference LastCategoryFullName="Animation" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="LFO" />
@@ -4028,7 +4690,7 @@
             <Pin Id="KFCpLegjgmwN1eWeC0t2VE" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="SQtD6rQkSfDQbNtc0Sqvg3" Name="Clock" Kind="InputPin" />
             <Pin Id="TOEZV65t4XpOUnrA2wA1Me" Name="New Clock" Kind="InputPin" />
-            <Pin Id="D7jP4cOD7vyPgBfQiSjEwC" Name="Period" Kind="InputPin" />
+            <Pin Id="D7jP4cOD7vyPgBfQiSjEwC" Name="Period" Kind="InputPin" DefaultValue="20" />
             <Pin Id="A2NrjRBobguOQxZ0Eo8osI" Name="Pause" Kind="InputPin" />
             <Pin Id="DW2LwZd4aeqNXwx6ahIqZv" Name="Reset" Kind="ApplyPin" />
             <Pin Id="IehkKLZWSxhLD7VpmS2fOC" Name="Phase" Kind="OutputPin" />
@@ -4040,7 +4702,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="JBUL3EhEUysLAuYedM6SDH" Bounds="672,294,153,138" ShowValueBox="true" isIOBox="true" Value="//OSC Servers&#xD;&#xA;&#x9;Celia&#xD;&#xA;&#x9;&#x9;Port: 3333&#xD;&#xA;&#x9;Louis&#xD;&#xA;&#x9;&#x9;Port: 5555">
+          <Pad Id="JBUL3EhEUysLAuYedM6SDH" Bounds="672,294,153,156" ShowValueBox="true" isIOBox="true" Value="//OSC Servers&#xD;&#xA;&#xD;&#xA;Listening:&#xD;&#xA;&#xD;&#xA;&#x9;Celia&#xD;&#xA;&#x9;&#x9;Port: 3333&#xD;&#xA;&#x9;Louis&#xD;&#xA;&#x9;&#x9;Port: 5555">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -4049,7 +4711,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="TGBVS24ZdokNnfqOQdixpH" Bounds="817,292,212,197" ShowValueBox="true" isIOBox="true" Value="//OSC Client&#xD;&#xA;&#x9;VCV&#xD;&#xA;&#x9;&#x9;IP: Localhost&#xD;&#xA;&#x9;&#x9;Port: 6666&#xD;&#xA;&#x9;Celia&#xD;&#xA;&#x9;&#x9;IP: 169.254.11.184&#xD;&#xA;&#x9;&#x9;Port: 2222&#xD;&#xA;&#x9;Louis&#xD;&#xA;&#x9;&#x9;IP: 169.254.158.243&#xD;&#xA;&#x9;&#x9;Port: 4444">
+          <Pad Id="TGBVS24ZdokNnfqOQdixpH" Bounds="817,292,212,197" ShowValueBox="true" isIOBox="true" Value="//OSC Client&#xD;&#xA;&#xD;&#xA;Sending:&#xD;&#xA;&#xD;&#xA;&#x9;VCV&#xD;&#xA;&#x9;&#x9;IP: Localhost&#xD;&#xA;&#x9;&#x9;Port: 6666&#xD;&#xA;&#x9;Celia&#xD;&#xA;&#x9;&#x9;IP: 169.254.11.184&#xD;&#xA;&#x9;&#x9;Port: 2222&#xD;&#xA;&#x9;Louis&#xD;&#xA;&#x9;&#x9;IP: 169.254.158.243&#xD;&#xA;&#x9;&#x9;Port: 4444">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -4203,7 +4865,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="DOQZLYlC15eNiuxPbnyEij" Comment="Apply" Bounds="1961,476,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+          <Pad Id="DOQZLYlC15eNiuxPbnyEij" Comment="Apply" Bounds="1961,464,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -4237,7 +4899,7 @@
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Overlay Id="TRSl9XebfURNZI2LHXVDAB" Name="TEST SIGNAL /lfo" Bounds="1724,402,566,227" />
+          <Overlay Id="TRSl9XebfURNZI2LHXVDAB" Name="TEST SIGNAL /lfo" Bounds="1724,336,566,293" />
           <Overlay Id="TgRmFOGS76CMgkg4ud0ffk" Name="IP/PORT LIST" Bounds="1262,260,364,378" />
           <Overlay Id="FmNpEATfoQNPTWeYvqBaRm" Name="OSC Client SEND // VCV" Bounds="1217,703,489,379" />
           <Overlay Id="AUOc2zHU9m0NEhdLCQn8Bu" Name="OSC Client SEND // L+C" Bounds="1730,705,514,376" />
@@ -4483,6 +5145,26 @@
               <CategoryReference Kind="Category" Name="Primitive" />
             </p:TypeAnnotation>
           </Pad>
+          <Node Bounds="1835,395,58,19" Id="J9XIAp12YehPKJIXdzOV7F">
+            <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="SineWave" />
+            </p:NodeReference>
+            <Pin Id="BuFe1EmbmivM7PXPm7W9vO" Name="Phase" Kind="InputPin" />
+            <Pin Id="QdxGDE1MxJiMvxVOUH5NHA" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="1835,440,85,19" Id="VUj44EyVeHjLkxmvjHJd8h">
+            <p:NodeReference LastCategoryFullName="Math.Ranges" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="Map" />
+            </p:NodeReference>
+            <Pin Id="NSFZ0TdHuPwNsuDiJfkJUv" Name="Input" Kind="InputPin" />
+            <Pin Id="CBFZgKPDrCBQPmx6lHH8SZ" Name="Input Minimum" Kind="InputPin" DefaultValue="-1" />
+            <Pin Id="QSNu9nWQqSKMZvJ9SSm6Du" Name="Input Maximum" Kind="InputPin" DefaultValue="1" />
+            <Pin Id="EGeMqi1eHW0NzKex5dpKLG" Name="Output Minimum" Kind="InputPin" />
+            <Pin Id="N2Bk3FTCGICLQsGD0dV8AK" Name="Output Maximum" Kind="InputPin" DefaultValue="1" />
+            <Pin Id="R0tPi1md7OcMkrEoTMgL3h" Name="Output" Kind="OutputPin" />
+          </Node>
         </Canvas>
         <ProcessDefinition Id="QU2BmcqHAR6MEKlsg6jz2q">
           <Fragment Id="LDMLt9oMED7Prd8m1k92Qn" Patch="Bg3MROwz3KQMW7aVFwWGd1" Enabled="true" />
@@ -4494,7 +5176,6 @@
         <Link Id="G46AItTPQUTNzyEviRRrjq" Ids="TnjICuftAUrPHUfvbBxTTj,SmN49oIKEwqLJOp1OMC7Rh" />
         <Link Id="FUZHThXGgJ2NR9V5vMiNA9" Ids="IscpDf4KfynOQieoHjeEth,AuarnOfujoPM0blYvXgKAx" />
         <Link Id="BtLHMc5FvdXNofGKwlaKX6" Ids="Eq7dlXqssSfOkP3iAYgQL7,HLQqg42Y0ojLXoqBZLHGEF" />
-        <Link Id="JPM58iHvradMDWJdtriRIJ" Ids="IehkKLZWSxhLD7VpmS2fOC,LRKPKMuOu4WLI0buEquG9i" />
         <Link Id="HCkEvS2iMuoNHwyC63SO3C" Ids="QKBqhJ9kgxYQNo2q5GIVbT,SVCb1lnoG5KPycYgvgvvde" />
         <Link Id="EwhHoyeBuatPZWGnDODL4r" Ids="SYupJ2dEw1BLGcpsWUd5Hg,KWyIW6Kf1rcPs5U7i65DDV" />
         <Link Id="DOboWap2PYVOtsV2Rei07P" Ids="KWyIW6Kf1rcPs5U7i65DDV,KgKiQuJbaoxMBahoFdPpZT" IsHidden="true" />
@@ -4515,7 +5196,6 @@
         <Link Id="MRO1CsJv7wqM6F55M2ugTY" Ids="QBlRjDEz6s1LwT5fay39W7,QBtsY34ufbXLGfWdbQjE2N" />
         <Link Id="DPfJxQ2Gk41Nj5kt0gaCGh" Ids="P7weCXr7iiGNlxDykMNl8E,MpXXbiMSLQTMuiFvXzE31l" />
         <Link Id="S3M4HkHDIXBMrNlOBJ62aY" Ids="GKbHKJQ2ZXcMmthOQrr8um,Fo65HiF2ROEPihvAvhskjt" />
-        <Link Id="AUt6P27DMB7Nre66myMYwy" Ids="IehkKLZWSxhLD7VpmS2fOC,R5DhxpBQcCpNwoXk2NtS0m" />
         <Link Id="HSgx60ovYFoOmAsQ2nT7M9" Ids="IHmPMATlc7ALMz4q9nHJP5,SX9Dji91sekOQxdYCHUivV" />
         <Link Id="AiRn47OK6wVO7xN39s9BvF" Ids="EswG2LWRC67OIYimu6vN9N,RvVHjwuq1bWQRv6Soia6Af" />
         <Link Id="B3fNbnZJWqcLtiDGgvTRWC" Ids="DOQZLYlC15eNiuxPbnyEij,FonkRJ7OC5YMQu2tJBUYUm" />
@@ -4562,6 +5242,10 @@
         <Link Id="DuSUE0c3feAPA8O8keTTIM" Ids="G1GCZaNc3vZLG7AAiSS158,E32x7bPpjqCOhWRZjYxI7d" />
         <Link Id="HngppJ3DRMiNZtiex2zfWb" Ids="N12RizZd8AXOHKsPg6TCWJ,H8TbcCu2gaJLtix5piRh2d" />
         <Link Id="Jx4ntiaNjtgMBdlYNyEw71" Ids="JLbyPVAghKyQXs4ppst778,NnO8Epwdmf3MtEfyEtgIGa" />
+        <Link Id="MpPTGvZy7VrL7K89RRQo80" Ids="IehkKLZWSxhLD7VpmS2fOC,BuFe1EmbmivM7PXPm7W9vO" />
+        <Link Id="Bg8pFmKVSMeOxKUB5yquez" Ids="QdxGDE1MxJiMvxVOUH5NHA,NSFZ0TdHuPwNsuDiJfkJUv" />
+        <Link Id="CKL6TOvhq8wN9pC1Oc30zV" Ids="R0tPi1md7OcMkrEoTMgL3h,LRKPKMuOu4WLI0buEquG9i" />
+        <Link Id="VGabhoBYHIkPRwdka8NJdj" Ids="R0tPi1md7OcMkrEoTMgL3h,R5DhxpBQcCpNwoXk2NtS0m" />
       </Patch>
     </Node>
   </Patch>
