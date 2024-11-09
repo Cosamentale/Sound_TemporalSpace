@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="TbAJdQHFxCEN1wF5yH16uf" LanguageVersion="2024.6.5" Version="0.128">
-  <NugetDependency Id="MhNZruOHnCLOHyIQZg7Ijv" Location="VL.CoreLib" Version="2024.6.5" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="TbAJdQHFxCEN1wF5yH16uf" LanguageVersion="2024.6.6" Version="0.128">
+  <NugetDependency Id="MhNZruOHnCLOHyIQZg7Ijv" Location="VL.CoreLib" Version="2024.6.6" />
   <Patch Id="MCT7sffQiXiPasDsUeuSeO">
     <Canvas Id="DoibdPrLgzvMJInjLKprJS" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -4623,7 +4623,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Overlay Id="RnzCmGLb9btMhfbgWB2Lkr" Name="//CHECKLIST" Bounds="658,230,399,377">
+          <Overlay Id="RnzCmGLb9btMhfbgWB2Lkr" Name="//CHECKLIST" Bounds="658,262,399,377">
             <p:ColorIndex p:Type="Int32">5</p:ColorIndex>
           </Overlay>
           <Node Bounds="1832,807,46,19" Id="QQmNQNKpWoDNvcGLCbMXua">
@@ -4702,7 +4702,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="JBUL3EhEUysLAuYedM6SDH" Bounds="672,294,153,156" ShowValueBox="true" isIOBox="true" Value="//OSC Servers&#xD;&#xA;&#xD;&#xA;Listening:&#xD;&#xA;&#xD;&#xA;&#x9;Celia&#xD;&#xA;&#x9;&#x9;Port: 3333&#xD;&#xA;&#x9;Louis&#xD;&#xA;&#x9;&#x9;Port: 5555">
+          <Pad Id="JBUL3EhEUysLAuYedM6SDH" Bounds="672,326,153,156" ShowValueBox="true" isIOBox="true" Value="//OSC Servers&#xD;&#xA;&#xD;&#xA;Listening:&#xD;&#xA;&#xD;&#xA;&#x9;Celia&#xD;&#xA;&#x9;&#x9;Port: 3333&#xD;&#xA;&#x9;Louis&#xD;&#xA;&#x9;&#x9;Port: 5555">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -4711,7 +4711,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="TGBVS24ZdokNnfqOQdixpH" Bounds="817,292,212,197" ShowValueBox="true" isIOBox="true" Value="//OSC Client&#xD;&#xA;&#xD;&#xA;Sending:&#xD;&#xA;&#xD;&#xA;&#x9;VCV&#xD;&#xA;&#x9;&#x9;IP: Localhost&#xD;&#xA;&#x9;&#x9;Port: 6666&#xD;&#xA;&#x9;Celia&#xD;&#xA;&#x9;&#x9;IP: 169.254.11.184&#xD;&#xA;&#x9;&#x9;Port: 2222&#xD;&#xA;&#x9;Louis&#xD;&#xA;&#x9;&#x9;IP: 169.254.158.243&#xD;&#xA;&#x9;&#x9;Port: 4444">
+          <Pad Id="TGBVS24ZdokNnfqOQdixpH" Bounds="817,324,212,197" ShowValueBox="true" isIOBox="true" Value="//OSC Client&#xD;&#xA;&#xD;&#xA;Sending:&#xD;&#xA;&#xD;&#xA;&#x9;VCV&#xD;&#xA;&#x9;&#x9;IP: Localhost&#xD;&#xA;&#x9;&#x9;Port: 6666&#xD;&#xA;&#x9;Celia&#xD;&#xA;&#x9;&#x9;IP: 169.254.11.184&#xD;&#xA;&#x9;&#x9;Port: 2222&#xD;&#xA;&#x9;Louis&#xD;&#xA;&#x9;&#x9;IP: 169.254.158.243&#xD;&#xA;&#x9;&#x9;Port: 4444">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -4899,7 +4899,7 @@
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Overlay Id="TRSl9XebfURNZI2LHXVDAB" Name="TEST SIGNAL /lfo" Bounds="1724,336,566,293" />
+          <Overlay Id="TRSl9XebfURNZI2LHXVDAB" Name="TEST SIGNAL /lfo" Bounds="1724,318,566,311" />
           <Overlay Id="TgRmFOGS76CMgkg4ud0ffk" Name="IP/PORT LIST" Bounds="1262,260,364,378" />
           <Overlay Id="FmNpEATfoQNPTWeYvqBaRm" Name="OSC Client SEND // VCV" Bounds="1217,703,489,379" />
           <Overlay Id="AUOc2zHU9m0NEhdLCQn8Bu" Name="OSC Client SEND // L+C" Bounds="1730,705,514,376" />
@@ -5000,7 +5000,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Overlay Id="KTXebdGaF75ObkTQPz3Wel" Name="OSC Server // Celia" Bounds="660,701,265,251" />
-          <Pad Id="UdIVfhXlHDMMom2RZJn7tS" Comment="Data Preview" Bounds="355,1088,228,103" ShowValueBox="true" isIOBox="true">
+          <Pad Id="UdIVfhXlHDMMom2RZJn7tS" Comment="Data Preview" Bounds="355,1080,228,103" ShowValueBox="true" isIOBox="true">
             <p:ValueBoxSettings>
               <p:maxvisibleentries p:Type="Int32">67</p:maxvisibleentries>
             </p:ValueBoxSettings>
@@ -5097,7 +5097,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="431,962,73,19" Id="PR8VNDbk73WNVRBJKnd4GS">
+          <Node Bounds="966,987,73,19" Id="PR8VNDbk73WNVRBJKnd4GS">
             <p:NodeReference LastCategoryFullName="IO.OSC" LastDependency="VL.IO.OSC.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="OSCReceiver" />
@@ -5111,7 +5111,7 @@
             <Pin Id="MZXWkz4BhPNPPc1ZxVCOJ2" Name="On Data" Kind="OutputPin" />
             <Pin Id="BdytzTmLx4ONbSPkAH39xo" Name="Address" Kind="OutputPin" />
           </Node>
-          <Pad Id="AVSNM6JpYSJQQZIKbzY9a6" Comment="Address" Bounds="467,943,52,15" ShowValueBox="true" isIOBox="true" Value="/P1Y">
+          <Pad Id="AVSNM6JpYSJQQZIKbzY9a6" Comment="Address" Bounds="1002,968,52,15" ShowValueBox="true" isIOBox="true" Value="/P1Y">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -5139,7 +5139,7 @@
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="B5mYQ7KDr7rOOyR9LJJqKZ" Bounds="434,1004,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+          <Pad Id="B5mYQ7KDr7rOOyR9LJJqKZ" Bounds="969,1029,35,15" ShowValueBox="true" isIOBox="true" Value="0">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Float32" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -5250,5 +5250,5 @@
     </Node>
   </Patch>
   <NugetDependency Id="UPETNDUnt2bMxOVQQiscoA" Location="VL.IO.OSC" Version="1.1.3" />
-  <NugetDependency Id="LLC2VbcvymnMr3H1922Zv9" Location="VL.Skia" Version="2024.6.5" />
+  <NugetDependency Id="LLC2VbcvymnMr3H1922Zv9" Location="VL.Skia" Version="2024.6.6" />
 </Document>
