@@ -3,7 +3,7 @@
   <PropertyGroup>
     <VLAssetBehavior>PointToOutput</VLAssetBehavior>
     <VLCleanBuildDirectory>True</VLCleanBuildDirectory>
-    <VLExportPath>C:\Users\celia\Documents\vvvv\gamma\Build_1011_02</VLExportPath>
+    <VLExportPath>C:\Users\celia\Desktop\cinetic02</VLExportPath>
     <VLTargetOS>Windows</VLTargetOS>
     <OutputType>WinExe</OutputType>
     <PlatformTarget>AnyCPU</PlatformTarget>

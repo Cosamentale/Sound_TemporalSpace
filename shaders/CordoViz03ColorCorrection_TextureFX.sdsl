@@ -27,6 +27,8 @@ float poigne;
 float genoux;
 float droit;
 float expo;
+float ratio;
+float ske;
 float minMaskBlurImg;float maxMaskBlurImg;
 float blur; float blurQuality;float texBlur;
 float variationHue; float globalHue; float3 sha; float3 mid; float3 hig; float noise;
@@ -224,7 +226,7 @@ float bez( float2 pos, float2 A,  float2 B,  float2 C ){
     //float m = step(0.038,distance(0.255,uv.x))*step(0.0375,distance(0.7282,uv.x));
     float m = 1.;
     if(m>0.5){
-    float2 ptt = float2(0.0,0.02);
+    float2 ptt = float2(0.0,ske);
     float2 p0 = Texture0.SampleLevel(samplerState,  float2(0.825,0.01), 0)+ptt;
     float2 p1 = Texture0.SampleLevel(samplerState,  float2(0.835,0.01), 0)+ptt;
     float2 p2 = Texture0.SampleLevel(samplerState,  float2(0.845,0.01), 0)+ptt;
@@ -244,11 +246,11 @@ float bez( float2 pos, float2 A,  float2 B,  float2 C ){
     float2 p10s = Texture0.SampleLevel(samplerState,float2(0.985,0.01), 0)+ptt;
     float2 p12s = Texture0.SampleLevel(samplerState,float2(0.995,0.01), 0)+ptt;
     float2 pf = lerp(lerp(p0,lerp(p1,p2,clamp(droit,0.,1.)),clamp(poigne,0.,1.)),lerp(p3,p4,clamp(droit,0.,1.)),clamp(genoux,0.,1.));
-    float2 pf1 = pf-zoom;
-    float2 pf2 = pf+zoom;
+    float2 pf1 = pf-zoom*float2(ratio,1.);
+    float2 pf2 = pf+zoom*float2(ratio,1.);
     float2 uz = map2(uv,pf1,pf2);
     uz = lerp(uv,uz+float2(XPose,0.),effetzoom);
-    float2 fac = float2(1920./1200.,1.);
+    float2 fac = float2(1.777,1.);
     float2 gt = (p0+p1+p2+p3+p4)/5.;
     float a1 = step(0.5,sin(Time)*0.5+0.5);
     float bq = clamp(blurQuality,0.2,2.);
@@ -374,7 +376,7 @@ float bez( float2 pos, float2 A,  float2 B,  float2 C ){
       float3 r = co(c2,sha,mid,hig);
       float3 r2 = ov3(r,lerp(0.5,noi,noise));
       float3 r3 = min(r2,lerp(1.-longEx,1.,Texture2.SampleLevel(samplerState,uc,0).xyz));
-      float3 r4 =lerp(r3,1.-r3,pof*0.05)*(1.-pof*0.2)*pow(clamp(fade,0.,1.),2.);
+      float3 r4 =lerp(r3,1.-r3,pof*0.3)*(1.-pof*0.2)*pow(clamp(fade,0.,1.),2.);
       //pow(clamp(fade,0.,1.),lerp(2.,lerp(3.,40,step(0.69,uv.x)),step(0.22,uv.x)));
       rf = float4(r4,1.);
       }
